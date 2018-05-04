@@ -1,0 +1,159 @@
+.detail-card {
+  width: 100%!important;
+}
+.input-money {
+  padding: 20px;
+}
+.label-input-money {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.detail-main-img {
+  margin-bottom: 10px;
+}
+.detail-share {
+  margin-top: 10px;
+}
+.detail-content {
+  margin-top: 20px;
+}
+.detail-active {
+  border-bottom:2px solid #2BDE73!important;
+}
+.detail-tab .item {
+  font-size: 15px;
+  color:  #cc7a00!important;
+  font-weight: bold!important;
+}
+.detail-project-header {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color:  #cc7a00!important;
+  line-height: 30px;
+
+}
+.detail-project-content {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+}
+.detail-project-figure figcaption {
+  font-size: 14px;
+}
+@media screen and (min-width: 240px) {
+  .detail-share button {
+  }
+}
+@media screen and (min-width: 375px) {
+  .detail-share button {
+    display: inline-block;
+  }
+}
+.detail-title {
+  margin-bottom: 30px;
+}
+.detail-share-icon {
+  margin-left: 10px!important;
+  font-size: 20px!important;
+}
+.detail-share-turns {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.detail-share-turns div {
+  display: inline-block;
+}
+.detail-current-money {
+  border-bottom: 1px solid #e8e8e8;
+}
+.detail-current-money label{
+  font-size: 18px!important;
+  color: #cc7a00;
+}
+.detail-progress-label {
+  color: white!important;
+}
+.detail-goal label{
+  font-size: 18px!important;
+  color: #2BDE73;
+}
+.detail-funding-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 16px!important;
+  margin-top: 20px!important;
+}
+.detail-list i {
+  color:  #cc7a00!important;
+}
+.detail-list {
+  font-size: 13px;
+}
+.other-readmore {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  font-size: 16px!important;
+}
+.other-header {
+  cursor: pointer;
+}
+.other-empty {
+  margin-top: -15px;
+}
+.recommend-pagination ul{
+  float: right;
+  margin-right: 15px;
+}
+.recommend-header div{
+  margin-top: 25px;
+}
+
+.phase-detail-camp {
+  border: 1px solid #a1a1a1;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.award-desc {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.passed-phase {
+  background-color: #73899a;
+  color: white;
+} 
+.min-award {
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.phase-goal {
+  color: #e8a782;
+}
+
+.phase-goal span {
+  font-weight: bold;
+}
+
+.phase-title {
+  color: #14A8B3;
+}
+
+.main {
+  position: relative;
+}
+.loading-icon {
+  height: 800px;
+  text-align: center;
+  padding-top: 300px;
+  z-index: 100000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,233 @@
+.carousel-control {
+    width: 10% !important;
+}
+
+.carousel-caption {
+    top: 20%;
+    left: 300px;
+}
+
+.search-section{
+    position: relative;
+    top: 56px;
+    left: 70px;
+}
+.carousel-caption p {
+    margin: 40px 0 0;
+  
+}
+
+.carousel-caption p a {
+    border: 2px solid #fff;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+    width: 16px;
+    height: 16px;
+    margin: 3px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel-caption h2 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .carousel-caption h2 {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption h2 {
+        font-size: 36px;
+        margin-bottom: 5px;
+    }
+
+    .carousel-caption {
+        top: 25%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .carousel-caption h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 14px;
+    }
+
+    .carousel-caption {
+        top: 10%;
+    }
+}
+.carousel-inner{
+
+    background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    opacity: 0.8;
+}
+.carousel-caption > h1{
+
+font-family: Quicksand;
+font-size: 45px;
+
+}
+.carousel-caption .carousel-title{
+
+font-family: "Quicksand Regular";
+font-size: 16px;
+margin-top: 5px;
+}
+.carousel-inner .item >img{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-caption .row input{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #888888;
+    border: none;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 8px;
+
+}
+.search-section form .row .select {
+    padding-left: -15px;
+    padding-top: 2px;
+    width: 200px;
+     border-radius: 8px;
+      height: 50px;
+    line-height: 50px;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #888888;
+    border: none;
+    appearance: none; 
+    background-color: #fff;
+
+    text-shadow: 0px 0px #888888;
+}
+.search-section form .row .select:hover{
+   cursor: pointer;
+}
+.carousel-caption .row .fa-keyboard-o{
+
+    position: relative;
+    right: 85px;
+    top: 10px;
+    font-size: 30px;
+    color:  #ee2a6b;
+    font-weight: lighter;
+    text-shadow: 0px 0px #000;
+}
+.carousel-caption .row .fa-map-marker{
+    position: relative;
+    left: -35px;
+    bottom: -12px;
+    font-size: 25px;
+    color:  #ee2a6b;
+    font-weight: lighter;
+    text-shadow: 0px 0px #000;
+}
+.carousel-caption .row .search1{
+   
+    margin-right: -30px;
+}
+.carousel-caption .row .search2{
+  
+    margin-left: -80px;
+}
+
+.carousel-caption .search-chosen{
+    position: relative;
+    top: 65px;
+    right: 24px;
+    background: #fff;
+    border-radius: 8px;
+    width: 200px;
+    height: 90px;
+
+}
+.hidden-select{
+    display: none;
+}
+.search-chosen .item{
+   
+     position: relative;
+     right: 60px;
+     top: 7px;
+     height: 20px;
+     color: #888888;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 0px #888888;
+    font-size: 13px;
+    transition-property: width;
+    transition-duration: 2s;
+    width: 200px;
+
+}
+.search-chosen .item:hover{
+    width: 250px;
+    color: #ee2a6b;
+    cursor: pointer;
+}
+.item-chosen{
+  
+    position: relative;
+    right: 45px;
+}
+.moveLogo{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    top: 280px;
+    z-index: -99;
+}
+.moveLogo:hover{
+    
+}
+.scroll-to {
+    
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #ffffff;
+    margin-top: -65px;
+    z-index: 22;
+    position: relative;
+    
+    border-radius: 50%;
+   top: 345px;
+    left: 50%;
+    margin-left: -65px;
+}
+.scroll-to a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    margin-top: -30px;
+    background: #ffffff;
+    
+    border-radius: 50%;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+
+    line-height: 60px;
+    font-size: 30px;
+}
+.scroll-to:hover{
+    border-color: #fb236a;  
+}
+.scroll-to:hover a{
+    background: #fb236a;
+    color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.list-covers-wrapper {
+  margin-bottom: 20px;
+	padding: 20px;
+}
+.front-line {
+  margin-bottom: 20px;
+}
+.list-covers-see-all {
+  /*float: right;*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.list-covers-see-all:hover {
+}
+.front-line a {
+  color: black;
+}

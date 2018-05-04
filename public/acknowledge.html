@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thank You</title>
+    <script src="/assets/js/jquery-3.1.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="/assets/style/bootstrap.min.css">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script>
+    function backToIndex(){
+      window.location.href = "/";
+    }
+    function getDataFromQuery() {
+      var query = location.search.substr(1);
+      var result = [];
+      var urlApi = "/api/payment/check";
+      if (query.length) {
+        var order = query.split("&");
+        var paymentId = order[0].split("=")[1];
+        if (paymentId) {
+          var url = urlApi + "?paymentId=" + paymentId;
+          $.ajax({
+            type: 'GET',
+            url: url,
+            success: function (data, res) {
+              if (!data.code) {
+                $('.icon-loading').hide();
+                $('.thank-you').show();
+              }
+            }
+          })
+        }
+      }
+      return result;
+    }
+    $(document).ready(function () {
+      getDataFromQuery();
+    })
+    </script>
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+      body {
+        background-color: #fafafa;
+      }
+      .icon-loading p {
+        margin-bottom: -50px;
+      }
+      .loading-mobile {
+        display: block;
+        position: fixed;
+        background-color: #fafafa;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        text-align: center;
+      }
+      .loading-mobile .loading-logo {
+        position: relative;
+        top: calc(35% - 40px);
+      }
+      .loading-mobile .loading-logo .logo-tch {
+        width: 100px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .loading-mobile .icon-loading {
+        top: 10px;
+        left: calc(50% - 100px);
+        display: inline-block;
+        color : black;
+        font-family: 'Roboto';
+      }
+      .loading-gif {
+      }
+      .thank-you {
+        color : black;
+        font-family: 'Roboto';
+        display : none;
+      }
+      .text-thank-you {
+        display: inline-block;
+        font-size : 25px;
+      }
+      .icon-loading {
+        font-size : 25px;
+        margin-top : 20px;
+        margin-bottom: 20px;
+      }
+      .success-icon {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width : 46px;
+      }
+      .btn-back-to-index {
+        color : white;
+        background-color: #FF792C;
+        padding: 10px;
+        border-radius: 2px;
+        border: 0;
+      }
+      .order_id {
+        color :#FF792C;
+      }
+      @-webkit-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@-moz-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@-ms-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@-moz-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@-o-keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+@keyframes uil-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0 0 0 0;
+  }
+  33% {
+    width: 44%;
+    height: 44%;
+    margin: -22% 0 0 -22%;
+    opacity: 1;
+  }
+  100% {
+    width: 88%;
+    height: 88%;
+    margin: -44% 0 0 -44%;
+    opacity: 0;
+  }
+}
+.uil-ripple-css {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin : 0 auto;
+}
+.uil-ripple-css div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 50%;
+  border-width: 8px;
+  border-style: solid;
+  -ms-animation: uil-ripple 2s ease-out infinite;
+  -moz-animation: uil-ripple 2s ease-out infinite;
+  -webkit-animation: uil-ripple 2s ease-out infinite;
+  -o-animation: uil-ripple 2s ease-out infinite;
+  animation: uil-ripple 2s ease-out infinite;
+}
+.uil-ripple-css div:nth-of-type(1) {
+  border-color: #FF792C;
+}
+.uil-ripple-css div:nth-of-type(2) {
+  border-color: #161717;
+  -ms-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+    </style>
+  </head>
+  <body>
+    <div class="loading-mobile">
+      <div class="loading-logo">
+
+        <div>
+          <div class="icon-loading">
+            <p> Đang kiểm tra trạng thái thanh toán của giao dịch <span class="order_id"></span> </p>
+            <div class='uil-ripple-css' style='transform:scale(0.4);'><div></div><div></div></div>
+          </div>
+          <div class="thank-you">
+            <div> <p class="text-thank-you">Đã thanh toán thành công. <br/> Vui lòng liên hệ chúng tôi để được hỗ trợ qua HOTLINE XX XXX XX XX </div></p>
+            <button class="btn btn-back-to-index" onClick="backToIndex();">Trở về trang chủ</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.block.remove-top{padding-top:0}
+.heading {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.heading > h2 {
+    float: left;
+    width: 100%;
+    margin: 0;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 30px;
+    color: #202020;
+    line-height: 23px;
+}
+.heading span {
+    float: left;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #888888;
+    margin-top: 8px;
+    line-height: 29px;
+}
+.how-to-sec {
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    display: table;
+}
+.how-icon {
+    float: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px dashed;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    line-height: 94px;
+    font-size: 53px;
+    text-align: center;
+    color:  #394284;
+    border-color:  #394284;
+}
+.how-to h3 {
+    float: left;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #121212;
+    margin: 0;
+    margin-top: 30px;
+}
+.how-to p {
+    float: left;
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #888888;
+    line-height: 24px;
+    margin-top: 14px;
+}
+.how-to {
+    float: left;
+    width: 33.334%;
+    text-align: center;
+    position: relative;
+}
+.how-to::before {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    width: 270px;
+    height: 36px;
+   
+    content: "";
+    z-index: 1;
+    margin-left: 61px;
+}
+.how-to:nth-child(n+2)::before {
+  
+    top: 13px;
+}
+.how-to:last-child::before {
+    display: none;
+}
+.how-to:nth-child(2n+2) {
+    padding: 0 50px;
+}

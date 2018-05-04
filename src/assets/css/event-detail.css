@@ -1,0 +1,69 @@
+.event-detail {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  margin : 0 !important;
+  background-color: #F5F5F5;
+  padding-left:  15% !important;
+  padding-right : 15% !important;
+}
+
+.event-detail-container {
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(160, 160, 160, 0.45);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left:  0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+}
+
+.event-cover img {
+  width :100%;
+}
+.event-info {
+  background-color: #F9F6EC;
+  position: relative;
+  padding-bottom: 30px;
+  float: left;
+  width : 100%;
+  color : #696565;
+}
+.event-name {
+  font-size : 38px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.event-location {
+  font-size : 22px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+.event-info-content {
+  color : #8E96B2;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.event-info .col-xs-4 {
+
+}
+.event-sponsor {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top : 30px;
+}
+.event-sponsor ul {
+  padding-top : 30px !important;
+}
+.event-sponsor li {
+  font-weight: 500;
+  font-size : 22px;
+}
+.event-desc {
+  font-size: 22px;
+  line-height: 34px;
+  padding : 50px;
+  float : left;
+  width :100%;
+}

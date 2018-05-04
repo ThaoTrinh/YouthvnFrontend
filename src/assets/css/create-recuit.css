@@ -1,0 +1,101 @@
+.submit-recuit {
+  width : 100%;
+}
+.recuit-detail {
+  padding-top: 100px !important;
+  padding-bottom: 50px !important;
+  background-color: #f5f5f5;
+  padding-left: 16% !important;
+  padding-right: 16% !important;
+}
+.title-page-recuit {
+  font-size: 30px;
+  font-weight: bold;
+  color : #2185d0;
+  border-bottom: 1px solid #F0F0F0;
+  padding-bottom: 20px;
+  padding-top :50px;
+}
+.recuit-detail-container {
+  width : 100%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 1px 5px rgba(160, 160, 160, 0.45);
+}
+.no-recuit-box-msg {
+  border-radius: 5px;
+  background-color: grey;
+  color : white;
+  font-size : 25px;
+  text-align: center;
+  height : 100px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width : 100%;
+}
+.recuit .label-new {
+  font-size: 11px;
+  font-weight: bold;
+  background: #f76d22;
+  color: #FFF;
+  padding: 1px 4px 0 4px;
+  margin-left: 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 14px;
+}
+.recuit {
+  background-color: #F0F0F0;
+  padding-top: 100px !important;
+  padding-bottom: 30px !important;
+}
+.recuit .container {
+  background-color: white !important;
+  box-shadow: 0px 1px 5px rgba(160, 160, 160, 0.45);
+}
+.recuit .row {
+  margin : 0 !important;
+}
+.recuit-box {
+  width : 100%;
+  padding : 20px;
+  border-bottom: 1px solid #EDEDED;
+}
+.recuit-title {
+  font-weight: bold;
+  font-size : 18px;
+}
+
+.recuit-author {
+  padding-top: 10px;
+}
+.recuit .author-name {
+  padding-left: 10px;
+  padding-right: 5px;
+  font-style: italic;
+}
+.recuit-box-info {
+  padding : 10px;
+  font-size: 14px;
+  background-color: #F1F1F1;
+  margin: 8px 0 10px;
+  border-radius: 2px;
+}
+.recuit-place {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.recuit-field {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.recuit-max-salary {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.recuit-box-desc {
+  height : 100px;
+}

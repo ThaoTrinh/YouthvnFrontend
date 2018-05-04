@@ -1,0 +1,77 @@
+.events {
+  background-color: #F5F5F5;
+  padding-left: 16% !important;
+  padding-right: 16% !important;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+.event-container {
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(160, 160, 160, 0.45);
+}
+.events-thumbnail {
+  width : 100%;
+}
+.events-thumbnail img {
+  width : 100%;
+  height : 250px;
+  border-radius: 3px;
+}
+.events .author {
+  padding : 10px;
+}
+.events .author-title {
+  font-size : 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.events .logo-author {
+  float : left;
+}
+.logo-author img {
+  width : 50px;
+  height : 50px;
+  border-radius: 2px;
+}
+.events .author-name {
+  float : left;
+  font-size : 25px;
+  padding-left: 10px;
+  padding-top : 15px;
+}
+.events .row {
+  margin: 0 !important;
+  position: relative;
+}
+.events-box {
+  border-radius: 2px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.events {
+  padding-bottom: 50px;
+}
+.events div.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:100%;
+	/* styling bellow */
+	background-color: rgba(0,0,0, 0.6);
+	color:white;
+	filter:alpha(opacity=60); /* IE transparency */
+}
+.events p.description_content{
+	padding:10px;
+	margin:0px;
+	font-size: 30px;
+}
+
+.events .info {
+  padding-top : 20px;
+  font-size : 15px;
+}
+
+.remaining-date {
+  text-align: center;
+  background-color: rgba(33,206,231, 0.5);
+}

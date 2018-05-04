@@ -1,0 +1,81 @@
+.Panel{
+ background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
+ width: 100% !important;
+ height: 300px !important;
+ z-index: 99;
+ opacity: 0.8;
+}
+.pagination {
+
+    float: left;
+    margin: 60px 0 0;
+    margin-left: 20%;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.pagination ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.pagination li {
+    float: left;
+    font-family: "Montserrat";
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+.pagination li:last-child {
+    margin: 0;
+}
+.pagination li.active a, .pagination li a:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+.pagination li.active a, .pagination li a:hover {
+    color: #ffffff;
+    background-color: #8b91dd;
+    border-color: #8b91dd;
+}
+.pagination li .delimeter {
+    display: block;
+    padding-top: 6px;
+}
+.pagination a,
+.pagination span{
+    background: #ffffff none repeat scroll 0 0;
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px 13px;
+    text-decoration: none;
+    border: 3px solid #edeff7;
+    padding: 9px 15px;
+    font-size: 14px;
+    color: #000000;
+    
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+
+    height: 41px;
+}
+.pagination li.prev a, .pagination li.next a {
+    padding: 9px 25px;
+}
+.pagination a i {
+    font-size: 15px;
+    color: #fb236a;
+}

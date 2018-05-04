@@ -1,0 +1,41 @@
+/*@media screen and (min-width: 240px) {
+  #login-google {
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #login-google {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}*/
+#login-facebook {
+  margin-bottom: 12px;
+}
+#login-google {
+  margin-bottom: 12px;
+}
+.login-checkbox input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.login-checkbox {
+  margin-bottom: 10px;
+}
+.login-checkbox span {
+  color:  #666666;
+}
+.ng-binding {
+  font-size: 12px;
+  color: #6a6a6a;
+  margin-bottom: 10px!important;
+}
+.ng-message {
+  font-size: 14px!important;
+  color: #a8a8a8;
+  font-weight: normal;
+  text-transform: lowercase;
+  padding: 10px 0;
+}

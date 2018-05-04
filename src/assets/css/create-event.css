@@ -1,0 +1,21 @@
+.create-event .twelve {
+  padding-top : 100px !important;
+  padding-bottom : 100px !important;
+}
+.create-event .cover {
+  width :100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.create-event .cover img {
+  width: 100px;
+  height : auto;
+}
+
+.create-event .field .desc {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 200;
+}

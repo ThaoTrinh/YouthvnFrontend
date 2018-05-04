@@ -1,0 +1,35 @@
+.feedback .left {
+  padding : 100px;
+}
+.feedback {
+  font-family: 'Roboto';
+  padding-top: 100px;
+  height: 600px;
+  position: relative;
+}
+.feedback .title {
+  color : #3c8dbc;
+  font-size : 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.feedback .desciption {
+  font-size : 26px;
+  line-height: 26px;
+}
+.feedback .right {
+  padding : 80px;
+}
+.feedback .name {
+  width : 48%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.feedback .email {
+  width: 48%;
+  display: inline-block;
+}
+.feedback button {
+  float : right;
+  width : 100px;
+}

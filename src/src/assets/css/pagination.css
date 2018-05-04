@@ -1,0 +1,109 @@
+.block {
+  float: left;
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.block .container{padding:0}
+.container{padding:0}
+.block.remove-top{padding-top:0}
+.block.no-padding{padding-top:0; padding-bottom:0; }
+.block.dark{background:#111111}
+.gray{background:#f4f5fa}
+.block.remove-bottom{padding-bottom:0}
+.parallax,.fixed-bg{
+    background-size:cover!important;
+    height:100%;
+    width:100%;
+    margin:0;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+
+.block.overlape {
+  z-index: 2;
+}
+
+.bloglist-sec {
+  float: left;
+  width: 100%;
+  margin-top: -40px;
+}
+
+.pagination {
+
+  float: inherit;
+  margin: 60px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.pagination ul {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.pagination li {
+  float: left;
+  font-family: Montserrat;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+.pagination li:last-child {
+  margin: 0;
+}
+.pagination li.active a, .pagination li a:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.pagination li.active a, .pagination li a:hover {
+  color: #ffffff;
+  background-color: #8b91dd;
+  border-color: #8b91dd;
+}
+.pagination li .delimeter {
+  display: block;
+  padding-top: 6px;
+}
+.pagination a,
+.pagination span{
+  background: #ffffff none repeat scroll 0 0;
+  
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+
+  float: left;
+  font-family: Open Sans;
+  padding: 3px 13px;
+  text-decoration: none;
+  border: 3px solid #edeff7;
+  padding: 9px 15px;
+  font-size: 14px;
+  color: #000000;
+  
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+
+  height: 41px;
+}
+.pagination li.prev a, .pagination li.next a {
+  padding: 9px 25px;
+}
+.pagination a i {
+  font-size: 15px;
+  color: #fb236a;
+}

@@ -1,0 +1,68 @@
+.cover-wrapper {
+  border-radius: 0!important;
+}
+.image img {
+  width: 100%;
+}
+.label {
+  display: block;
+  color: black;
+  font-size: 13px;
+}
+.cover-list-info {
+  list-style: none;
+  padding: 0
+}
+.cover-list-info li {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.cover-info {
+  font-size: 12.5px;
+}
+.cover-title {
+  height: 100px;
+  overflow: hidden;
+}
+.cover-description {
+  height: 70px;
+  overflow: hidden;
+}
+@media screen and (min-width: 240px) {
+  .cover-elements span:not(:last-child){
+    margin-bottom: 10px!important;
+  }
+  .cover-elements span:last-child {
+    margin-left: -0.5px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .cover-elements span:last-child {
+    margin-left: 0;
+  }
+}
+
+.status {
+  text-align: center;
+  color: white;
+}
+
+.status-active {
+  background-color: #27aee8 !important;
+}
+
+.status-paused {
+  background-color: #d8a915 !important;
+}
+
+.status-failed {
+  background-color: #ea0047 !important;
+}
+
+.status-success {
+  background-color: #50d25f !important;
+}
+
+.status-canceled {
+  background-color: #80461b !important;
+}

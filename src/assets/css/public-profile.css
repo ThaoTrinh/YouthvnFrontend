@@ -1,0 +1,85 @@
+h2:not(.swal2-title):not(.profile-title) {
+    margin-bottom: 50px!importan;
+}
+
+h2::after:not(.swal2-title) {
+    background: #14b1bb;
+    content: "";
+    display: block;
+    height: 5px;
+    margin-top: 10px;
+    width: 80px;
+}
+
+.public-profiles {
+    border: 1px solid #e7e7e7;
+    border-bottom: 0;
+    border-radius: 3px;
+}
+
+.public-profiles a {
+    border-bottom: 1px solid #e7e7e7;
+    color: #888;
+    display: block;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+}
+
+.public-profiles a.featured {
+    background: #fff;
+    border-bottom: 1px solid #14b1bb;
+}
+
+.public-profiles a h5 {
+    line-height: 1.71em;
+}
+
+.public-profiles a .row, .public-profiles p {
+    margin: 0;
+}
+
+#more-public-profiles {
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+#more-public-profiles .more {
+    display: block;
+}
+
+.featured-profile {
+    color: #888;
+}
+
+.featured-profile .title {
+    padding: 11px 0 0 20px;
+}
+
+.featured-job img, .featured-job .title {
+    float: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.featured-job .data {
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    clear: both;
+    margin: 15px 0;
+    padding: 10px 15px;
+}
+
+.public-profiles-filter hr {
+    margin: 0 0 50px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.public-profiles-filter h5 {
+    margin: 1em 0 2em;
+    text-transform: uppercase;
+}
+
+.public-profiles-filter h5:last-child {
+    margin-bottom: 2em !important;
+}

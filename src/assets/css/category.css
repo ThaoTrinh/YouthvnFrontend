@@ -1,0 +1,24 @@
+.title-category {
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title-category-box {
+  border : 1px solid #005b96;
+  background-color: #005b96;
+  color : white;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 45px;
+  text-transform: uppercase;
+  height : 70px;
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+.desc-category {
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+  font-size : 20px;
+  margin-bottom: 40px;
+}

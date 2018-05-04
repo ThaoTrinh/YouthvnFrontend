@@ -1,0 +1,9 @@
+.CandidateList{
+	width: 100%;
+    height: 600px;
+}
+.CandidateList .carousel-caption .cv{
+   background-color: #fff;
+   width:300px;
+   row: 500px;
+}

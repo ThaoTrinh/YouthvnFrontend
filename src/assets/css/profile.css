@@ -1,0 +1,111 @@
+.profile-header {
+  background-color: #BECEE8!important;
+  text-align: center;
+}
+.profile-name {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 29px;
+  letter-spacing: 1.35px;
+  color: #FFFFFF
+}
+.profile-basicInfo {
+  color: #FFFFFF;
+  line-height: 30px!important;
+}
+.profile-border {
+  border-top: 2px #BECEE8 solid!important;
+}
+.profile-about {
+  font-weight : bold;
+  font-size : 20px;
+  color : #4A4F5A;
+}
+.profile-title {
+  line-height: 28px;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 0 !important;
+}
+.profile-title::after {
+  display: none;
+}
+.profile-desc {
+  font-size : 15px;
+  line-height : 17px;
+  letter-spacing : 0.45px;
+  color : #939598;
+  text-align: justify;
+}
+.profile-info {
+  line-height: 25px;
+}
+
+.profile-school {
+  font-weight : bold;
+  font-size : 18px;
+  line-height : 18px;
+  letter-spacing : 0.6px;
+  color : #4A4F5A;
+}
+.profile-year {
+  padding-top:5px;
+  font-size : 15px;
+  letter-spacing : 0.45px;
+  color : #939598;
+}
+.profile-schoolInfo {
+  font-weight : bold;
+  font-size : 18px;
+  line-height : 18px;
+  letter-spacing : 0.6px;
+  color : #4A4F5A;
+}
+.profile-schoolDesc {
+  padding-top: 8px;
+  font-size : 15px;
+  line-height : 17px;
+  letter-spacing : 0.45px;
+  color : #939598;
+  text-align: justify;
+}
+
+.title-header {
+  margin: 30.8px 14px 30.8px 28px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.button_badge {
+  background-color: #fa3e3e;
+  border-radius: 3px;
+  color: white;
+
+  padding: 1px 3px;
+  font-size: 10px;
+
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 0;
+}
+
+.profile-select .Select-input > input{
+  width: 100%!important;
+  background: none transparent!important;
+  border: 0 none!important;
+  box-shadow: none!important;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit!important;
+  font-size: inherit!important;
+  margin: 0!important;
+  outline: none!important;
+  line-height: 14px!important;
+  padding: 8px 0 12px!important;
+  -webkit-appearance: none!important;
+}
+.dropzone-profile-avatar {
+  cursor: pointer;
+  width: 10%;
+  margin: 0 auto;
+}

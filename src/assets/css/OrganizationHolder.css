@@ -1,0 +1,352 @@
+.Panel{
+
+   width: 100% !important;
+ height: 400px;
+ z-index: 99;
+
+}
+
+.Company-Item .logo > a img {
+
+   
+   
+    border-radius: 50%;
+
+}
+.Company-Item .logo .hour {
+
+   
+   
+ font-family: "Open Sans", sans-serif;
+ font-weight: lighter;
+ margin-top: 15px;
+ margin-left: auto;
+ margin-right: auto;
+ color: #8b91dd;
+}
+.Company-Item .logo .fa-eye {
+
+   
+padding-left: 20px;
+ font-weight: lighter;
+
+}
+
+.Company-Item {
+ border: 1px solid #e8ecec;
+   font-family: "Open Sans", sans-serif;
+ height: 200px;
+ padding-top: 25px;
+ width: 800px;
+ padding-left:10px;
+
+}
+.Company-Item:hover{
+   box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
+
+    border-color: #ffffff;
+}
+.Company-Item .content {
+   
+    position: relative;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #202020;
+    margin-left: -10px;
+  }
+  .Company-Item .content .companyName{
+
+  }
+.Company-Item .content div{
+	
+	font-size: 16px;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+.Company-Item .content .description{
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: lighter;
+  color: #7f7e7f;
+   font-family: "Open Sans", sans-serif;
+}
+.Company-Item .content p{
+margin-left: 2px;
+font-size: 15px;
+ font-family: "Open Sans", sans-serif;
+font-weight: lighter;
+color: #fb236a;;
+}
+.Company-Item .empty-position h3{
+	margin-left: -20px;
+	float:left;
+	font-weight: lighter;
+font-family: "Open Sans", sans-serif;
+color: #8b91dd;
+font-size: 15px;
+}
+.filter .Search-Com {
+	width: 80%;
+	margin: 0 auto;
+   border: 2px solid #e8ecec;
+  color: #8b91dd;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  height: 60px;
+  margin-top: 10px;
+}
+.filter .fa-search{
+	float: right;
+}
+.filter .fa-edit{
+	float: right;
+}
+.filter .fa-graduation-cap{
+  float: right;
+}
+.filter .Location-Com{
+
+
+    width: 80%;
+	margin: 0 auto;
+   border: 2px solid #e8ecec;
+  color: #8b91dd;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  height: 60px;
+}
+.filter .search-area{
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+.filter .search-area i{
+    float: right;
+	position: relative;
+    bottom: 38px;
+    font-size: 24px;
+    color: #fb236a;
+    right: 80px;
+}
+.filter .checkbox{
+	border: none;
+	width: 80%;
+	margin: 0 auto;
+  margin-bottom: -5px;
+
+  
+}
+.filter .checkbox p label{
+
+  font-size: 16px;
+}
+.filter .Specialism {
+
+height: 300px;
+margin-bottom: 20px;
+}
+.filter .Specialism .input label{
+
+color: #7f7e7f;
+}
+.filter .Team {
+
+height: 300px;
+margin-bottom: 20px;
+margin-top: 5px;
+position: relative;
+bottom: 30px;
+}
+.filter .Team .input label{
+  color: #7f7e7f;
+}
+.filter .checkbox .title {
+    font-weight: lighter;
+    font-family:"Open Sans",sans-serif;
+    font-size: 16px;
+    color: #111111;
+   border:none;
+
+}
+.filter .checkbox p label{
+    font-weight: lighter;
+    font-family:"Open Sans",sans-serif;
+    float: left;
+    width: 100%;
+    color: black;     
+    font-size: 13px;
+    margin-bottom: 4px;
+   
+}
+.filter .checkbox p label {
+    padding-left: 31px;
+}
+.filter .checkbox p label::before {
+ content: "";
+  border: 2px solid #e6e7ef;
+
+  border-radius: 3px;
+  
+  z-index:12;
+}
+
+.filter .checkbox .input input{
+    
+    position: relative;
+    left: 50px;
+    z-index:1;
+   float: left;
+   opacity: 0;
+}
+.filter .checkbox .input p{
+	
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    z-index:99;
+    width: 100%;
+   
+}
+.filter .checkbox .input p input[type="checkbox"]:checked+label::before {
+    background: #2c7dfa;
+    border-color: #2c7dfa;
+}
+.filter .checkbox p input[type="checkbox"]+label::after {
+    color: #ffffff;
+}
+
+/* Checkbox */
+input[type="checkbox"] + label::after {
+
+  position: relative;
+  right: 20px;
+  content: "\2714";
+  color: #2c3e50;
+  line-height: 1.5;
+  
+}
+label::before{
+  float: left;
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+
+}
+label::after {
+ float: left;
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+}
+label {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 2em;
+  height: 1.5em;
+  line-height: 1.5;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::after {
+  content: "\2714";
+  color: #2c3e50;
+  line-height: 1.5;
+  text-align: center;
+}
+input[type="checkbox"]:checked + label::after {
+  
+  transform: scale(1);
+}
+/* Transition */
+label::before {
+ 
+  transition: .25s all ease;
+}
+label::after {
+ 
+  transition: .25s all ease;
+}
+.filter .checkbox .input p input[type="checkbox"]:checked + label::before{
+    background: #2c7dfa;
+    border-color: #2c7dfa;
+}
+.filter .checkbox .input p input[type="checkbox"] + label::after {
+    color: #ffffff;
+}
+.pagination{
+  position: relative;
+  right: 25%;
+}
+.filter .type label{
+ 
+ font-weight: lighter;
+    font-family:"Open Sans",sans-serif;
+    font-size: 16px;
+    color: #111111;
+   position: relative;
+  left: 30px;
+  bottom: 100px;
+}
+.filter .type .search2{
+  position: relative;
+  left: 80px;
+  bottom: 90px;
+
+ border: 2px solid #e8ecec;
+ 
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  width: 160px;
+ 
+   border-radius: 8px;
+  height: 50px;
+}
+.filter .type .search2 .item-chosen{
+
+   position: relative;
+  left: 15px;
+  top: 13px;
+}
+.filter .type .search2 span{
+   position: relative;
+   float: right;
+   bottom: 5px;
+   font-size: 20px;
+    color: #fb236a;
+    position: relative;
+    right: 7px;
+
+}
+.filter .type .search2:hover{
+  cursor: pointer;
+}
+.filter .type .display-select{
+  
+   border: 2px solid #e8ecec;
+   width: 160px;
+ 
+   border-radius: 8px;
+  height: 80px;
+  position: relative;
+  left: 94px;
+  bottom: 80px;
+}
+.filter .type .display-select:hover{
+
+}
+.filter .type .display-select .search-chosen .item{
+
+
+  width: 60px;
+    position: relative;
+    right: 100px;
+    transition-property:transform;
+    transition-duration: 2s;
+}
+.filter .type .display-select .search-chosen .item:hover{
+   cursor: pointer;
+   transform:translateX(50px);
+
+}

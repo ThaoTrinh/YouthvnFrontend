@@ -1,0 +1,98 @@
+.heading {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+.heading > h2 {
+    float: left;
+    width: 100%;
+    margin: 0;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 30px;
+    color: #202020;
+    line-height: 23px;
+    margin-top: 10px;
+}
+.heading span {
+    float: left;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #888888;
+    margin-top: 8px;
+    line-height: 29px;
+}
+
+.heading .tabpanel{
+  position: relative;
+  top: 20px;
+
+}
+.heading .nav li a{
+  font-family: Quicksand;
+  font-size: 18px;
+  border: 1px #e8ecec solid;
+  position: relative;
+  left: 450px;
+}
+.recruit-item{
+     float: left;
+   
+    
+    border-bottom: 1px solid #e8ecec;
+    padding: 20px 0;
+    background: #ffffff;
+    border-left: 2px solid #ffffff;
+    padding-right: 30px;
+}
+.recruit-item .logo img{
+  width: 98px;
+  height: 51px;
+}
+.recruit-item .content h3,p{
+ font-family: Quicksand;
+}
+.recruit-item .content h4{
+    font-weight: 200;
+   color: #1e83f0
+}
+.recruit-item .frame p {
+   border-radius: 10px;
+   font-size: 13px;
+   color: #fff;
+    width: 108px;
+    margin: 9px 0;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 30px;
+   
+    position: relative;
+}
+.recruit-item .frame .full-time{
+     background: #8b91dd;
+}
+.recruit-item .frame .part-time{
+     background: #7dc246;
+}
+.recruit-item .frame .freelance{
+     background: #fb236a;;
+}
+.recruit-item .frame .heart{
+    font-size: 20px;
+  position: absolute;
+  left: -15px;
+  top: 35px;
+}
+.recruit-item .frame .heart:hover{
+    color: #fb236a;
+}
+.recruit-item:hover {
+   
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    z-index: 1;
+    position: relative;
+}

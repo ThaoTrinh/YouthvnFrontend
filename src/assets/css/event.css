@@ -1,0 +1,14 @@
+.events {
+  padding-top: 100px;
+}
+
+.events-box {
+  cursor: pointer;
+}
+.left-container {
+  width: 100px;
+  height: 100px;
+  float: left;
+  position: relative;
+  border: 1px solid #eeeeee;
+}

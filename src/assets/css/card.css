@@ -1,0 +1,19 @@
+.card-wrapper {
+  width: 95%!important;
+  border-radius: 0!important;
+}
+
+.card-left-content {
+  border-right: 1px solid #eee;
+}
+.card-infomation {
+  font-size: 13px;
+  color: #4d4d4d;
+}
+.card-infomation a {
+  color: #4d4d4d;
+
+}
+.card-infomation a:hover {
+  color: #3333ff;
+}

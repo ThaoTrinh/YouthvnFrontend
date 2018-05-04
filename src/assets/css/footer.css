@@ -1,0 +1,28 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  border-top: 1px solid #e8e8e8;
+  color: #fff;
+  background: #222;
+  padding: 50px 0;
+  height: 300px;
+  z-index: -99;
+}
+.footer-position {
+  margin-top: 20px;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer h3::after {
+  background: #14b1bb;
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: 10px;
+  width: 80px;
+}

@@ -1,0 +1,75 @@
+/* .user-cms-table {
+  overflow-x: scroll!important;
+  
+}
+.user-cms-table tr {
+  overflow-x: scroll!important;
+  max-width: 400px!important;
+}
+.user-cms-table th, td {
+  min-width: 100px;
+} */
+/* 
+.cms-organization .table-responsive .dropdown-menu li a {
+  color: #595959;
+}
+.cms-organization .table-responsive {
+  overflow-y:visible;
+  overflow-x:visible;
+} */
+.cms-organization .table-responsive .dropdown-menu {
+  width: 50px;
+}
+.table-responsive tr td{
+  font-size: 14px;
+
+}
+
+.pj-camps {
+  border-top: 1px solid #FFFFFF;
+  padding: 10px;
+}
+.add-to-wallet {
+  width: 100%;
+}
+.add-wallet-card {
+  width: 50% !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+}
+
+.wallet-label {
+  display: block !important;
+
+}
+
+.wallet-input {
+  display: block !important;
+}
+
+.wallet-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.add-wallet-card button {
+  width: 100%;
+}
+.wallet-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.active-camp {
+  border: 2px solid #68EFAD !important;
+}
+@media (max-width: 767px) {
+  .table-responsive .dropdown-menu {
+      position: static !important;
+  }
+}
+@media (min-width: 768px) {
+  .table-responsive {
+      overflow: visible;
+  }
+}

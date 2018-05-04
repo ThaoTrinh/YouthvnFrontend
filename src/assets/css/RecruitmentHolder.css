@@ -1,0 +1,94 @@
+.RecruitmentHolder .Panel{
+	width: 100%;
+	height:600px!important;
+	text-align: center
+}
+.RecruitmentHolder .Panel h2{
+
+	font-family: Quicksand;
+    position: relative;
+    top: 40%;
+      font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 0px;
+      line-height: 39px;
+}
+.RecruitmentHolder .Panel .search-section{
+	position: relative;
+	top: 40%;
+	left: 20%;
+
+}
+.RecruitmentHolder .Panel .search-section .search1{
+
+width: 50%;
+}
+.RecruitmentHolder .Panel .search-section .search1 input{
+	 border-radius: 8px;
+	 height: 50px;
+}
+.RecruitmentHolder .Panel .search-section .search1 input{
+	 border-radius: 8px;
+	 height: 50px;
+	   line-height: 50px;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #888888;
+
+}
+.RecruitmentHolder .Panel .search-section .search1 span{
+   font-size: 30px;
+    color:  #ee2a6b;
+    font-weight: lighter;
+    text-shadow: 0px 0px #000;
+    position: relative;
+    right: 140%;
+    top: 10px;
+}
+.RecruitmentHolder .Panel .search-section .search2{
+	    position: relative;
+	    right: 120px;
+
+}
+.RecruitmentHolder .Panel .search-section .search2 span{
+   font-size: 30px;
+    color:  #ee2a6b;
+    font-weight: lighter;
+    text-shadow: 0px 0px #000;
+    position: relative;
+	    right: 185px;
+	    top: 8px;
+}
+.RecruitmentHolder .Panel .search-chosen{
+    background: #fff;
+    border-radius: 8px;
+    width: 200px;
+    height: 90px;
+    position: relative;
+	    right: 340px;
+	    top: 10px;
+}
+.RecruitmentHolder .filter .Degree{
+	
+	position: relative;
+   bottom: 100px;
+}
+.RecruitmentHolder .filter .Degree p label{
+color: #7f7e7f;
+}
+.RecruitmentHolder .filter .Sex{
+	
+	position: relative;
+   bottom: 90px;
+}
+.RecruitmentHolder .filter .Sex p label{
+color: #7f7e7f;
+}
+.RecruitmentHolder .filter .Ranges{
+position: relative;
+top: 80px;
+}
+.RecruitmentHolder .filter .Slider{
+position: relative;
+top: 80px;
+}
