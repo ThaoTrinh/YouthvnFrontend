@@ -26,6 +26,7 @@ export default class Information extends React.Component {
           <div className="cand-details" id="about">
             
           <h2>Candidates About</h2>
+           
             <Introduce
               name="Introduce"
               groupName="Introduce"
@@ -70,11 +71,6 @@ export default class Information extends React.Component {
               groupName="Language"
             />
 
-            <Course
-              name="Course"
-              groupName="Course"
-            />
-            
             <Publication
               name="Publication"
               groupName="Publication"
@@ -89,7 +85,10 @@ export default class Information extends React.Component {
               name="Portfolio"
               groupName="Portfolio"
             />
+           
             
+              <Sliders/>
+        
           </div>
         </div>
         <div className="col-lg-4 column">
@@ -100,9 +99,7 @@ export default class Information extends React.Component {
         </div>
 
         
-        <div style={{marginTop:40}}>
-          <Sliders/>
-        </div>
+        
       </div>
     </div>
     

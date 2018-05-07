@@ -1333,7 +1333,8 @@
 }
 
 .fa-eye:before {
-  content: "\f06e"
+  content: "\f06e";
+  font-size: 12px;
 }
 
 .fa-eye-dropper:before {
@@ -1805,7 +1806,8 @@
 }
 
 .fa-heart:before {
-  content: "\f004"
+  content: "\f004";
+  padding-left: 10px;
 }
 
 .fa-heartbeat:before {
