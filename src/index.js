@@ -115,6 +115,7 @@ import "./assets/css/candidate-single.css"
 import "./assets/css/OrganizationHolder.css"
 import "./assets/css/RecruitmentHolder.css"
 import "./assets/css/HowItWork.css"
+import "./assets/css/sliderItem.css"
 
 
 const routes = (

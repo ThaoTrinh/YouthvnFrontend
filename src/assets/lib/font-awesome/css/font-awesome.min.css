@@ -749,7 +749,10 @@
 }
 
 .fa-heart-o:before {
-      content: "\f08a"
+      content: "\f08a";
+      padding-left: 20px;
+      font-size: 19px;
+      color: red;
 }
 
 .fa-sign-out:before {

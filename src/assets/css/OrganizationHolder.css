@@ -86,7 +86,7 @@ color: #8b91dd;
 font-size: 15px;
 }
 .filter .Search-Com {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
    border: 2px solid #e8ecec;
   color: #8b91dd;
@@ -94,8 +94,8 @@ font-size: 15px;
   font-size: 14px;
   padding: 14px 30px;
   border-radius: 8px;
-  height: 60px;
-  margin-top: 10px;
+  height: 45px;
+  margin-top: 30px;
 }
 .filter .fa-search{
 	float: right;
@@ -120,8 +120,10 @@ font-size: 15px;
   height: 60px;
 }
 .filter .search-area{
- margin-top: 30px;
+ margin-top: 0px;
  margin-bottom: 30px;
+ margin-left: 0px;
+ margin-right: 0px;
 }
 .filter .search-area i{
     float: right;
@@ -129,7 +131,7 @@ font-size: 15px;
     bottom: 38px;
     font-size: 24px;
     color: #fb236a;
-    right: 80px;
+    right: 45px;
 }
 .filter .checkbox{
 	border: none;
