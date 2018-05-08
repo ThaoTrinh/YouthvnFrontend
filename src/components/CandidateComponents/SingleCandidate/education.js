@@ -1,15 +1,34 @@
+
+
+
 import React from 'react';
-import University from './university.js';
-import HighSchool from './highSchool.js';
 import $ from 'jquery';
-export default class Education extends React.Component {
-  
+import { Link } from 'react-router';
+export default class Education extends React.Component{
+
   constructor(props){
     super(props);
     this.state = {
-      icondown: true
+      icondown: true,
+      education:[
+        {
+        Type:"University",
+        year:"12/2020",
+        School:"Bach Khoa University",
+        Major:"Computer Science",
+        },
+
+        {
+          Type:"High School",
+          year:"12/2016",
+          School:"Le Thanh Phuong",
+          Major:"12/12",
+          },
+
+      ]
     }
   }
+
 
   toggle_widget() {
     $(document.getElementById(this.props.groupName)).next().slideToggle();
@@ -20,8 +39,36 @@ export default class Education extends React.Component {
   toggleIcon=()=>{
     this.setState({icondown:!this.state.icondown});
   }
-  render() { return (
-    <div className="edu-history-sec" id="education">
+
+  render(){
+
+    var elm = this.state.education.map((education,key)=>{
+    return(
+      <div className="edu-history">
+        <i className="fa fa-graduation-cap"></i>
+        <div className="edu-hisinfo">
+        <div className="row">
+          <div className="col-md-11 col-sm-11 col-xs-10">
+            <span style={{color:'#8b91dd'}}>{education.Type} - </span>
+            <span><i>{education.year}</i></span>
+            
+          </div>
+          <div className="col-md-1 col-sm-1 col-xs-2">
+            <a href="#"  className="fa fa-pencil pull-right"><i></i></a>
+          </div>
+        </div>
+        
+         <i> <span>{education.Major} - </span>
+         <span>{education.School }</span></i>
+        </div>
+      </div>
+      )
+    })
+   
+    return (
+
+     
+      <div className="edu-history-sec" id="education">
       <div className="row">
         <div className="col-md-11 col-sm-11 col-xs-10">
         <h2 className="sb-title open"
@@ -35,8 +82,7 @@ export default class Education extends React.Component {
         </h2>
 
         <div className="specialism_widget">
-          <University/>
-          <HighSchool/>
+          {elm}
         </div>
         </div>
         <div className="col-md-1 col-sm-1 col-xs-2">
@@ -44,6 +90,8 @@ export default class Education extends React.Component {
         </div>
       </div>
     </div>
-  );
+       
+    );
+    ;
   }
 }

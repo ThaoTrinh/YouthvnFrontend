@@ -46,7 +46,8 @@ class RecruitmentHolder extends Component {
          company: 'KMS company' ,
          logoCompany:"/logo/KMS.png" ,
          type:"full-time" ,
-         location: "Sai Gon" 
+         location: "Sai Gon" ,
+         salary:"10 million"
 
        },
       {
@@ -55,6 +56,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/VNG.png" ,
          type:"full-time"  ,
          location:"Sai Gon" ,
+         salary:"15 million"
        },
       {
          name: "PHP dev",
@@ -62,6 +64,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/facebook.png",
          type:"part-time" ,
          location: "Singapore",
+         salary:"10 million"
        },
        {
          name:"Data Science" ,
@@ -69,6 +72,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/google.png",
          type: "freelance"  ,
          location: "Da Nang",
+         salary:"15 million"
        },
        {
          name:" Game Developer Unity" ,
@@ -76,6 +80,7 @@ class RecruitmentHolder extends Component {
          logoCompany:"/logo/Gameloft.png" ,
          type: "part-time"  ,
          location:" Bangkok" ,
+         salary:"20 million"
        },
        {
          name:"Optimize search engine" ,
@@ -83,13 +88,15 @@ class RecruitmentHolder extends Component {
          logoCompany:"/logo/amazon.png" ,
          type: "part-time"  ,
          location:"Ha Noi" ,
+         salary:"10 million"
        },
         {
          name: 'Web Developer',
          company: 'KMS company' ,
          logoCompany:"/logo/KMS.png" ,
          type:"full-time" ,
-         location: "Sai Gon" 
+         location: "Sai Gon" ,
+         salary:"20 million"
 
        },
       {
@@ -98,6 +105,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/VNG.png" ,
          type:"full-time"  ,
          location:"Sai Gon" ,
+         salary:"10 million"
        },
       {
          name: "PHP dev",
@@ -105,6 +113,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/facebook.png",
          type:"part-time" ,
          location: "Singapore",
+         salary:"13 million"
        },
        {
          name:"Data Science" ,
@@ -112,6 +121,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/google.png",
          type: "freelance"  ,
          location: "Da Nang",
+         salary:"14 million"
        },
        {
          name:" Game Developer Unity" ,
@@ -119,6 +129,7 @@ class RecruitmentHolder extends Component {
          logoCompany:"/logo/Gameloft.png" ,
          type: "part-time"  ,
          location:" Bangkok" ,
+         salary:"10\8 million"
        },
        {
          name:"Optimize search engine" ,
@@ -126,6 +137,7 @@ class RecruitmentHolder extends Component {
          logoCompany:"/logo/amazon.png" ,
          type: "part-time"  ,
          location:"Ha Noi" ,
+         salary:"11 million"
        }
 
       ]
@@ -148,13 +160,17 @@ class RecruitmentHolder extends Component {
                     <img src={value.logoCompany}/>
                  </div>
                  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 content">
-                   <h3>{value.name}</h3>
+                   <h3>{value.name}
+                   <i className="fa fa-heart-o heart"> </i>
+                   </h3>
                    <h4>{value.company}</h4>
+                   <h4 style={{color: 'red'}}>Salary: upto {value.salary}</h4>
                    <p><i className="fa fa-map-marker"></i>{value.location}</p>
+                   
                  </div>
                 
                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 frame ">
-                    <i className="fa fa-heart-o heart"> </i>
+                    
                     <p className={value.type}> {value.type} </p>
                  </div>
                </div>

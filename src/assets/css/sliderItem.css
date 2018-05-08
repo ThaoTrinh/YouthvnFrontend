@@ -79,8 +79,8 @@
     .slick-prev::before, .slick-next::before {color: #ffffff; font-family: "lineawesome"; font-size: 30px; left: 0; line-height: 1; opacity: 0.75; position: absolute; top: 9px; width: 100%;}
     .slick-prev {left: -90px; }
     [dir='rtl'] .slick-prev {right: -25px; left: auto; }
-    .slick-prev::before {content: '\f067';color:#000 }
-    [dir='rtl'] .slick-prev:before {content: '\f067'; color:#000 } 
+    .slick-prev::before {content: '\f053';color:#000 }
+    [dir='rtl'] .slick-prev:before {content: '\f053'; color:#000 } 
     .slick-next {right: -90px; } 
     [dir='rtl'] .slick-next {right: auto; left: -25px; }
     .slick-next:before {content: '\f182';color:#000  }

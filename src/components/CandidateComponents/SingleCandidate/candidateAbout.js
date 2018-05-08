@@ -86,7 +86,7 @@ export default class Information extends React.Component {
               groupName="Portfolio"
             />
            
-            
+           <h2 style={{paddingLeft:30}}>Related candidates</h2>
               <Sliders/>
         
           </div>

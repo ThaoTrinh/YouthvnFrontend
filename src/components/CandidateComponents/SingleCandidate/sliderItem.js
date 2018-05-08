@@ -99,11 +99,10 @@ export default class Sliders extends React.Component {
         )
       })
     return (
-     
-        <div className="emply-resume-sec">    
+      <div className="emply-resume-sec">    
           <Slider {...settings}>
              {elm}
-              </Slider>
+          </Slider>
         </div>
       
     );

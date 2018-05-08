@@ -1,13 +1,26 @@
-import React from 'react';
-import Skill from './skill.js';
-import $ from 'jquery';
-export default class Information extends React.Component {
 
+
+import React from 'react';
+import $ from 'jquery';
+import { Link } from 'react-router';
+export default class ListSkill extends React.Component{
 
   constructor(props){
     super(props);
     this.state = {
-      icondown: true
+      icondown: true,
+      skill:[
+        {
+        name:"React",
+        level:"80%"
+        },
+
+        {
+          name:"Nodejs",
+          level:"70%"
+          },
+
+      ]
     }
   }
 
@@ -22,8 +35,32 @@ export default class Information extends React.Component {
     this.setState({icondown:!this.state.icondown});
   }
 
-  render() { return (
-    <div className="progress-sec" id="skills" style={{marginBottom:0}} >
+  render(){
+
+    var elm = this.state.skill.map((skill,key)=>{
+    return(
+      <div className="progress-sec">
+
+      <div className="row">
+        <div className="col-md-11 col-sm-11 col-xs-10">
+          <span>{skill.name} - </span>
+          <span>{skill.level}</span>
+        </div>
+        <div className="col-md-1 col-sm-1 col-xs-2">
+          <a href="#"  className="fa fa-pencil pull-right"><i></i></a>
+        </div>
+      </div>
+
+      <div className="progressbar"> <div className="progress " style={{width: skill.level}}></div> </div>
+      
+    </div>
+      )
+    })
+   
+    return (
+
+     
+      <div className="progress-sec" id="skills" style={{marginBottom:0}} >
       <div className="row">
         <div className="col-md-11 col-sm-11 col-xs-10">
           <h2 className="skillfix sb-title open"
@@ -35,8 +72,7 @@ export default class Information extends React.Component {
           </h2>
 
           <div className="specialism_widget">
-            <Skill/>
-            <Skill/>
+            {elm}
           </div>
         </div>
         <div className="col-md-1 col-sm-1 col-xs-2">
@@ -44,6 +80,9 @@ export default class Information extends React.Component {
         </div>
       </div>
     </div>
-  );
+      
+       
+    );
+    ;
   }
 }

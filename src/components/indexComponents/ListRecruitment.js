@@ -77,11 +77,12 @@ class ListRecruitment extends Component {
                  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 content">
                    <h3>{value.name}</h3>
                    <h4>{value.company}</h4>
+                   <i className="fa fa-heart-o heart"> </i>
                    <p><i className="fa fa-map-marker"></i>{value.location}</p>
                  </div>
                 
                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 frame ">
-                    <i className="fa fa-heart-o heart"> </i>
+                   
                     <p className={value.type}> {value.type} </p>
                  </div>
                </div>
