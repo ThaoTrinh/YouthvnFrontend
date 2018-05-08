@@ -362,8 +362,13 @@ section.overlape {
     padding-right: 5px;
     padding-left: 0px;
     position: relative;
-    border-bottom: 2px solid #e8ecec;
+    border-bottom: 1px solid #e8ecec;
     margin-bottom: -5px;
+}
+
+.cand-extralink > li:hover a {
+    color: #8b91dd;
+    border-color: #8b91dd;
 }
 .cand-details-sec {
     float: left;

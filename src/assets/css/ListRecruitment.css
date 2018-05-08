@@ -54,10 +54,13 @@
 }
 .recruit-item .content h3,p{
  font-family: Quicksand;
+ margin-bottom: 3px;
 }
 .recruit-item .content h4{
     font-weight: 200;
-   color: #1e83f0
+   color: #1e83f0;
+   margin-bottom: 0px;
+   margin-top: 2px;
 }
 .recruit-item .frame p {
    border-radius: 10px;
@@ -68,7 +71,7 @@
     height: 30px;
     text-align: center;
     padding-top: 5px;
-    margin-top: 30px;
+    top:0px;
    
     position: relative;
 }

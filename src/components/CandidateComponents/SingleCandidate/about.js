@@ -12,7 +12,7 @@ export default class About extends React.Component{
                <li><a href="#project" title="">Project</a></li>
 				 			<li><a href="#activities" title="">Activities</a></li>
 				 			<li><a href="#language" title="">Language</a></li>
-              <li><a href="#course" title="">Course</a></li>
+              {/*<li><a href="#course" title="">Course</a></li>*/}
               <li><a href="#publication" title="">Publication</a></li>
               <li><a href="#recommendator" title="">Recommendator</a></li>
               <li><a href="#portfolio" title="">Portfolio</a></li>

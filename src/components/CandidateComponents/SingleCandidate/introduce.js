@@ -23,7 +23,7 @@ export default class Introduce extends React.Component {
   render() { return (
     <div className="edu-history-sec" >
       
-      <h2 className="sb-title open" style={{marginBottom:0}}
+      <h2 className="sb-title open" style={{marginBottom:20}}
         id={this.props.groupName}
         onClick={() => this.toggle_widget()}
         >{this.props.name} 

@@ -19,3 +19,5 @@ export default class Skill extends React.Component {
   );
   }
 }
+
+

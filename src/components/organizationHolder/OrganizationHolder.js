@@ -64,8 +64,8 @@ class OrganizationHolder extends Component {
              <div className="row Company-Item">
              <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 logo">
                <a href="#" title=""><img src="http://placehold.it/80x80" alt="" /></a>
-               <p className="hour">{value.hour+' hours ago'}</p>
-               <i className="fa fa-eye">{" "+ value.view} </i>
+               <i className="fa fa-eye" style={{fontSize: 12}}>{" "+ value.view +"view"} </i>
+               <p className="hour" style={{fontSize:12}}>{value.hour+' hours ago'}</p>
              </div>
              <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 content">
                <div className="companyName">{value.name}</div>
