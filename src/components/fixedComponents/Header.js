@@ -38,7 +38,7 @@ class Header extends React.Component {
               <span className="icon-bar"></span>
             </button>
 
-            <Link to="/" className="navbar-brand" onClick={() => { window.scrollTo(0, 0) }}>BKStart</Link>
+            <Link to="/" className="navbar-brand" onClick={() => { window.scrollTo(0, 0) }}><img src="logo/youthvn.png" /></Link>
           </div>
 
           <div className="collapse navbar-collapse" id={this.state.hidden?"myNavbar-hidden":"myNavbar"}>
@@ -47,14 +47,15 @@ class Header extends React.Component {
             </ul>
             <ul className="nav navbar-nav hidden-sm hidden-md ">
               <li className="a1">
-                <Link to="/cvs"> Candidates List</Link>
+                <Link to="/cvs"> Candidates List <span><i className="fa fa-caret-down"></i></span></Link>
+                
               </li>
               <li className="a ">
-                <Link to="/organizations"> Employers List</Link>
+                <Link to="/organizations"> Employers List <span><i className="fa fa-caret-down"></i></span></Link>
               </li>
               
               <li className="a ">
-                <Link to="/recruitments">Recruitments List</Link>
+                <Link to="/recruitments">Recruitments List  <span><i className="fa fa-caret-down"></i></span></Link>
               </li>
               <button type="button" class="btn btn-default">+ Post Job</button>
             </ul>
