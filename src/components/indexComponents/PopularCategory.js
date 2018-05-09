@@ -30,17 +30,7 @@ class PopularCategory extends React.Component {
         logo:"fa fa-html5",
         numJob:10,
         },
-        {
-        name:".Net Developer",
-        logo:"fa fa-windows",
-        numJob:9,
-        },
-        {
-        name:"IT Engineer",
-        logo:"fa fa-code-fork",
-        numJob:3,
-        }
-
+        
 
       ]
     }
@@ -53,7 +43,7 @@ class PopularCategory extends React.Component {
     var elms = this.state.Jobs.map((value,key)=>{
 
       return(
-         <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+         <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
          <div className="Job-item">
                
           <div className="logo text-center">
@@ -69,16 +59,18 @@ class PopularCategory extends React.Component {
         )
     })
     return (
-      <div className ="container">
+      <div className ="container PopularCategory ">
       <br/>
       <br/>
       <br/>
       <div>
-        <h2 className="text-center"style={{fontFamily: "Quicksand Regular", marginTop: 15, fontWeight: 900}}> Popular Category </h2>
+        <h2 className="text-center"style={{fontFamily: "Quicksand Regular", marginTop: 5,marginBottom:40, fontWeight: 900}}> Popular Category </h2>
       </div>
+      <div className="container">
       <div className="row no-gape">
         {elms}
        
+      </div>
       </div>
            <div className="browse-all-cat">
               <a href="#" title="">Browse All Categories</a>

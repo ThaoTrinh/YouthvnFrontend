@@ -1,3 +1,6 @@
+.Ourjob{
+  margin-top: 30px;
+}
 .heading {
     float: left;
     width: 100%;
@@ -5,62 +8,118 @@
     margin-bottom: 40px;
 
 }
-.heading > h2 {
-    float: left;
-    width: 100%;
+.heading .titlejob {
+    
+
     margin: 0;
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: 30px;
-    color: #202020;
-    line-height: 23px;
+    font-family: "Quicksand Regular";
+    font-weight: 900!important;
     margin-top: 10px;
-}
-.heading span {
-    float: left;
-    width: 100%;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    color: #888888;
-    margin-top: 8px;
-    line-height: 29px;
-}
-
-.heading .tabpanel{
-  position: relative;
-  top: 20px;
+    
+ 
 
 }
-.heading .nav li a{
-  font-family: Quicksand;
-  font-size: 18px;
-  border: 1px #e8ecec solid;
-  position: relative;
-  left: 450px;
+
+
+.Ourjob .tab-panel{
+width: 340px;
+height:75px;
+border: 1px #e7e7e7 solid;
+border-radius: 8px;
+margin: 0 auto;
+margin-top: 60px;
+
+}
+
+.Ourjob .tab-panel div{
+width: 150px;
+font-family: "Quicksand Regular";
+font-weight: 900;
+text-align: center;
+font-size:18px;
+margin-top: -5px;
+height: 60px;
+padding-top:20px;
+}
+.Ourjob .tab-panel div:hover{
+  cursor:pointer;
+}
+.Ourjob .tab-panel .Featurejob{
+
+float:left;
+border-radius: 5px;
+position:relative;
+  left: 20px;
+}
+.Ourjob .tab-panel .Featurejob-active{
+background-color: #1e83f0;
+color: #fff;
+float:left;
+border-radius: 5px;
+position:relative;
+left: 20px;
+}
+.Ourjob .tab-panel .Recentjob{
+
+  border-radius: 5px;
+  float: right;
+  position:relative;
+  right:20px;
+}
+.Ourjob .tab-panel .Recentjob-active{
+background-color: #1e83f0;
+color: #fff;
+  border-radius: 5px;
+  float: right;
+  position:relative;
+  right:20px;
+}
+.Ourjob .joblist{
+  margin-top: 20px;
 }
 .recruit-item{
      float: left;
    
     
-    border-bottom: 1px solid #e8ecec;
+    border: 1px solid #e8ecec;
+    border-radius:6px;
     padding: 20px 0;
     background: #ffffff;
-    border-left: 2px solid #ffffff;
+   width: 515px;
     padding-right: 30px;
-}
+    height: 100px;
+    margin-bottom: 20px;
+      margin-left: 20px;
+      padding-top: 10px;
+    }
 .recruit-item .logo img{
   width: 98px;
   height: 51px;
 }
+.recruit-item .content{
+ 
+   position:relative;
+ right:20px;
+}
 .recruit-item .content h3,p{
- font-family: Quicksand;
+
+ font-family: "Open Sans", sans-serif;
+ font-weight: 100;
+ font-size: 16px;
+ color: #918370;
  margin-bottom: 3px;
+
 }
 .recruit-item .content h4{
     font-weight: 200;
    color: #1e83f0;
-   margin-bottom: 0px;
-   margin-top: 2px;
+     position:relative;
+     bottom: 20px;
+}
+
+.recruit-item .content p{
+   position:relative;
+     bottom: 20px;
 }
 .recruit-item .frame p {
    border-radius: 10px;
@@ -84,14 +143,13 @@
 .recruit-item .frame .freelance{
      background: #fb236a;;
 }
-.recruit-item .frame .heart{
-    font-size: 20px;
-  position: absolute;
-  left: -15px;
-  top: 35px;
+.recruit-item .content .heart{
+    font-size: 18px;
+    margin-left: 8px;
+  
 }
-.recruit-item .frame .heart:hover{
-    color: #fb236a;
+.recruit-item .content .heart:hover{
+   color:#ec2944;
 }
 .recruit-item:hover {
    
