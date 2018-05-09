@@ -1,5 +1,9 @@
-
-
+.navbar-header .navbar-brand >img{
+	width: 80px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: -8px;
+}
 #myNavbar .hidden-sm >li>a  {
 font-family: 'Open Sans', sans-serif;
 margin-left: 40px;
@@ -23,16 +27,28 @@ margin-bottom: 5px;
 float: right;
 padding-bottom: 15px;
 color: black;
-transition: transform 1s;
 
 height: 50px;
 
 }
-.hidden-sm >li>a:hover {
-transform: translateY(30px);
+
+#myNavbar .hidden-sm .header-dropdown {
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+	width: 200px;
+	 border-radius: 8px;
+	 background-color: white;
+     
+	 height: 100px;
+	 position: relative;
+	 top: 50px;
 }
 
- #myNavbar .hidden-sm button {
+
+#myNavbar .hidden-sm button {
+
+
+
+
 font-family: 'Open Sans', sans-serif;
 margin-top: 20px;
 margin-left: 40px;

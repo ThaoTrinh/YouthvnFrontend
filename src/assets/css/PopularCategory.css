@@ -1,3 +1,7 @@
+.PopularCategory {
+    background-color: #f4f5fa;
+    width: 100%;
+}
 .Job-item .logo i{
 	font-size: 70px;
 	color: #8b91dd;
@@ -48,7 +52,8 @@
     float: left;
     width: 100%;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .browse-all-cat a {
     float: none;

@@ -1,3 +1,12 @@
+.HowItWork{
+    background-color:#f4f5fa;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.HowItWork section{
+    margin-top: 20px;
+}
 .block.remove-top{padding-top:0}
 .heading {
     float: left;
@@ -12,7 +21,7 @@
     font-family: Quicksand;
     font-weight: bold;
     font-size: 30px;
-    color: #202020;
+    color: #000;
     line-height: 23px;
 }
 .heading span {
