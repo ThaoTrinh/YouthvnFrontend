@@ -82,9 +82,7 @@ class Slider extends React.Component {
                        <div onClick={()=>{this.setLocation("Others")}} className="item"> Others</div>
                    </div>
                </div>
-               <div className="scroll-to">
-                <a href="#scroll-here" title=""><i className="fa fa-arrow-down"></i></a>
-              </div>
+               
               </div>
             </div>
         <div className="carousel-inner">

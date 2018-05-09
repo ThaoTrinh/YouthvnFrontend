@@ -4,7 +4,9 @@ import PopularCategory from './PopularCategory';
 import HowItWork from './HowItWork';
 import ListOrganizations from './ListOrganizations'
 import ListRecruitment from './ListRecruitment';
+import FeatureCandidate from './FeatureCandidate';
 import ListCV from './ListCV';
+import TopCompany from './TopCompany';
 class Main extends React.Component {
   
   componentWillMount () {
@@ -16,9 +18,17 @@ class Main extends React.Component {
       <div>
         <MainSlider />
         <PopularCategory />
-        <hr/>
+        
+         <div className="container">
+                    
+          <ListRecruitment />
+          
+          
+         
+        
+        </div>
         <HowItWork />
-        <div className ="container-fluid section">
+        <div className ="container-fluid section" style={{marginTop:0}}>
          
                 <div className="block double-gap-top double-gap-bottom">
                   
@@ -36,15 +46,8 @@ class Main extends React.Component {
                 </div>
         
          </div>
-        <div className="container">
-          <div className="push"></div>
-          
-          <ListRecruitment />
-          
-          
-          <hr />
-        
-        </div>
+        <TopCompany />
+       <FeatureCandidate />
       </div>
     )
   }

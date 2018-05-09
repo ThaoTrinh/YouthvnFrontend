@@ -15,7 +15,7 @@ class HowItWork extends React.Component {
   render() {
     
     return (
-      <div className ="container">
+      <div className ="container HowItWork">
         <section>
     <div className="block remove-top">
       <div className="container">
