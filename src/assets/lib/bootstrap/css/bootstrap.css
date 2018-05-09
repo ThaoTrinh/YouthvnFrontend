@@ -1608,6 +1608,36 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 160px;
+  margin-left: 160px;
+}
+@media (min-width: 768px) {
+  .container1 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container1 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container1 {
+    width: 1170px;
+  }
+}
+.container1-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 160px;
+  margin-left: 160px;
+}
+
 .row {
   margin-right: -15px;
   margin-left: -15px;

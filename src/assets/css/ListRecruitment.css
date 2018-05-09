@@ -102,10 +102,12 @@ color: #fff;
  right:20px;
 }
 .recruit-item .content h3,p{
+
  font-family: "Open Sans", sans-serif;
  font-weight: 100;
  font-size: 16px;
  color: #918370;
+ margin-bottom: 3px;
 
 }
 .recruit-item .content h4{
@@ -118,7 +120,6 @@ color: #fff;
 .recruit-item .content p{
    position:relative;
      bottom: 20px;
-
 }
 .recruit-item .frame p {
    border-radius: 10px;
@@ -129,7 +130,7 @@ color: #fff;
     height: 30px;
     text-align: center;
     padding-top: 5px;
-    margin-top: 30px;
+    top:0px;
    
     position: relative;
 }

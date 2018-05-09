@@ -8,8 +8,6 @@
 
 .Company-Item .logo > a img {
 
-   
-   
     border-radius: 50%;
 
 }
@@ -27,7 +25,7 @@
 .Company-Item .logo .fa-eye {
 
    
-padding-left: 20px;
+
  font-weight: lighter;
 
 }
@@ -37,7 +35,7 @@ padding-left: 20px;
    font-family: "Open Sans", sans-serif;
  height: 200px;
  padding-top: 25px;
- width: 800px;
+ width: 700px;
  padding-left:10px;
 
 }
@@ -55,7 +53,7 @@ padding-left: 20px;
     margin-left: -10px;
   }
   .Company-Item .content .companyName{
-
+      font-weight: bold;
   }
 .Company-Item .content div{
 	
@@ -75,7 +73,7 @@ margin-left: 2px;
 font-size: 15px;
  font-family: "Open Sans", sans-serif;
 font-weight: lighter;
-color: #fb236a;;
+color: #2326fb;;
 }
 .Company-Item .empty-position h3{
 	margin-left: -20px;
@@ -86,7 +84,7 @@ color: #8b91dd;
 font-size: 15px;
 }
 .filter .Search-Com {
-	width: 80%;
+	width: 300px;
 	margin: 0 auto;
    border: 2px solid #e8ecec;
   color: #8b91dd;
@@ -94,8 +92,8 @@ font-size: 15px;
   font-size: 14px;
   padding: 14px 30px;
   border-radius: 8px;
-  height: 60px;
-  margin-top: 10px;
+  height: 45px;
+  margin-top: 30px;
 }
 .filter .fa-search{
 	float: right;
@@ -120,8 +118,10 @@ font-size: 15px;
   height: 60px;
 }
 .filter .search-area{
- margin-top: 30px;
+ margin-top: 0px;
  margin-bottom: 30px;
+ margin-left: 0px;
+ margin-right: 0px;
 }
 .filter .search-area i{
     float: right;
@@ -129,7 +129,7 @@ font-size: 15px;
     bottom: 38px;
     font-size: 24px;
     color: #fb236a;
-    right: 80px;
+    right: 45px;
 }
 .filter .checkbox{
 	border: none;

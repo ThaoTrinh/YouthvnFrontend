@@ -23,7 +23,7 @@ export default class Awards extends React.Component {
   render() { return (
     <div className="edu-history-sec" id="awards">
       <div className="row">
-        <div className="col-md-11 col-sm-11 col-xs-10">
+        <div className="col-md-11 col-sm-11 col-xs-10" style={{marginTop: 15}}>
           <h2 className="sb-title open"
               id={this.props.groupName}
               onClick={() => this.toggle_widget()}

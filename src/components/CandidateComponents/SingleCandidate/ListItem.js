@@ -46,8 +46,8 @@ export default class ListItem extends React.Component {
       ]
     }
   }
-  render() { 
-    var elm= this.state.candidate.map((value,key)=>{
+  render() {
+    var elm = this.state.candidate.map((value,key)=>{
       var arrSkill=[];
       for (let i=0;i<value.skill.length;i++){
          arrSkill.push(<span className="skill-item">{value.skill[i]}</span>);
@@ -55,14 +55,14 @@ export default class ListItem extends React.Component {
       return(
       <Link to="/candidate">
       <div className="emply-resume-list row">
-        <div className="emply-resume-thumb col-md-3">
+        <div className="emply-resume-thumb col-md-2">
           <img src="http://placehold.it/100x86" alt="" />
-          <div className="view"> <i className="fa fa-eye"> </i>{" "+value.view}</div>
-          <div style={{fontSize: 14, marginTop: 10, marginBottom:5}}><center>{value.hour+" hours ago"}</center></div>
+          <div className="view" style={{fontSize: 12}}> <i className="fa fa-eye"> </i>{" "+value.view}</div>
+          <div style={{fontSize: 12}}><center>{value.hour+" hours ago"}</center></div>
         </div>
         
           <div className="emply-resume-info col-md-6">
-            <h3><a href="#" title="">{value.name}</a>
+            <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
             <a href="#" className="fa fa-heart-o"></a></h3>
           
             <span>{value.position}</span>
@@ -82,16 +82,14 @@ export default class ListItem extends React.Component {
           
               
         </div>
-        </Link>
+      </Link>
       )
     })
     return (
       <div className="candidate-item">
         <div className="padding-left">
-          <div className="emply-resume-sec">	
+          <div className="emply-resume-sec">
            {elm}
-           
-            
           </div>
         </div>
       </div>

@@ -559,7 +559,8 @@
  content:"\f089"
 }
 .fa-heart-o:before {
- content:"\f08a"
+ content:"\f08a";
+ padding-left: 20px;
 }
 .fa-sign-out:before {
  content:"\f08b"

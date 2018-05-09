@@ -93,12 +93,14 @@ class ListRecruitment extends Component {
                    <h3>{value.name}<i className="fa fa-heart-o heart"> </i></h3>
 
                    <h4>{value.company}</h4>
+
                    <p><i className="fa fa-map-marker location"></i>{value.location}</p>
                  </div>
                 
                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 frame ">
                     <div><i className="fa fa-dollar"></i>{value.salary}</div>
                    <Link to="#"> <p className={value.type}> {value.type} </p></Link>
+
                  </div>
                </div>
              </div>

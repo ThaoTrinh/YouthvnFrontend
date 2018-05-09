@@ -23,7 +23,7 @@ class CVHolder extends Component {
         </div>
         <div className="container">
           <div className="row no-gape">
-           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-4">
               <SideNav />
            </div>
            <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7">

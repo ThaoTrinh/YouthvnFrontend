@@ -19,6 +19,7 @@ import Connection from './components/userCMS/views/account/Connection';
 
 // Organization
 import OrganizationHolder from './components/organizationHolder/OrganizationHolder';
+import OrganizationPage from './components/organizationHolder/OrganizationPage';
 import PublicOrganization from './components/publicOrganization/PublicOrganization';
 import CreateOrganization from './components/userCMS/views/organization/CreateOrganization';
 import UpdateOrganization from './components/userCMS/views/organization/UpdateOrganization';
@@ -36,6 +37,7 @@ import PublicRecruitment from './components/recruitment/PublicRecruitment';
 import ApplyJob from './components/recruitment/ApplyJob';
 
 import RecruitmentHolder from './components/recruitmentHolder/RecruitmentHolder';
+import RecruitmentPage from './components/recruitmentHolder/RecruitmentPage';
 import ListRecruitment from './components/userCMS/views/recruitment/ListRecruitment';
 import UpdateRecruitment from './components/userCMS/views/recruitment/UpdateRecruitment';
 import RecommendedCVs from './components/userCMS/views/recruitment/RecommendedCVs';
@@ -117,6 +119,9 @@ import "./assets/css/RecruitmentHolder.css"
 import "./assets/css/HowItWork.css"
 import "./assets/css/FeatureCandidate.css"
 import "./assets/css/TopCompany.css"
+import "./assets/css/sliderItem.css"
+
+
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
@@ -129,10 +134,10 @@ const routes = (
       <Route path="/candidate" component={CandidateSingle}/>
       <Route path="/cvs" component={CVHolder}></Route>
       <Route path="/recruitments/:id" component={PublicRecruitment}></Route>
-      <Route path="/recruitments" component={RecruitmentHolder}></Route>
+      <Route path="/recruitments" component={RecruitmentPage}></Route>
       <Route path="/recruitments/apply/:id" component={ApplyJob}></Route>
       <Route path="/organizations/:id" component={PublicOrganization}></Route>
-      <Route path="/organizations" component={OrganizationHolder}></Route>
+      <Route path="/organizations" component={OrganizationPage}></Route>
       
     </Route>
 
