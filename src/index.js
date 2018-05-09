@@ -115,8 +115,8 @@ import "./assets/css/candidate-single.css"
 import "./assets/css/OrganizationHolder.css"
 import "./assets/css/RecruitmentHolder.css"
 import "./assets/css/HowItWork.css"
-
-
+import "./assets/css/FeatureCandidate.css"
+import "./assets/css/TopCompany.css"
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
