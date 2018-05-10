@@ -11,22 +11,24 @@
     border-radius: 50%;
 
 }
+
 .Company-Item .logo .hour {
 
    
    
  font-family: "Open Sans", sans-serif;
  font-weight: lighter;
- margin-top: 15px;
+ margin-top: 25px;
  margin-left: auto;
  margin-right: auto;
  color: #8b91dd;
 }
-.Company-Item .logo .fa-eye {
+.Company-Item .logo .view {
 
    
-
+   font-family: "Open Sans", sans-serif;
  font-weight: lighter;
+
 
 }
 

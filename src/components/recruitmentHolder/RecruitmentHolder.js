@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ListRecruitment from './ListRecruitment';
+import { Link } from 'react-router';
 import RecruitmentFilter from './RecruitmentFilter';
 import Ranges from '../CandidateComponents/ListCandidate/Ranges.js';
 import Slider from '../CandidateComponents/ListCandidate/Sliders.js';
@@ -41,14 +42,14 @@ class RecruitmentHolder extends Component {
         selectChosen: false,
         location:"Location",
         recruitments: [
+      
        {
          name: 'Web Developer',
          company: 'KMS company' ,
          logoCompany:"/logo/KMS.png" ,
          type:"full-time" ,
          location: "Sai Gon" ,
-         salary:"10 million"
-
+         salary:1000
        },
       {
          name: 'Mobile Developer',
@@ -56,7 +57,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/VNG.png" ,
          type:"full-time"  ,
          location:"Sai Gon" ,
-         salary:"15 million"
+         salary:2000
        },
       {
          name: "PHP dev",
@@ -64,7 +65,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/facebook.png",
          type:"part-time" ,
          location: "Singapore",
-         salary:"10 million"
+         salary:4000
        },
        {
          name:"Data Science" ,
@@ -72,7 +73,7 @@ class RecruitmentHolder extends Component {
          logoCompany: "/logo/google.png",
          type: "freelance"  ,
          location: "Da Nang",
-         salary:"15 million"
+         salary:6000
        },
        {
          name:" Game Developer Unity" ,
@@ -80,7 +81,7 @@ class RecruitmentHolder extends Component {
          logoCompany:"/logo/Gameloft.png" ,
          type: "part-time"  ,
          location:" Bangkok" ,
-         salary:"20 million"
+         salary:9000
        },
        {
          name:"Optimize search engine" ,
@@ -88,58 +89,8 @@ class RecruitmentHolder extends Component {
          logoCompany:"/logo/amazon.png" ,
          type: "part-time"  ,
          location:"Ha Noi" ,
-         salary:"10 million"
-       },
-        {
-         name: 'Web Developer',
-         company: 'KMS company' ,
-         logoCompany:"/logo/KMS.png" ,
-         type:"full-time" ,
-         location: "Sai Gon" ,
-         salary:"20 million"
-
-       },
-      {
-         name: 'Mobile Developer',
-         company:"VNG Inc." ,
-         logoCompany: "/logo/VNG.png" ,
-         type:"full-time"  ,
-         location:"Sai Gon" ,
-         salary:"10 million"
-       },
-      {
-         name: "PHP dev",
-         company:"Facebook Vietnam",
-         logoCompany: "/logo/facebook.png",
-         type:"part-time" ,
-         location: "Singapore",
-         salary:"13 million"
-       },
-       {
-         name:"Data Science" ,
-         company:" Google Asia",
-         logoCompany: "/logo/google.png",
-         type: "freelance"  ,
-         location: "Da Nang",
-         salary:"14 million"
-       },
-       {
-         name:" Game Developer Unity" ,
-         company: "Gameloft",
-         logoCompany:"/logo/Gameloft.png" ,
-         type: "part-time"  ,
-         location:" Bangkok" ,
-         salary:"10\8 million"
-       },
-       {
-         name:"Optimize search engine" ,
-         company: "Gameloft",
-         logoCompany:"/logo/amazon.png" ,
-         type: "part-time"  ,
-         location:"Ha Noi" ,
-         salary:"11 million"
+         salary:1000
        }
-
       ]
     }
   }
@@ -160,18 +111,17 @@ class RecruitmentHolder extends Component {
                     <img src={value.logoCompany}/>
                  </div>
                  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 content">
-                   <h3>{value.name}
-                   <i className="fa fa-heart-o heart"> </i>
-                   </h3>
+                   <h3>{value.name}<i className="fa fa-heart-o heart"> </i></h3>
+
                    <h4>{value.company}</h4>
-                   <h4 style={{color: 'red'}}>Salary: upto {value.salary}</h4>
-                   <p><i className="fa fa-map-marker"></i>{value.location}</p>
-                   
+
+                   <p><i className="fa fa-map-marker location"></i>{value.location}</p>
                  </div>
                 
                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 frame ">
-                    
-                    <p className={value.type}> {value.type} </p>
+                    <div><i className="fa fa-dollar"></i>{value.salary}</div>
+                   <Link to="#"> <p className={value.type}> {value.type} </p></Link>
+
                  </div>
                </div>
              </div>
