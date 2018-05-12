@@ -1,0 +1,308 @@
+.account-popup-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20,31,114,0.6);
+    opacity: 1;
+    z-index: 99;
+    overflow-Y: scroll;
+    display: none;
+}
+.account-popup {
+    position: relative;
+    float: left;
+    width: 460px;
+    background: #ffffff;
+    z-index: 1;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+
+    left: 50%;
+    margin-left: -230px;
+    margin-top: 140px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 40px 60px;
+}
+.account-popup > h3 {
+    float: left;
+    width: 100%;
+    font-family: "Quicksand Regular";
+    color: #222222;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-bottom: 12px;
+    line-height: 10px;
+}
+.account-popup > span {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #888888;
+    margin-top: 20px;
+}
+.select-user {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.select-user > span {
+    float: none;
+    display: inline-block;
+   font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #202020;
+    border: 2px solid;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+
+    padding: 9px 29px;
+    margin: 0 5px;
+        margin-top: 0px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.account-popup > form {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.account-popup > form .cfield {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 19px;
+    border: 2px solid #e8ecec;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+
+}
+.account-popup > form .cfield input {
+    float: left;
+    width: 100%;
+    background: no-repeat;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: #474747;
+    
+    border: none;
+    padding: 16px 45px 16px 15px;
+}
+.account-popup > form .cfield i {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    right: 20px;
+    font-size: 19px;
+}
+.remember-label{
+    float: left;
+   
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #202020;
+}
+.remember-label label{
+    font-weight: lighter;
+    font-family:"Open Sans",sans-serif;
+    float: left;
+    width: 100%;
+    color: black;     
+    font-size: 13px;
+    margin-bottom: 4px;
+  
+}
+.remember-label label::before{
+content: "";
+  border: 2px solid #e6e7ef;
+ float: left;
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 3px;
+  
+  z-index:12;
+}
+.remember-label label::after{
+    float: left;
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+}
+.remember-label input[type="checkbox"] + label::after {
+  content: "\2714";
+  color: #2c3e50;
+  line-height: 1.5;
+  text-align: center;
+  
+  position: relative;
+  right: 20px;
+}
+.remember-label input[type="checkbox"]:checked+label::before {
+    background: #2c7dfa;
+    border-color: #2c7dfa;
+}
+.remember-label input[type="checkbox"]+label::after {
+    color: #ffffff;
+}
+.remember-label input[type="checkbox"]:checked + label::after {
+  
+  transform: scale(1);
+}
+/* Transition */
+.remember-label label::before {
+ 
+  transition: .25s all ease;
+}
+.remember-label label::after {
+ 
+  transition: .25s all ease;
+}
+
+.remember-label input[type="checkbox"]:checked + label::before{
+    background: #2c7dfa;
+    border-color: #2c7dfa;
+}
+.remember-label input[type="checkbox"] + label::after {
+    color: #ffffff;
+}
+.remember-label input {
+     position: relative;
+    left: 5px;
+    top:18px;
+    z-index:1;
+   float: left;
+  opacity: 0;
+   
+}
+.account-popup > form > a {
+    float: right;
+   font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 30px;
+}
+.account-popup > form button {
+    font-family:"Open Sans", sans-serif;
+    color: #fff;
+    float: left;
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin-top: 20px;
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+
+}
+.extra-login {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.extra-login::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #d8dcdc;
+    content: "";
+}
+.extra-login > span {
+    width: auto;
+    float: none;
+    display: inline-block;
+    background: #ffffff;
+    padding: 1px 20px;
+    z-index: 1;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #afafaf;
+    text-transform: capitalize;
+}
+.login-social {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.login-social a {
+    float: none;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    border: 2px solid;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+
+    line-height: 36px;
+    font-size: 21px;
+    margin: 0 5px;
+        margin-top: 0px;
+    margin-top: 6px;
+}
+.login-social a.fb-login {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+.login-social a.tw-login {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.login-social a {
+    font-size: 16px;
+}
+
+.account-popup .close-popup {
+    position: absolute;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+    float: none;
+    margin: 0;
+    right: -20px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    cursor: pointer;
+}

@@ -221,7 +221,7 @@ bottom: 30px;
 }
 
 /* Checkbox */
-input[type="checkbox"] + label::after {
+.filter .checkbox input[type="checkbox"] + label::after {
 
   position: relative;
   right: 20px;
@@ -230,20 +230,20 @@ input[type="checkbox"] + label::after {
   line-height: 1.5;
   
 }
-label::before{
+.filter .checkbox label::before{
   float: left;
   display: block;
   width: 20px !important;
   height: 20px !important;
 
 }
-label::after {
+.filter .checkbox label::after {
  float: left;
   display: block;
   width: 20px !important;
   height: 20px !important;
 }
-label {
+.filter .checkbox label {
   position: relative;
   display: inline-block;
   padding: 0 0 0 2em;
@@ -251,22 +251,22 @@ label {
   line-height: 1.5;
   cursor: pointer;
 }
-input[type="checkbox"] + label::after {
+.filter .checkbox input[type="checkbox"] + label::after {
   content: "\2714";
   color: #2c3e50;
   line-height: 1.5;
   text-align: center;
 }
-input[type="checkbox"]:checked + label::after {
+.filter .checkbox input[type="checkbox"]:checked + label::after {
   
   transform: scale(1);
 }
 /* Transition */
-label::before {
+.filter .checkbox label::before {
  
   transition: .25s all ease;
 }
-label::after {
+.filter .checkbox label::after {
  
   transition: .25s all ease;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class FeatureCandidate extends React.Component {
   constructor(props){
     super(props);
@@ -43,6 +42,7 @@ class FeatureCandidate extends React.Component {
                   <div className="info">
                   <div>{value.name}</div>
                   <p>{value.career}</p>
+                  <div className ="view-cv">View CV</div>
                   </div>
                 </div>
             )
