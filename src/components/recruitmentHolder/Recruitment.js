@@ -201,7 +201,7 @@ export default class Recruitments extends React.Component {
         }
 
       return(
-      <Link to="/candidate">
+      <Link to="/job">
       <div className="emply-resume-list row">
         <div className="emply-resume-thumb col-md-2">
           <img src={value.logoCompany} alt="" />
