@@ -28,8 +28,17 @@
 
 
 }
-.FeatureCandidate  .candidate-item .candidate-item{
-
+.FeatureCandidate  .candidate-item .view-cv{
+width: 100px;
+border: 2px #9297db solid;
+border-radius: 6px;
+margin: 0 auto;
+margin-top: 15px;
+}
+.FeatureCandidate  .candidate-item .view-cv:hover{
+color: #fff;
+background-color: #9297db ;
+cursor: pointer;
 }
 .FeatureCandidate  .candidate-item .info{
 	width: 270px;

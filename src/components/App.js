@@ -4,6 +4,7 @@ import Loading from 'react-loading-bar';
 import 'react-loading-bar/dist/index.css';
 import Header from './fixedComponents/Header';
 import Footer from './fixedComponents/Footer';
+import Signin from './fixedComponents/Signin';
 import request from 'superagent';
 import _ from 'lodash';
 import async from 'async';
@@ -34,13 +35,15 @@ class App extends Component {
       invitations: []
     }
  
-  }
- 
+  };
+   fadeIn =()=>{
+   $(".account-popup-area").fadeIn();
+   }
   render() {
     
     return (
       <div className='App theme-layout'>
-        <Header 
+        <Header fadeIn = {this.fadeIn}
         />
         <Loading
           show={this.state.loading_bar_show}
@@ -53,6 +56,7 @@ class App extends Component {
           </main>
         </div>
          <Footer/>
+         <Signin/>
       </div>
     );
   }

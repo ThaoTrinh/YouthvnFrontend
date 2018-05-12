@@ -25,6 +25,9 @@ class Header extends React.Component {
   componentDidMount(){
     window.addEventListener("scroll",this.setBackgroundHeader);
   }
+ 
+  
+
   render() {
      moment.locale('vi');
     
@@ -63,7 +66,7 @@ class Header extends React.Component {
            
                 <ul className="nav navbar-nav navbar-right">
                   <li><a href="#"><span className="fa fa-key"></span> Sign Up</a></li>
-                  <li><a href="#"><span className="fa fa-sign-in"></span> Login</a></li>
+                  <li><a href="#"><span className="fa fa-sign-in" onClick ={()=>{this.props.fadeIn()}}></span> Login</a></li>
                </ul>
      
           </div>
