@@ -1,0 +1,23 @@
+1. Header
+
+Scroll xuống thì vị trí của tất cả các phần tử trong đó không được lệch, hiện tại còn lệch.
+
+2. CandidateList
+
+Thanh Age vs Experience cũng như các thanh như vậy ở chỗ khác thu nhỏ lại 
+
+Giảm khoảng cách giữa "Checkboxes" với nhau và với mấy cái thanh đó.
+
+nút "Turn on job search" với "download cv" không cân xứng.
+
+3. Trang chủ 
+
+nút "Feature Job" với "Recent jobs" không cân xứng. 
+
+Ngay dưới 2 nút đó là mấy cái thẻ nên làm giống như mấy cái thẻ trong recuitmentList.
+
+4. Employer List 
+
+chỉnh mấy cái thẻ trong đây giống như trong CandidateList và recuitmentList nha
+
+Với lại chỉnh thẻ Employer list vs recuitmentList cho nó ngắn lại để chứ quảng cáo như trong cái CandidateList ấy .
