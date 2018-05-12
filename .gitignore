@@ -1,6 +1,7 @@
 
 # Created by https://www.gitignore.io/api/vim,node,visualstudio,visualstudiocode
 
+package-lock.json
 ### Node ###
 # Logs
 logs
