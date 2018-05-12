@@ -21,21 +21,29 @@ class CVHolder extends Component {
         <div className="Panel">
 
         </div>
-        <div className="container">
+        <div>
+        
+        <div >
           <div className="row no-gape">
-           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-4">
+          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-1">
+            <img  style={{width:160}} src="/logo/panner.jpg" alt="" />    
+           </div>
+           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-3" style={{marginLeft:50}}>
               <SideNav />
            </div>
-           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-6">
               <ListItem />
+
               <div >
               <Pagination/>
                </div>
            </div>
-            
+           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-1">
+            <img  style={{width:160}} src="/logo/panner.jpg" alt="" />   
+           </div>
           </div>
         </div>
-        
+        </div>
       </section>
     )
   }

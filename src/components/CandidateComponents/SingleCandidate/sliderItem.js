@@ -67,7 +67,7 @@ export default class Sliders extends React.Component {
           }
         return(
         
-        <div className="emply-resume-list row">
+        <div className="emply-resume-list" style={{marginLeft:80}}>
           <div className="emply-resume-thumb col-md-2">
             <img src="http://placehold.it/100x86" alt="" />
             <div className="view" style={{fontSize: 12}}> <i className="fa fa-eye"> </i>{" "+value.view}</div>
@@ -99,7 +99,7 @@ export default class Sliders extends React.Component {
         )
       })
     return (
-      <div className="emply-resume-sec">    
+      <div className="emply-resume-sec" style={{width: '80%'}}>    
           <Slider {...settings}>
              {elm}
           </Slider>

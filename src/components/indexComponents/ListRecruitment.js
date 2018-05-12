@@ -48,7 +48,7 @@ class ListRecruitment extends Component {
          salary:6000
        },
        {
-         name:" Game Developer Unity" ,
+         name:" Game Unity" ,
          company: "Gameloft",
          logoCompany:"/logo/Gameloft.png" ,
          type: "part-time"  ,
@@ -56,7 +56,7 @@ class ListRecruitment extends Component {
          salary:9000
        },
        {
-         name:"Optimize search engine" ,
+         name:"Optimize engine" ,
          company: "Gameloft",
          logoCompany:"/logo/amazon.png" ,
          type: "part-time"  ,
@@ -151,3 +151,4 @@ class ListRecruitment extends Component {
 }
 
 export default ListRecruitment
+
