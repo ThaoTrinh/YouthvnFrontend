@@ -64,7 +64,7 @@ class Organizations extends Component {
              <div className="row Company-Item">
              <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 logo">
                <a href="#" title=""><img src="http://placehold.it/80x80" alt="" /></a>
-             <i className="fa fa-eye" style={{fontSize: 12,marginTop:2}}>{" "+ value.view +"view"} </i>
+              <span className="view"><i className="fa fa-eye"></i>{" "+ value.view +" view"} </span>
                <p className="hour" style={{fontSize:12,marginTop:0}}>{value.hour+' hours ago'}</p>
              </div>
              <div className="col-xs-8 col-sm-8 col-md-8 col-lg-7 content">
