@@ -120,7 +120,7 @@ import "./assets/css/HowItWork.css"
 import "./assets/css/FeatureCandidate.css"
 import "./assets/css/TopCompany.css"
 import "./assets/css/sliderItem.css"
-
+import "./assets/css/Signin.css"
 
 const routes = (
   <Router history={browserHistory}>
