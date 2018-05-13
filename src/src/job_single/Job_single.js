@@ -1,12 +1,14 @@
 import React from 'react';
-import $ from 'jquery';
-import './css/icons.css';
-import './css/animate.min.css';
-import './css/style.css';
-import './css/responsive.css';
-import './css/bootstrap-grid.css';
-import './css/colors/colors.css';
-import './css/job_single.css';
+import $ from 'jquery'
+import Header from '../../components/fixedComponents/Header';
+import Footer from '../../components/fixedComponents/Footer';
+/*import '../assets/oldcss/css/style.css';
+import '../assets/oldcss/css/responsive.css';
+import '../assets/oldcss/css/animate.min.css';
+import '../assets/oldcss/css/bootstrap-grid.css';
+import '../assets/oldcss/css/icons.css';
+import '../assets/oldcss/css/colors/colors.css';*/
+import './job_single.css';
 
 class Job_single extends React.Component {
     constructor(props) {
@@ -34,7 +36,7 @@ class Job_single extends React.Component {
     renderSkill = (skill) => {
         if(skill.length > 0) {
             return skill.map(elem =>
-                <a className="skill">{elem}</a>
+                <a className="skill-job">{elem}</a>
             );
         }
         else return "Not required"
