@@ -57,7 +57,7 @@ export default class ListItem extends React.Component {
       <div className="emply-resume-list row">
         <div className="emply-resume-thumb col-md-2">
           <img src="http://placehold.it/100x86" alt="" />
-          <div className="view" style={{fontSize: 12}}> <i className="fa fa-eye"> </i>{" "+value.view}</div>
+          <div className="view" style={{fontSize: 12}}> <i className="fa fa-eye"> </i>{" "+value.view} view</div>
           <div style={{fontSize: 12}}><center>{value.hour+" hours ago"}</center></div>
         </div>
         

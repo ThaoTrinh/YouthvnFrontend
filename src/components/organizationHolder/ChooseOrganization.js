@@ -19,7 +19,7 @@ export default class ChooseOrganization extends React.Component{
             <i className="fa fa-search"></i>
           </div>
            <div className="search-area">
-            <input type="text" name="" id="input" className="form-control Search-Com" placeholder="Locate"/>
+            <input type="text" name="" id="input" className="form-control Search-Com" placeholder="Location"/>
             <i className="fa fa-map-marker"></i>
           </div>
            <form className="checkbox Specialism">
