@@ -28,6 +28,53 @@
     position: relative;
     right: 10px;
 }
+
+
+.sb-title::after {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  width: 1px;
+  height: 0px;
+  background: #222222;
+  content: "";
+}
+.sb-title.open.active::before {
+  width: 17px;
+}
+.sb-title::after {
+  height: 0px;
+}
+.sb-title.open.active::after {
+  height: 15px;
+}
+
+.sb-title.open.active {
+  margin-bottom: 0;
+}
+
+
+.sb-title {
+  float: left;
+  width: 100%;
+  font-family: Open Sans;
+  font-size: 16px;
+  color: #111111;
+  margin: 0;
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.sb-title::before {
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 20px;
+  height: 1px;
+  background: #222222;
+  content: "";
+}
 .emfield select{
   border: 2px solid #e8ecec;
     border-radius: 8px;

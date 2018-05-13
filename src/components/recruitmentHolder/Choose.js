@@ -22,35 +22,25 @@ export default class Choose extends React.Component{
             <input type="text" name="" id="input" className="form-control Search-Com" placeholder="Location"/>
             <i className="fa fa-map-marker"></i>
           </div>
-           <form className="checkbox Specialism">
-             <p className="title">Specialism</p> 
-             <br/>
-              <div className="input">
-               <p><input type="checkbox" value=".Net"/><label>.NET</label> </p>
-               <p><input type="checkbox" value="C++"/><label>C++</label></p>
-               <p><input type="checkbox" value="Java"/><label>Java</label></p>
-               <p><input type="checkbox" value="PHP"/><label>PHP</label></p>
-               <p><input type="checkbox" value="Python"/><label>Python</label></p>
-               
-              </div>
+          <div style={{marginTop:50}}>
+              <CheckBox3
+                valueArr={['.Net','C++','Java','PHP','Python']}
+                groupName={'Specialism'}
+                name={'Specialism'}
+              />
+            </div>
+           
+             
+           <div>
+              <CheckBox3
+                valueArr={['Fulltime','Parttime','Internship','Temporary']}
+                groupName={'Category'}
+                name={'Category'}
+              />
+            </div>
 
-             
-           </form>
-           <form className="checkbox Team">
-             <p className="title">Category</p> 
-             <br/>
-              <div className="input">
-               <p><input type="checkbox"/><label>FullTime</label> </p>
-               <p><input type="checkbox"/><label>PartTime</label></p>
-               <p><input type="checkbox" /><label>Intern</label></p>
-               <p><input type="checkbox" /><label>Temporary</label></p>
-             
-               
-              </div>
-
-             
-           </form>
-            <Ranges
+          <div style={{marginTop:50}}>
+          <Ranges
             name={"Salary"}
             defaultValue={[0,500000000]}
             min={0}
@@ -58,6 +48,7 @@ export default class Choose extends React.Component{
             allowCross={false}
             step={1}
            />
+           </div>
             <Slider
             name={"Experience"}
             defaultValue={0}
@@ -65,7 +56,10 @@ export default class Choose extends React.Component{
             max={10}
             step={1}
            />
-         </div>
+           </div>
+             
+           
+         
          
          
           

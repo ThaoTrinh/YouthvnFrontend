@@ -68,15 +68,16 @@ class Checkboxes extends React.Component {
                 this.renderCheckboxGroup(this.props.valueArr, this.props.groupName)
             );
         return (
-            <div className="checkbox">
-                <h3 className="sb-title open"
-                    id={this.props.groupName}
-                    onClick={() => this.toggle_widget()}>
+            <div className="checkbox Team" style={{marginBottom:-100}}>
+                <p>
+                    
                     {this.props.name}
-                </h3>
-                <div className="check-item">
+                </p>
+                
+                <div className="input">
                     {func}
                 </div>
+        
             </div>
         );
     }
