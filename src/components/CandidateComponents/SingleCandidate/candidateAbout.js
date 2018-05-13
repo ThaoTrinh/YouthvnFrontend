@@ -86,9 +86,6 @@ export default class Information extends React.Component {
               groupName="Portfolio"
             />
            
-          
-             
-        
           </div>
         </div>
         <div className="col-lg-5 column">
@@ -96,13 +93,12 @@ export default class Information extends React.Component {
           <div className="job-overview">
             <JobOverview/>
             <Contact/>
-            </div>
-            
+          </div>    
           </div>
-          <div className="col-lg-15 column">
-         
-        <RelatedCandidate/>
-            </div>
+        <div className="col-lg-15 column">
+        <h2 style={{marginLeft:15}}>Related Candidates</h2>
+          <RelatedCandidate/>
+        </div>
         </div>
         
         

@@ -367,8 +367,8 @@ section.overlape {
 }
 
 .cand-extralink > li:hover a {
-    color: #8b91dd;
-    border-color: #8b91dd;
+    color: #1421d6;
+    border-color: #222fe2;
 }
 .cand-details-sec {
     float: left;
@@ -435,7 +435,7 @@ section.overlape {
     display: table-cell;
     vertical-align: top;
     width: 70px;
-    font-size: 50px;
+    font-size: 40px;
     color: #fb236a;
     line-height: 60px;
 }

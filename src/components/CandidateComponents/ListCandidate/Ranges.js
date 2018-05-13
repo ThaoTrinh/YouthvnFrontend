@@ -36,7 +36,7 @@ class RangeBox extends React.Component {
     }
     render() {
         return (
-            <div className="widget border">
+            <div className="widget border" style={{marginTop:10}}>
                 <h3 className="sb-title open"
                     id={this.props.name}
                     onClick={() => this.toggle_widget()}>

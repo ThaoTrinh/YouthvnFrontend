@@ -1,6 +1,5 @@
 import React from 'react';
 import Information from './information.js';
-import DownloadCV from './downloadCV.js';
 import About from './about.js';
 import CandidateAbout from './candidateAbout.js';
 import JobSearch from './jobsearch.js';
@@ -17,8 +16,6 @@ export default class Record extends React.Component {
 				 			</div>
                 <Information/>
                 <div className="col-md-3" style={{top: 70}}>
-                
-                <DownloadCV/>
               
                 <JobSearch/>
                 

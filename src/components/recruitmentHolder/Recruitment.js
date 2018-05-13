@@ -201,6 +201,7 @@ export default class Recruitments extends React.Component {
         }
 
       return(
+
       <Link to="/job">
       <div className="emply-resume-list row">
         <div className="emply-resume-thumb col-md-2">
@@ -220,7 +221,7 @@ export default class Recruitments extends React.Component {
           </div>
           
 
-           <div className="emply-resume-info col-md-3" style={{marginLeft:50}}>
+           <div className="emply-resume-info col-md-3" style={{marginLeft:55}}>
            <div style={{marginLeft:10,color:'#212121'}}><i className="fa fa-dollar"></i>{value.salary}</div>
             {arrType}
           </div>

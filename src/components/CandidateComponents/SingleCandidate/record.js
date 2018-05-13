@@ -17,12 +17,7 @@ export default class Record extends React.Component {
 				 			</div>
                 <Information/>
                 <div className="col-md-3" style={{top: 70}}>
-                
-                <div>
-                <DownloadCV/>
-              
-                <JobSearch/>
-                </div>
+                  <JobSearch/> 
                 </div>
               </div>
               <About/>
