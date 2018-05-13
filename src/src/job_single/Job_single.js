@@ -53,13 +53,13 @@ class Job_single extends React.Component {
         const profileLink = this.getProfileLink(this.props.profileLink);
         return (
             <div>
-                <section className="overlape">
-                    <div className="block no-padding">
+                <section className="job-single-overlape">
+                    <div className="job-single-block job-single-no-padding">
                         <div data-velocity="-.1"
                             style={{ background: 'url(' + this.props.companyImage + ') repeat scroll 50% 422.28px transparent' }}
-                            className="parallax scrolly-invisible no-parallax"></div>
-                        <div className="container fluid">
-                            <div className="row">
+                            className="job-single-parallax scrolly-invisible job-single-no-parallax"></div>
+                        <div className="job-single-container job-single-fluid">
+                            <div className="row no-gape">
                                 <div className="col-lg-12">
                                     <div className="inner-header">
                                         <h3>{this.props.companyName}</h3>
@@ -71,32 +71,32 @@ class Job_single extends React.Component {
                 </section>
 
                 <section>
-                    <div className="block">
-                        <div className="container">
-                            <div className="row">
+                    <div className="job-single-block">
+                        <div className="job-single-container">
+                            <div className="row no-gape">
                                 <div className="col-lg-8 column">
                                     <div className="job-single-sec">
                                         <div className="job-single-head2">
                                             <div className="job-title2">
                                                 <h3>Senior Web Designer</h3>
-                                                <span className="job-is ft">{this.props.FullTime ? 'Full time' : 'Part time'}</span>                                        
-                                                <i className="la la-heart" style={{ color: this.state.heart_color }} onClick={this.heart_toggle}></i>
-                                                <a href="#" title="" className="applyjob-btn"><i className="la la-paper-plane"></i>Apply for job</a>
+                                                <span className="job-is-single ft">{this.props.FullTime ? 'Full time' : 'Part time'}</span>                                        
+                                                <i className="fa fa-heart" style={{ color: this.state.heart_color }} onClick={this.heart_toggle}></i>
+                                                <a href="#" title="" className="applyjob-btn"><i className="fa fa-paper-plane"></i>Apply for job</a>
                                             </div>
-                                            <ul className="tags-jobs">
-                                                <li style={{width: '100%'}}><i className="la la-life-ring"></i> Major: {majors}</li>
-                                                <li><i className="la la-map-marker"></i> {this.props.mapPosition}</li>
-                                                <li><i className="la la-money"></i> Monthly Salary : <span>{this.props.monthlySalary}</span></li>
-                                                <li><i className="la la-users"></i> Amount: {this.props.amount}</li>
-                                                <li><i className="la la-certificate"></i> Certificate: {this.props.certi}</li>
-                                                <li><i className="la la-clock-o"></i> Experience: {this.props.exp}</li>
-                                                <li><i className="la la-calendar-check-o"></i> Age: {this.props.age}</li>                                                
-                                                <li><i className="la la-transgender-alt"></i> Gender: {this.props.gender}</li>
-                                                <li style={{width: '100%'}}><i className="la la-language"></i> Language: {languages}</li>
-                                                <li style={{width: '100%'}}><i className="la la-tasks"></i> Skills: {skills}</li>
-                                                <li><i className="la la-calendar-o"></i> Post Date: {this.props.postDate}</li>
-                                                <li><i className="la la-calendar-o"></i> End Date: {this.props.endDate}</li>
-                                                <li style={{width: '100%'}}><i className="la la-user"></i> Profile: {profileLink}</li>
+                                            <ul className="tags-jobs-single">
+                                                <li><i className="fa fa-life-ring"></i> Major: {majors}</li>
+                                                <li><i className="fa fa-map-marker"></i> {this.props.mapPosition}</li>
+                                                <li><i className="fa fa-money"></i> Monthly Salary : <span>{this.props.monthlySalary}</span></li>
+                                                <li><i className="fa fa-users"></i> Amount: {this.props.amount}</li>
+                                                <li><i className="fa fa-certificate"></i> Certificate: {this.props.certi}</li>
+                                                <li><i className="fa fa-clock-o"></i> Experience: {this.props.exp}</li>
+                                                <li><i className="fa fa-calendar-check-o"></i> Age: {this.props.age}</li>                                                
+                                                <li><i className="fa fa-transgender-alt"></i> Gender: {this.props.gender}</li>
+                                                <li><i className="fa fa-language"></i> Language: {languages}</li>
+                                                <li><i className="fa fa-tasks"></i> Skills: {skills}</li>
+                                                <li><i className="fa fa-calendar-o"></i> Post Date: {this.props.postDate}</li>
+                                                <li><i className="fa fa-calendar-o"></i> End Date: {this.props.endDate}</li>
+                                                <li><i className="fa fa-user"></i> Profile: {profileLink}</li>
                                             </ul>
                                             <span><strong>Roles</strong> : {this.props.roles}</span>
                                         </div>
@@ -126,12 +126,12 @@ class Job_single extends React.Component {
                                         <div className="job-overview">
                                             <h3>Job Overview</h3>
                                             <ul>
-                                                <li><i className="la la-money"></i><h3>Offerd Salary</h3><span>£15,000 - £20,000</span></li>
-                                                <li><i className="la la-mars-double"></i><h3>Gender</h3><span>Female</span></li>
-                                                <li><i className="la la-thumb-tack"></i><h3>Career Level</h3><span>Executive</span></li>
-                                                <li><i className="la la-puzzle-piece"></i><h3>Industry</h3><span>Management</span></li>
-                                                <li><i className="la la-shield"></i><h3>Experience</h3><span>2 Years</span></li>
-                                                <li><i className="la la-line-chart "></i><h3>Qualification</h3><span>Bachelor Degree</span></li>
+                                                <li><i className="fa fa-money"></i><h3>Offerd Salary</h3><span>£15,000 - £20,000</span></li>
+                                                <li><i className="fa fa-mars-double"></i><h3>Gender</h3><span>Female</span></li>
+                                                <li><i className="fa fa-thumb-tack"></i><h3>Career Level</h3><span>Executive</span></li>
+                                                <li><i className="fa fa-puzzle-piece"></i><h3>Industry</h3><span>Management</span></li>
+                                                <li><i className="fa fa-shield"></i><h3>Experience</h3><span>2 Years</span></li>
+                                                <li><i className="fa fa-line-chart "></i><h3>Qualification</h3><span>Bachelor Degree</span></li>
                                             </ul>
                                         </div>
                                         <div className="share-bar">
@@ -145,9 +145,9 @@ class Job_single extends React.Component {
                                         <div className="job-head-info">
                                             <h4>{this.props.companyName}</h4>
                                             <span><p>{this.props.companyAddress}</p></span>
-                                            <p><i className="la la-unlink"></i>{this.props.link}</p>
-                                            <p><i className="la la-phone"></i>{this.props.phoneNumber}</p>
-                                            <p><i className="la la-envelope-o"></i>{this.props.email}</p>
+                                            <p><i className="fa fa-unlink"></i>{this.props.link}</p>
+                                            <p><i className="fa fa-phone"></i>{this.props.phoneNumber}</p>
+                                            <p><i className="fa fa-envelope-o"></i>{this.props.email}</p>
                                         </div>
                                         <a href="#" title="" className="viewall-jobs">View all Jobs</a>
                                     </div>

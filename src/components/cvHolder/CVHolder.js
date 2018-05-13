@@ -31,7 +31,7 @@ class CVHolder extends Component {
            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-3" style={{marginLeft:50}}>
               <SideNav />
            </div>
-           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-6" style={{marginRight:20}}>
+           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-6" style={{marginRight:10}}>
               <ListItem />
 
               <div >
