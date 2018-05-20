@@ -36,7 +36,7 @@ class CVHolder extends Component {
 
               <div >
               <Pagination/>
-               </div>
+              </div>
            </div>
            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-1">
             <img  style={{width:160}} src="/logo/panner.jpg" alt="" />   

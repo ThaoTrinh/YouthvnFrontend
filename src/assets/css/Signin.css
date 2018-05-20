@@ -306,3 +306,8 @@ content: "";
 
     cursor: pointer;
 }
+.dropdown-field {
+    float: left;
+    width: 100%;
+    margin-bottom: 19px;
+}

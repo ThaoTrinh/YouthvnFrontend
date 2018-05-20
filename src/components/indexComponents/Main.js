@@ -2,10 +2,8 @@ import React from 'react';
 import MainSlider from './MainSlider';
 import PopularCategory from './PopularCategory';
 import HowItWork from './HowItWork';
-import ListOrganizations from './ListOrganizations'
 import ListRecruitment from './ListRecruitment';
 import FeatureCandidate from './FeatureCandidate';
-import ListCV from './ListCV';
 import TopCompany from './TopCompany';
 class Main extends React.Component {
   

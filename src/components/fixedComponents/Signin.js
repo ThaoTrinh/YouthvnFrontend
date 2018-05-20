@@ -4,7 +4,7 @@ const $ = window.jQuery;
 
 class Signin extends React.Component {
    fadeOut = ()=>{
-    $(".account-popup-area").fadeOut();
+    $(".signin-popup-box").fadeOut();
    }
   
   render() {

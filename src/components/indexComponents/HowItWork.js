@@ -1,8 +1,6 @@
 import React from 'react';
 import MainSlider from './MainSlider';
-import ListOrganizations from './ListOrganizations'
 import ListRecruitment from './ListRecruitment';
-import ListCV from './ListCV';
 class HowItWork extends React.Component {
   constructor(props){
     super(props);

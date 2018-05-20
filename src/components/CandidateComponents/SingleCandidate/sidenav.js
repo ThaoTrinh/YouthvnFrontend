@@ -53,13 +53,14 @@ export default class SideNav extends React.Component{
             step={1}
            />
            </div>
+           <hr/>
             <Slider
             name={"Experience"}
             defaultValue={0}
             min={0}
             max={10}
             step={1}
-           />
+            />
          </div>
          
          

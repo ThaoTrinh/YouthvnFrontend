@@ -9,7 +9,7 @@
     float: left;
     margin: 0;
         margin-right: 0px;
-    font-family: Open Sans;
+    font-family: "Open Sans",sans-serif;
     font-size: 14px;
     color: #888888;
     margin-right: 30px;
@@ -56,7 +56,7 @@
     margin-left: 18px;
 }
 .applyjob-btn {
-    font-family: Open Sans;
+    font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 0px;
     border-radius: 40px;
@@ -115,7 +115,7 @@
 }
 
 .majors {
-    font-family: Open Sans;
+    font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 0px;
     border-radius: 2px;
@@ -134,7 +134,7 @@
 }
 
 .language {
-    font-family: Open Sans;
+     font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 0px;
     border-radius: 2px;
@@ -153,7 +153,7 @@
 }
 
 .skill-job {
-    font-family: Open Sans;
+     font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 0px;
     border-radius: 2px;
@@ -172,7 +172,7 @@
 }
 
 .profile {
-    font-family: Open Sans;
+     font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 0px;
     border-radius: 2px;
@@ -288,7 +288,7 @@ section.job-single-overlape {
 .job-details h3 {
     float: left;
     width: 100%;
-    font-family: Open Sans;
+     font-family: "Open Sans",sans-serif;
     font-size: 16px;
     color: #202020;
     margin-bottom: 15px;
@@ -303,9 +303,10 @@ section.job-single-overlape {
     line-height: 24px;
     margin: 0;
     margin-bottom: 19px;
+    font-family: "Open Sans",sans-serif;
 }
 .job-details p {
-    font-family: 'Lucida';
+    font-family: "Open Sans",sans-serif;
 }
 .job-details > ul {
     float: left;
@@ -501,7 +502,7 @@ section.job-single-overlape {
 .job-head-info h4 {
     float: left;
     width: 100%;
-    font-family: Open Sans;
+     font-family: "Open Sans",sans-serif;
     font-size: 16px;
     color: #202020;
     margin: 0;
@@ -537,7 +538,7 @@ section.job-single-overlape {
     height: 60px;
     line-height: 60px;
     color: #ffffff;
-    font-family: Open Sans;
+    font-family: "Open Sans",sans-serif;
     font-size: 14px;
     
     -webkit-border-radius: 40px;
@@ -569,7 +570,7 @@ section.job-single-overlape {
 .job-is-single {
     display: table-cell;
     vertical-align: middle;
-    font-family: Open Sans;
+     font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 1px solid;
     float: left;

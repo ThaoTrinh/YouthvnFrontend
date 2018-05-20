@@ -26,7 +26,6 @@
     height: 16px;
     margin: 3px;
 }
-
 @media only screen and (min-width: 1200px) {
     .carousel-caption h2 {
         font-size: 80px;
@@ -183,52 +182,4 @@ color: #fff !important;
     position: relative;
     right: 45px;
 }
-.moveLogo{
-    position: relative;
-    width: 130px;
-    height: 130px;
-    top: 280px;
-    z-index: -99;
-}
-.moveLogo:hover{
-    
-}
-.scroll-to {
-    
-    text-align: center;
-    width: 130px;
-    height: 130px;
-    border: 2px solid #ffffff;
-    margin-top: -65px;
-    z-index: 22;
-    position: relative;
-    
-    border-radius: 50%;
-   top: 345px;
-    left: 50%;
-    margin-left: -65px;
-}
-.scroll-to a {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 60px;
-    height: 60px;
-    margin-left: -30px;
-    margin-top: -30px;
-    background: #ffffff;
-    
-    border-radius: 50%;
 
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-
-    line-height: 60px;
-    font-size: 30px;
-}
-.scroll-to:hover{
-    border-color: #fb236a;  
-}
-.scroll-to:hover a{
-    background: #fb236a;
-    color: #ffffff;
-}
