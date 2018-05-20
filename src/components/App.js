@@ -5,6 +5,7 @@ import 'react-loading-bar/dist/index.css';
 import Header from './fixedComponents/Header';
 import Footer from './fixedComponents/Footer';
 import Signin from './fixedComponents/Signin';
+import Signup from './fixedComponents/Signup';
 import request from 'superagent';
 import _ from 'lodash';
 import async from 'async';
@@ -36,14 +37,18 @@ class App extends Component {
     }
  
   };
-   fadeIn =()=>{
-   $(".account-popup-area").fadeIn();
+   fadeInSignIn =()=>{
+   $(".signin-popup-box").fadeIn();
+   }
+    fadeInSignUp =()=>{
+   $(".signup-popup-box").fadeIn();
    }
   render() {
     
     return (
       <div className='App theme-layout'>
-        <Header fadeIn = {this.fadeIn}
+        <Header fadeInSignIn = {this.fadeInSignIn}
+        fadeInSignUp ={this.fadeInSignUp}
         />
         <Loading
           show={this.state.loading_bar_show}
@@ -57,6 +62,7 @@ class App extends Component {
         </div>
          <Footer/>
          <Signin/>
+         <Signup/>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import FeatureCandidateItem from './FeatureCandidateItem'
 class FeatureCandidate extends React.Component {
   constructor(props){
     super(props);
@@ -35,16 +35,8 @@ class FeatureCandidate extends React.Component {
   render() {
     var elm = this.state.candidate.map((value,key)=>{
        return (
-        <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 candidate-item">
-                  <div className="circle">
-                 <img src="http://placehold.it/121x121" alt=""/>
-                  </div>
-                  <div className="info">
-                  <div>{value.name}</div>
-                  <p>{value.career}</p>
-                  <div className ="view-cv">View CV</div>
-                  </div>
-                </div>
+       
+        <FeatureCandidateItem name ={value.name} career ={value.career} />
             )
     })
     return (

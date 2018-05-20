@@ -9,7 +9,7 @@ export default class CandidateSingle extends React.Component {
   render() { return (
     <div className="overlape">
       <div className="block no-padding">
-        <div className="inner-header">
+        <div className="inner-header" style={{paddingBottom:0, paddingTop:150}}>
           <SaveResume/>
         </div>
       </div>

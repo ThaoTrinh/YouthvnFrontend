@@ -4,6 +4,9 @@ import swal from 'sweetalert';
 import moment from 'moment';
 import { MoneyToNumber, formattingItemArr, formattingMoney } from '../../commons/share';
 import { ACCEPTED_TYPES, INVITATION_TYPES } from '../../commons/constants';
+import DropdownLeft from './DropdownLeft'
+import DropdownRight from './DropdownRight'
+import LargeScreenNav from './LargeScreenNav'
 const $ = window.jQuery;
 
 class Header extends React.Component {
@@ -26,7 +29,11 @@ class Header extends React.Component {
     window.addEventListener("scroll",this.setBackgroundHeader);
   }
  
-  
+  renderList() {
+    return (
+     <DropdownLeft/>    
+          )
+  }
 
   render() {
      moment.locale('vi');
@@ -35,39 +42,28 @@ class Header extends React.Component {
       <nav className= {this.state.hidden?"navbar-hidden navbar-inverse navbar-fixed-top":"navbar navbar-inverse navbar-fixed-top"} >
         <div className="container-fluid">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target={this.state.hidden?"#myNavbar-hidden":"#myNavbar"}>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
 
-            <Link to="/" className="navbar-brand" onClick={() => { window.scrollTo(0, 0) }}><img src="logo/youthvn.png" /></Link>
+            
           </div>
-
+      
           <div className="collapse navbar-collapse" id={this.state.hidden?"myNavbar-hidden":"myNavbar"}>
-            <ul className="nav navbar-nav visible-sm visible-md visibleul">
-             
+            <ul className="nav navbar-nav visible-sm visible-md ">
+             {this.renderList()}
             </ul>
-            <ul className="nav navbar-nav hidden-sm hidden-md ">
-              <li className="a1">
-                <Link to="/cvs"> Candidates List <span><i className="fa fa-caret-down"></i></span></Link>
-                
-              </li>
-              <li className="a ">
-                <Link to="/organizations"> Employers List <span><i className="fa fa-caret-down"></i></span></Link>
-              </li>
-              
-              <li className="a ">
-                <Link to="/recruitments">Recruitments List  <span><i className="fa fa-caret-down"></i></span></Link>
-              </li>
-              <button type="button" class="btn btn-default">+ Post Job</button>
-            </ul>
+            <DropdownRight />      
+            <LargeScreenNav />
 
            
-                <ul className="nav navbar-nav navbar-right">
-                  <li><a href="#"><span className="fa fa-key"></span> Sign Up</a></li>
-                  <li><a href="#"><span className="fa fa-sign-in" onClick ={()=>{this.props.fadeIn()}}></span> Login</a></li>
-               </ul>
+           <ul className="nav navbar-nav navbar-right">
+              <button type="button" class="btn btn-default">+ Post Job</button>
+              <li><a href="#"><span className="fa fa-key" onClick ={()=>{this.props.fadeInSignUp()}}></span> Sign Up</a></li>
+              <li><a href="#"><span className="fa fa-sign-in" onClick ={()=>{this.props.fadeInSignIn()}}></span> Login</a></li>
+           </ul>
      
           </div>
         </div>

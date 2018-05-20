@@ -8,39 +8,39 @@ class Footer extends React.Component {
       <div className="container footer-position">
         <div className="ui stackable three column grid">
           <div className="column">
-            <h3>BKStartup</h3>
+            <h3 className="footer-title">BKStartup</h3>
             
             <p>Copyright
-              <i className="copyright icon"></i>
+              <i className="fa fa-copyright"></i>
               2017. All right reserved.
             </p>
-            <p><i className="mail icon"></i> Email: abc@gmail.com</p>
-            <p><i className="home icon"></i> Địa chỉ: TpHCM</p>
-            <p><i className="mobile icon"></i> Số điện thoại: 01221234567</p>
+            <p><i className="fa fa-envelope"></i> Email: abc@gmail.com</p>
+            <p><i className="fa fa-home"></i> Địa chỉ: TpHCM</p>
+            <p><i className="fa fa-mobile"></i> Số điện thoại: 01221234567</p>
           </div>
 
           <div className="column">
-            <h3>Hỗ trợ</h3>
+            <h3 className="footer-title">Support</h3>
             
-            <p><i className="info large circle icon"></i><Link to="/">Điều khoản sử dụng</Link></p>
-            <p><i className="privacy large icon"></i><Link to="/">Chính sách bảo mật</Link></p>
-            <p><i className="warning large sign icon"></i><Link to="/feedback">Feedback</Link></p>
+            <p><i className="fa fa-info"></i><Link to="/">Điều khoản sử dụng</Link></p>
+            <p><i className="fa fa-key"></i><Link to="/">Chính sách bảo mật</Link></p>
+            <p><i className="fa fa-warning"></i><Link to="/feedback">Feedback</Link></p>
           </div>
 
-          <div className="column">
-            <h3>Liên lạc</h3>
-            <button className="ui circular facebook icon button">
-                <i className="facebook icon"></i>
-              </button>
-              <button className="ui circular twitter icon button">
-                <i className="twitter icon"></i>
-              </button>
-              <button className="ui circular linkedin icon button">
-                <i className="linkedin icon"></i>
-              </button>
-              <button className="ui circular google plus icon button">
-                <i className="google plus icon"></i>
-              </button>
+          <div className="column contact">
+            <h3 className="footer-title">Contact</h3>
+            <span className="">
+                <i className="fa fa-facebook"></i>
+              </span>
+              <span >
+                <i className="fa fa-twitter"></i>
+              </span>
+              <span >
+                <i className="fa fa-linkedin"></i>
+              </span>
+              <span >
+                <i className="fa fa-google-plus "></i>
+              </span>
           </div>
         </div>
       </div>

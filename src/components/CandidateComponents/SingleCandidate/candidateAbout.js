@@ -16,13 +16,13 @@ import Degree from './degree.js'
 import Recommendator from './recommendator.js'
 import ListItem from './ListItem.js'
 import Sliders from './sliderItem.js'
-
+import RelatedCandidate from './relatedCandidate.js'
 
 export default class Information extends React.Component {
   render() { return (
     <div className="cand-details-sec">
       <div className="row">
-        <div className="col-lg-8 column">
+        <div className="col-lg-7 column">
           <div className="cand-details" id="about">
             
           <h2>Candidates About</h2>
@@ -86,18 +86,20 @@ export default class Information extends React.Component {
               groupName="Portfolio"
             />
            
-           <h2 style={{paddingLeft:30}}>Related candidates</h2>
-              <Sliders/>
-        
           </div>
         </div>
-        <div className="col-lg-4 column">
+        <div className="col-lg-5 column">
+        <div className="col-lg-10 column">
           <div className="job-overview">
             <JobOverview/>
             <Contact/>
+          </div>    
           </div>
+        <div className="col-lg-15 column">
+        <h2 style={{marginLeft:15}}>Related Candidates</h2>
+          <RelatedCandidate/>
         </div>
-
+        </div>
         
         
       </div>

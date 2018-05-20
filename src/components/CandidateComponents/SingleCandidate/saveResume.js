@@ -13,9 +13,10 @@ export default class SaveResume extends React.Component{
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="action-inner">
+            <div className="action-inner" style={{paddingTop:10}}>
               <a href="#" title=""><i className="fa fa-paper-plane"></i>Save Resume</a>
               <a href="#" title=""><i className="fa fa-envelope-o"></i>Contact David</a>
+              <a href="#" title=""><i className="fa fa-download"></i>Download CV</a>
             </div>
           </div>
         </div>

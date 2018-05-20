@@ -1,8 +1,7 @@
 import React from 'react';
 import MainSlider from './MainSlider';
-import ListOrganizations from './ListOrganizations'
 import ListRecruitment from './ListRecruitment';
-import ListCV from './ListCV';
+import PopularItem from './PopularItem'
 class PopularCategory extends React.Component {
   constructor(props){
     super(props);
@@ -43,18 +42,7 @@ class PopularCategory extends React.Component {
     var elms = this.state.Jobs.map((value,key)=>{
 
       return(
-         <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
-         <div className="Job-item">
-               
-          <div className="logo text-center">
-            <i className ={value.logo}> </i>
-          </div>
-          <div className="text">
-            <h3>{value.name}</h3>
-            <h5>{value.numJob+' Jobs Opened'} </h5>
-          </div>
-        </div>
-        </div>
+          <PopularItem logo ={value.logo} name={value.name} numJob= {value.numJob}/>
 
         )
     })

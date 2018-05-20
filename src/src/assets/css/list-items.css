@@ -48,6 +48,7 @@
     border: 0.5px solid #edeff7;
     position: relative;
     padding-left: 30px;
+    margin-left: 50px;
 }
 .emply-resume-info > h3 {
     float: left;

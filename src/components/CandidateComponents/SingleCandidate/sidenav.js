@@ -25,33 +25,25 @@ export default class SideNav extends React.Component{
             <input type="text" name="" id="input" className="form-control Search-Com" placeholder="Speciality"/>
             <i className="fa fa-graduation-cap"></i>
           </div>
-           <form className="checkbox Specialism">
-             <p className="title">Degree</p> 
-             <br/>
-              <div className="input">
-               <p><input type="checkbox" value=".Net"/><label>Post-Graduate</label> </p>
-               <p><input type="checkbox" value="C++"/><label>Graduate</label></p>
-               <p><input type="checkbox" value="Java"/><label>Under-Graduate</label></p>
-               <p><input type="checkbox" value="Java"/><label>P.D</label></p>
-               <p><input type="checkbox" value="Java"/><label>Others</label></p>
-               
-              </div>
-
+          
+           <div style={{marginTop:50}}>
+              <CheckBox3
+                valueArr={['Post-Graduate','Graduate','Under-Graduate','P.D','Ohther']}
+                groupName={'Degree'}
+                name={'Degree'}
+              />
+            </div>
+           
              
-           </form>
-           <form className="checkbox Team">
-             <p className="title">Gender</p> 
-             <br/>
-              <div className="input">
-               <p><input type="checkbox" value=".Net"/><label>Male</label> </p>
-               <p><input type="checkbox" value="C++"/><label>Female</label></p>
-               <p><input type="checkbox" value="Java"/><label>Others</label></p>
-             
-               
-              </div>
-
-             
-           </form>
+           <div>
+              <CheckBox3
+                valueArr={['Male','Female','Other']}
+                groupName={'Gender'}
+                name={'Gender'}
+              />
+            </div>
+           
+           <div>
             <Ranges
             name={"Age"}
             defaultValue={[0,60]}
@@ -60,13 +52,15 @@ export default class SideNav extends React.Component{
             allowCross={false}
             step={1}
            />
+           </div>
+           <hr/>
             <Slider
             name={"Experience"}
             defaultValue={0}
             min={0}
             max={10}
             step={1}
-           />
+            />
          </div>
          
          
