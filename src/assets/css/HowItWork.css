@@ -104,3 +104,22 @@
 .how-to:nth-child(2n+2) {
     padding: 0 50px;
 }
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .how-to-sec.style2 .how-to{
+        float: left;
+        width: 100%;
+        
+       text-align: center;
+    }
+    
+   }
+@media screen and (max-width: 480px) {
+    .how-to-sec.style2 .how-to{
+        float: left;
+        width: 100%;
+        text-align: center;
+       
+    }
+    
+   }

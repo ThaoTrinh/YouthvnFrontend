@@ -36,7 +36,8 @@ import RecruitmentForm from './components/userCMS/views/recruitment/RecruitmentF
 import PublicRecruitment from './components/recruitment/PublicRecruitment';
 import ApplyJob from './components/recruitment/ApplyJob';
 
-import Job from './src/job_single/Job';
+//import Job from './src/job_single/Job';
+import Job from './components/recruitmentHolder/Job';
 import RecruitmentHolder from './components/recruitmentHolder/RecruitmentHolder';
 import RecruitmentPage from './components/recruitmentHolder/RecruitmentPage';
 import ListRecruitment from './components/userCMS/views/recruitment/ListRecruitment';
@@ -122,6 +123,7 @@ import "./assets/css/FeatureCandidate.css"
 import "./assets/css/TopCompany.css"
 import "./assets/css/sliderItem.css"
 import "./assets/css/Signin.css"
+import "./assets/css/job_single.css"
 
 const routes = (
   <Router history={browserHistory}>
@@ -134,7 +136,7 @@ const routes = (
 
       <Route path="/candidate" component={CandidateSingle}/>
       <Route path="/cvs" component={CVHolder}></Route>
-      <Route path="/recruitments/:id" component={PublicRecruitment}></Route>
+      //<Route path="/recruitments/:id" component={PublicRecruitment}></Route>
       <Route path="/recruitments" component={RecruitmentPage}></Route>
       <Route path="/job" component={Job}></Route>
       <Route path="/recruitments/apply/:id" component={ApplyJob}></Route>

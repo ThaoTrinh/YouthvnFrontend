@@ -9,13 +9,13 @@ class RecruitmentItem extends React.Component {
   render() {
   
     return (
-      <div key={this.props.key} className="col-xs-6 col-sm-6 col-md-6 col-lg-6 recruit-item">
+      <div key={this.props.key} className="col-xs-12 col-sm-12 col-md-6 col-lg-6 recruit-item">
                <div className="row">
                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 logo">
                     <img src={this.props.src}/>
                  </div>
                  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 content">
-                   <h3>{this.props.name}<i className="fa fa-heart-o heart"> </i></h3>
+                   <h3>{this.props.name}<i className="fa fa-heart-o heart"></i></h3>
 
                    <h4>{this.props.company}</h4>
 

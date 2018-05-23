@@ -13,7 +13,7 @@ class PopularItem extends React.Component {
   render() {
   
     return (
-      <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+      <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
          <div className="Job-item">
                
           <div className="logo text-center">

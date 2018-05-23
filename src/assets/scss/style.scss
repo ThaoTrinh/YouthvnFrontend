@@ -1,0 +1,14 @@
+.class_1 {
+ color: #f94342;
+ font-weight: bold;
+ padding: 15px;
+ margin: 5px;
+ a {
+ color: #fff;
+ text-decoration: underline;
+ &:hover,&:visited {
+ color: #f3f3f3;
+ text-decoration: none;
+ }
+ }
+}

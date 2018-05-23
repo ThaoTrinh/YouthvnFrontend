@@ -6,8 +6,8 @@ class Footer extends React.Component {
     return (
       <div className="footer">
       <div className="container footer-position">
-        <div className="ui stackable three column grid">
-          <div className="column">
+        <div className="ui stackable three column grid row">
+          <div className="column col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <h3 className="footer-title">BKStartup</h3>
             
             <p>Copyright
@@ -19,7 +19,7 @@ class Footer extends React.Component {
             <p><i className="fa fa-mobile"></i> Số điện thoại: 01221234567</p>
           </div>
 
-          <div className="column">
+          <div className="column col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <h3 className="footer-title">Support</h3>
             
             <p><i className="fa fa-info"></i><Link to="/">Điều khoản sử dụng</Link></p>
@@ -27,7 +27,7 @@ class Footer extends React.Component {
             <p><i className="fa fa-warning"></i><Link to="/feedback">Feedback</Link></p>
           </div>
 
-          <div className="column contact">
+          <div className="column col-lg-4 col-md-4 col-sm-12 col-xs-12 contact">
             <h3 className="footer-title">Contact</h3>
             <span className="">
                 <i className="fa fa-facebook"></i>
