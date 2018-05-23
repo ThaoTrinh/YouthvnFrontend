@@ -1,11 +1,13 @@
 .TopCompany {
 	background-color:#f4f5fa;
 	padding-top: 40px;
-	height: 300px;
+    height: auto;
+   text-align: center;
 }
-.TopCompany >p{
+.TopCompany >p {
 	text-align:center;
 	font-family:"Open Sans",sans-serif;
+	margin-bottom: 40px;
 }
 
 .TopCompany >h2{
@@ -14,22 +16,16 @@
 	font-weight: bold;
 	font-size: 30px;
 }
-.Top-list{
-	margin-top: 30px;
-}
-.Top-list .company-img {
-    float: left;
-    width: 20%;
-    text-align: center;
-}
-.Top-list .company-img a {
-    float: left;
-    width: 100%;
-}
-.Top-list .company-img a img {
-    float: none;
-    display: inline-block;
-    max-width: 100%;
+.TopCompany img {
     width: 180px;
     height: 80px;
+   margin-bottom:30px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.TopCompany img {
+		width: 140px;
+		height: 65px;
+	   margin-bottom: 30px;
+	}
+	
+   }

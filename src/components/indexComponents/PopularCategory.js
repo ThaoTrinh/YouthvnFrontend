@@ -57,7 +57,6 @@ class PopularCategory extends React.Component {
       <div className="container">
       <div className="row no-gape">
         {elms}
-       
       </div>
       </div>
            <div className="browse-all-cat">

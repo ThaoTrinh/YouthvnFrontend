@@ -28,14 +28,7 @@ class Header extends React.Component {
   componentDidMount(){
     window.addEventListener("scroll",this.setBackgroundHeader);
   }
- 
-  renderList() {
-    return (
-     <DropdownLeft/>    
-          )
-  }
-
-  render() {
+   render() {
      moment.locale('vi');
     
     return (
@@ -53,7 +46,7 @@ class Header extends React.Component {
       
           <div className="collapse navbar-collapse" id={this.state.hidden?"myNavbar-hidden":"myNavbar"}>
             <ul className="nav navbar-nav visible-sm visible-md ">
-             {this.renderList()}
+            <DropdownLeft/> 
             </ul>
             <DropdownRight />      
             <LargeScreenNav />

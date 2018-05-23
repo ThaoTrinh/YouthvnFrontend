@@ -4,89 +4,26 @@
 
 .carousel-caption {
     top: 20%;
-    left: 300px;
-}
-
-.search-section{
-    position: relative;
-    top: 56px;
-    left: 70px;
-}
-.carousel-caption p {
-    margin: 40px 0 0;
-  
-}
-
-.carousel-caption p a {
-    border: 2px solid #fff;
-}
-
-.carousel-indicators li, .carousel-indicators .active {
-    width: 16px;
-    height: 16px;
-    margin: 3px;
-}
-@media only screen and (min-width: 1200px) {
-    .carousel-caption h2 {
-        font-size: 80px;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .carousel-caption h2 {
-        font-size: 44px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .carousel-caption h2 {
-        font-size: 36px;
-        margin-bottom: 5px;
-    }
-
-    .carousel-caption {
-        top: 25%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .carousel-caption h2 {
-        font-size: 30px;
-        margin-bottom: 5px;
-    }
-
-    .carousel-caption h3 {
-        font-size: 14px;
-    }
-
-    .carousel-caption {
-        top: 10%;
-    }
-}
-.carousel-inner{
-
-    background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
-    opacity: 0.8;
+   
 }
 .carousel-caption > h1{
-
 font-family: Quicksand;
 font-size: 45px;
-
 }
 .carousel-caption .carousel-title{
 
 font-family: "Quicksand Regular";
-font-size: 16px;
+font-size: 18px;
 margin-top: 5px;
 color: #fff !important;
 }
-.carousel-inner .item >img{
-    width: 100%;
-    height: 100vh;
+.search-section{
+    margin-top: 60px;
+   
+    text-align: center
 }
-.carousel-caption .row input{
+
+.search1 input{
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     color: #888888;
@@ -95,14 +32,26 @@ color: #fff !important;
     width: 100%;
     line-height: 50px;
     border-radius: 8px;
+    position:relative;
 
 }
-.search-section form .row .select {
-    padding-left: -15px;
-    padding-top: 2px;
+.search1 .fa-keyboard-o{
+
+    font-size: 30px;
+    color:  #ee2a6b;
+    font-weight: lighter;
+    text-shadow: 0px 0px #000;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right:25px
+}
+
+.search2 .select {
+    
     width: 200px;
      border-radius: 8px;
-      height: 50px;
+    height: 50px;
     line-height: 50px;
      font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -110,54 +59,35 @@ color: #fff !important;
     border: none;
     appearance: none; 
     background-color: #fff;
-
     text-shadow: 0px 0px #888888;
+    padding-left: 15px;
+    text-align:left;
+    position: relative;
 }
-.search-section form .row .select:hover{
+.search2 .select:hover{
    cursor: pointer;
 }
-.carousel-caption .row .fa-keyboard-o{
-
-    position: relative;
-    right: 85px;
-    top: 10px;
-    font-size: 30px;
-    color:  #ee2a6b;
-    font-weight: lighter;
-    text-shadow: 0px 0px #000;
-}
-.carousel-caption .row .fa-map-marker{
-    position: relative;
-    left: -35px;
-    bottom: -12px;
+.search2 .select span{
+    margin-top: 10px;
     font-size: 25px;
     color:  #ee2a6b;
     font-weight: lighter;
     text-shadow: 0px 0px #000;
-}
-.carousel-caption .row .search1{
    
-    margin-right: -30px;
+    position: absolute;
+    right: 5px;
 }
-.carousel-caption .row .search2{
-  
-    margin-left: -80px;
-}
-
-.carousel-caption .search-chosen{
-    position: relative;
-    top: 65px;
-    right: 24px;
+.search-section .search-chosen{
+    position:absolute;
     background: #fff;
     border-radius: 8px;
     width: 200px;
     height: 90px;
+    left: 15px;
+    margin-top: 10px;
 
 }
-.hidden-select{
-    display: none;
-}
-.search-chosen .item{
+.search-section .search-chosen .item{
    
      position: relative;
      right: 60px;
@@ -167,19 +97,75 @@ color: #fff !important;
     font-family: "Open Sans", sans-serif;
     text-shadow: 0px 0px #888888;
     font-size: 13px;
-    transition-property: width;
-    transition-duration: 2s;
+    transition-property: transform;
+    transition-duration: 1s;
     width: 200px;
 
 }
-.search-chosen .item:hover{
-    width: 250px;
+.search-section .search-chosen .item:hover{
+    transform:translateX(15px);
     color: #ee2a6b;
     cursor: pointer;
 }
+
+.hidden-select{
+    display: none;
+}
+
 .item-chosen{
-  
     position: relative;
     right: 45px;
 }
+.carousel-inner{
+
+    background: linear-gradient(45deg,  rgba(139,145,221,1) 0%,rgba(16,25,93,1) 71%,rgba(16,25,93,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b91dd', endColorstr='#10195d',GradientType=1 );
+    opacity: 0.8;
+}
+
+
+.carousel-inner .item >img{
+    width: 100%;
+    height:600px;
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .carousel-caption > h1{
+        font-size: 35px;
+    }
+    
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption > h1{
+        font-size: 27px;
+    }
+  
+
+}
+@media only screen and (max-width: 768px) {
+    .carousel-caption > h1{
+        font-size: 27px;
+    }
+    .search1 input{
+        margin-bottom: 50px;
+        width: 100%;
+       font-size: 11px;
+    }
+    .search2 .select{
+       font-size:11px;
+        width: 100%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
