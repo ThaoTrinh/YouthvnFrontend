@@ -14,8 +14,8 @@ class DropdownLeft extends React.Component {
     
     return (
        <div className="dropdown">
-            <button className="dropdown-toggle" id="menu1" data-toggle="dropdown"><i className="fa fa-bars"></i> List
-             <span className="caret"></span></button>
+            <button className="dropdown-toggle" id="menu1" data-toggle="dropdown"><i className="fa fa-bars"></i>
+             </button>
 
             <ul className="dropdown-menu" role="menu" aria-labelledby="menu1">
               <li className="a1">

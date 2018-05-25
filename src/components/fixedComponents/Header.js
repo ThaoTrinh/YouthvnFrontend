@@ -33,14 +33,16 @@ class Header extends React.Component {
     
     return (
       <nav className= {this.state.hidden?"navbar-hidden navbar-inverse navbar-fixed-top":"navbar navbar-inverse navbar-fixed-top"} >
-        <div className="container-fluid">
+        
           <div className="navbar-header">
             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target={this.state.hidden?"#myNavbar-hidden":"#myNavbar"}>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-
+             
+             <a className="navbar-brand visible-lg" href="/"><img src="/logo/youthvn.png"/></a>
+             
             
           </div>
       
@@ -59,7 +61,7 @@ class Header extends React.Component {
            </ul>
      
           </div>
-        </div>
+        
       </nav>
     )
   }

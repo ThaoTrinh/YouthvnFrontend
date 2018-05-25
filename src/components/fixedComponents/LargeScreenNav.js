@@ -16,7 +16,6 @@ class LargeScreenNav extends React.Component {
        <ul className="nav navbar-nav hidden-xs hidden-sm hidden-md">
               <li className="a1">
                 <Link to="/cvs"> Candidates List <span><i className="fa fa-caret-down"></i></span></Link>
-                
               </li>
               <li className="a ">
                 <Link to="/organizations"> Employers List<span><i className="fa fa-caret-down"></i></span></Link>
