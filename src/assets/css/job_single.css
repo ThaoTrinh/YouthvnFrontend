@@ -1,8 +1,11 @@
+li{
+    list-style-type: none;
+}
 .tags-jobs-single {
     float: left;
     width: 100%;
     margin: 0;
-        margin-top: 0px;
+    margin-top: 0px;
     margin-top: 20px;
 }
 .tags-jobs-single > li {
@@ -14,6 +17,7 @@
     color: #888888;
     margin-right: 30px;
     width: 100%;
+    list-style-type: none;
 }
 .tags-jobs-single > li i {
     float: left;
@@ -41,7 +45,7 @@
     font-size: 25px;
     font-weight: bold;
     margin: 0;
-        margin-right: 0px;
+    margin-right: 0px;
     margin-right: 20px;
 }
 .job-title2 span.job-is {
@@ -153,7 +157,7 @@
 }
 
 .skill-job {
-     font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans",sans-serif;
     font-size: 12px;
     border: 0px;
     border-radius: 2px;

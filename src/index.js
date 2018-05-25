@@ -90,7 +90,6 @@ import "./assets/css/item.css"
 import "./assets/css/sidenav.css"
 import "./assets/css/magic-check.css"
 import "./assets/css/footer.css"
-import "./assets/css/search.css"
 import "./assets/css/category.css"
 import "./assets/css/event.css"
 import "./assets/css/sweetalert.css"
@@ -160,8 +159,6 @@ const routes = (
       <Route path="/user/organization/update/:id" name="Cập nhật tổ chức" component={UpdateOrganization}/>
       <Route path="/user/organization/create" name="Tạo tổ chức" component={CreateOrganization}/>
       <Route path="/user/organization/list" name="Tổ chức của tôi" component={ListOrganization} />
-      
-
       <Route path="/user/recruitment/create" name="Đăng tin tuyển dụng" component={RecruitmentForm}/>
       <Route path="/user/recruitment/list" name="Tin tuyển dụng của tôi" component={ListRecruitment}/>
       <Route path="/user/recruitment/update/:id" name="Cập nhật tin tuyển dụng" component={UpdateRecruitment}/>

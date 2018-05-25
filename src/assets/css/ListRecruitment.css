@@ -94,8 +94,9 @@ color: #fff;
     position: relative;
     }
 .recruit-item .logo img{
-  width: 98px;
-  height: 51px;
+  width: 94px;
+  height: 52.875px;
+  margin-left: 10px;
 }
 
 .recruit-item .content h3,p{
