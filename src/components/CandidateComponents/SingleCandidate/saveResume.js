@@ -5,14 +5,16 @@ export default class SaveResume extends React.Component{
     return(
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+        
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-6">
             <div className="skills-btn">
               <a href="#" title="">Photoshop</a>
               <a href="#" title="">Designers</a>
               <a href="#" title="">Illustrator</a>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-xs-5 col-sm-3 col-md-3"></div>
+          <div className="col-xs-4 col-sm-3 col-md-3 col-lg-6">
             <div className="action-inner" style={{paddingTop:10}}>
               <a href="#" title=""><i className="fa fa-paper-plane"></i>Save Resume</a>
               <a href="#" title=""><i className="fa fa-envelope-o"></i>Contact David</a>

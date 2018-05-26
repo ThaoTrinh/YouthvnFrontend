@@ -89,16 +89,38 @@ color: #fff;
     padding-right: 30px;
     height: 100px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    padding-top: 10px;
-    position: relative;
+      margin-left: 20px;
+      padding-top: 10px;
     }
 .recruit-item .logo img{
-  width: 94px;
-  height: 52.875px;
-  margin-left: 10px;
+  width: 98px;
+  height: 51px;
 }
 
+@media only screen and (max-width: 768px) {
+  .recruit-item .content{
+ 
+    position:relative;
+  right:30%;
+ }
+
+ .recruit-item .content > p{
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #111111;
+  margin-bottom: 3px;
+ right: 30%
+ }
+}
+
+
+.recruit-item .content{
+ 
+   position:relative;
+ right:20px;
+}
 .recruit-item .content h3,p{
 
  font-family: "Open Sans", sans-serif;
@@ -106,7 +128,6 @@ color: #fff;
  font-size: 16px;
  color: #111111;
  margin-bottom: 3px;
- position: relative;
 
 }
 .recruit-item .content h4{
@@ -117,8 +138,8 @@ color: #fff;
 }
 
 .recruit-item .content p{
-   position:absolute;
-   bottom: 5px;
+   position:relative;
+     bottom: 20px;
 }
 .recruit-item .frame p {
    border-radius: 10px;
@@ -144,8 +165,8 @@ color: #fff;
 }
 .recruit-item .content .heart{
     font-size: 18px;
-    right:-3px;
-    position: absolute;
+    margin-left: 8px;
+  
 }
 .recruit-item .content .heart:hover{
    color:#ec2944;
@@ -156,85 +177,3 @@ color: #fff;
     z-index: 1;
     position: relative;
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
- .recruit-item{
-   width:450px;
- }
- .recruit-item .logo img{
-  width: 80px;
-  height: 40px;
-}
-.recruit-item .frame p {
-
-   width: 93px;
-   height: 27px;
-   
-}
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .recruit-item{
-    width:320px;
-  }
-  .recruit-item .content h3{
-    font-size:14px;
-    }
-.recruit-item .content h4{
-  font-size:14px;
-  }
-  .recruit-item .content .heart{
-    font-size: 10px;
-   
-  
-}
-.recruit-item .content p{
-    
-    font-size:13px;
-}
-  .recruit-item .logo img{
-   width: 50px;
-   height: 20px;
- }
- .recruit-item .frame p {
-    
-    width: 75px;
-    height: 25px;
-    
- }
- }
- @media screen and (max-width: 768px) {
-  .recruit-item{
-    width:100%;
-  }
-  
- }
- @media screen and (max-width: 480px) {
-  .recruit-item{
-    margin: 10px auto;
-  }
-  .recruit-item .content h3{
-    font-size:14px;
-    }
-.recruit-item .content h4{
-  font-size:14px;
-  }
-  .recruit-item .content .heart{
-    font-size: 10px;
-   
-  
-}
-.recruit-item .content p{
-    
-    font-size:13px;
-}
-  .recruit-item .logo img{
-   width: 60px;
-   height: 30px;
- }
- .recruit-item .frame p {
-    
-    width: 70px;
-    height: 25px;
-    font-size:11px;
- }
-  
- }

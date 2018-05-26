@@ -120,11 +120,41 @@ font-size: 15px;
   border-radius: 8px;
   height: 60px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .filter .Search-Com {
+    width: 300px;
+    margin: 0 auto;
+     border: 2px solid #e8ecec;
+    color: #8b91dd;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    padding: 14px 30px;
+    border-radius: 8px;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 16%;
+  }
+  
+
+   .filter .Team {
+
+    height: 300px;
+    margin-top: 5px;
+    position: relative;
+    bottom: 30px;
+    margin-left: 30%;
+    }
+
+}
+
 .filter .search-area{
  margin-top: 0px;
  margin-bottom: 30px;
  margin-left: 0px;
  margin-right: 0px;
+ width: 100%
 }
 .filter .search-area i{
     float: right;

@@ -55,13 +55,13 @@ export default class ListItem extends React.Component {
       return(
       <Link to="/candidate">
       <div className="emply-resume-list row">
-        <div className="emply-resume-thumb col-md-2">
+        <div className="emply-resume-thumb col-xs-2 col-sm-1 col-lg-2">
           <img src="http://placehold.it/100x86" alt="" />
-          <div className="view" style={{fontSize: 12}}> <i className="fa fa-eye"> </i>{" "+value.view} view</div>
+          <div className="view hidden-md hidden-xs hidden-sm" style={{fontSize: 12}}> <i className="fa fa-eye hidden-md hidden-xs hidden-sm"> </i>{" "+value.view} view</div>
           <div style={{fontSize: 12}}><center>{value.hour+" hours ago"}</center></div>
         </div>
         
-          <div className="emply-resume-info col-md-6">
+          <div className="emply-resume-info col-xs-6 col-md-1 col-lg-6">
             <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
             <a href="#" className="fa fa-heart-o"></a></h3>
           
@@ -74,7 +74,7 @@ export default class ListItem extends React.Component {
           </div>
           
 
-           <div className="emply-resume-info col-md-3" style={{marginLeft:50}}>
+           <div className="emply-resume-info col-xs-3 col-md-3" style={{marginLeft:50}}>
             <span className= "job-is ft">Fulltime</span>
             <span className= "job-is tp">Parttime</span>
             <span className= "job-is fl">Intership</span>

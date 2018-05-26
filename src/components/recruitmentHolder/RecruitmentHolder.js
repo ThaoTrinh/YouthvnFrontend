@@ -169,7 +169,6 @@ class RecruitmentHolder extends Component {
                          </form>
                         <div className={this.state.selectChosen?"display-select row":"hidden-select row"} >
                              <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                                 
                              </div>
                              <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 search-chosen">
                                  <div onClick={()=>{this.setLocation("Saigon")}} className="item"> Saigon</div>

@@ -1,11 +1,30 @@
+
+
+
 import React from 'react';
 import $ from 'jquery';
-export default class Project extends React.Component {
+export default class Publication extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      icondown: true
+      icondown: true,
+
+      project:[
+        {
+          year:"2000 - 2001",
+          name:"YouthVN",
+          description:"React & Nodejs",
+          
+        },
+
+        {
+          year:"2001 - 2002",
+          name:"Fintech",
+          description:"Blockchain",
+         
+        }
+      ]
     }
   }
 
@@ -20,71 +39,53 @@ export default class Project extends React.Component {
     this.setState({icondown:!this.state.icondown});
   }
 
-  render() { return (
-    <div className="edu-history-sec" id="project">
-      <div className="row">
-        <div className="col-md-11 col-sm-11 col-xs-10">
-        <h2 className="sb-title open"
-          id={this.props.groupName}
-          onClick={() => this.toggle_widget()}
-          >{this.props.name}
-          <b onClick  = {()=>{this.toggleIcon()}}className={this.state.icondown?'fa fa-sort-up':'fa fa-sort-down'}>
-          </b>
-        </h2>
+  render(){
 
-        <div className="specialism_widget">
-          <div className="edu-history">
-            <i className="fa fa-book"></i>
-            <div className="edu-hisinfo">
-              <div className="row">
-                <div className="col-md-11 col-sm-11 col-xs-10">
-                  <span style={{color:'#8b91dd'}}>Youthvn</span>
-                </div>
-                <div className="col-md-1 col-sm-1 col-xs-2">
-                  <a href="#"  className="fa fa-pencil pull-right"><i></i></a>
-                </div>
-              </div>
-              <i>30/5/2017</i>
-              <p>IT Recruitment</p>
-            </div>
+    var elm = this.state.project.map((project,key)=>{
+    return(
+      <div className="edu-history style2">
+      <i></i>
+      <div className="edu-hisinfo">
+        <div className="row">
+          <div className="col-md-11 col-sm-11 col-xs-10">
+            <span style={{color:'#8b91dd'}}>{project.year}</span>
           </div>
-          <div className="edu-history">
-            <i className="fa fa-book"></i>
-            <div className="edu-hisinfo">
-              <div className="row">
-                <div className="col-md-11 col-sm-11 col-xs-10">
-                  <span style={{color:'#8b91dd'}}>BK tutor</span>
-                </div>
-                <div className="col-md-1 col-sm-1 col-xs-2">
-                  <a href="#"  className="fa fa-pencil pull-right"><i></i></a>
-                </div>
-              </div>
-              <i>12/06/2018</i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            </div>
-          </div>
-          <div className="edu-history">
-            <i className="fa fa-book"></i>
-            <div className="edu-hisinfo">
-              <div className="row">
-                <div className="col-md-11 col-sm-11 col-xs-10">
-                  <span style={{color:'#8b91dd'}}>WEB</span>
-                </div>
-                <div className="col-md-1 col-sm-1 col-xs-2">
-                  <a href="#"  className="fa fa-pencil pull-right"><i></i></a>
-                </div>
-              </div>
-              <i>2008 - 2012</i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            </div>
+          <div className="col-md-1 col-sm-1 col-xs-2">
+            <a href="#"  className="fa fa-pencil pull-right"><i></i></a>
           </div>
         </div>
-        </div>
-        <div className="col-md-1 col-sm-1 col-xs-2">
-          <a href="#" className="fa fa-plus" style={{marginTop:10}}></a>
-        </div>
+        <span style={{fontSize:14, color: "#888888"}}> {project.name}</span>
+        <span style={{fontSize:14, color: "#888888"}}> {project.description}</span>
       </div>
     </div>
-  );
+      )
+    })
+   
+    return (
+
+     
+      <div className="edu-history-sec" id="recommendator">
+        <div className="row">
+          <div className="col-md-11 col-sm-11 col-xs-10">
+            <h2 className="sb-title open"
+              id={this.props.groupName}
+              onClick={() => this.toggle_widget()}
+              >{this.props.name}
+              <b onClick  = {()=>{this.toggleIcon()}}className={this.state.icondown?'fa fa-sort-up':'fa fa-sort-down'}>
+              </b>
+            </h2>
+            <div className="specialism_widget">
+                {elm}
+                </div>
+                </div>
+                <div className="col-md-1 col-sm-1 col-xs-2">
+                  <a href="#" className="fa fa-plus" style={{marginTop:10}}></a>
+                </div>
+              </div>
+            </div>
+      
+       
+    );
+    ;
   }
 }

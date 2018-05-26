@@ -70,7 +70,6 @@ class Checkboxes extends React.Component {
         return (
             <div className="checkbox Team" style={{marginBottom:-100}}>
                 <p>
-                    
                     {this.props.name}
                 </p>
                 

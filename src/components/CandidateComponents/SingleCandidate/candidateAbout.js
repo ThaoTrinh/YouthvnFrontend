@@ -31,19 +31,15 @@ export default class Information extends React.Component {
               name="Introduce"
               groupName="Introduce"
             />
-            <Education
-              name="Education"
-              groupName="Education"
-            />
 
             <Experience
               name="Experience"
               groupName="Experience"
             />
 
-             <Degree
-              name="Degree"
-              groupName="Degree"
+            <Project
+              name="Project"
+              groupName="Project"
             />
 
             <ListSkill
@@ -51,24 +47,36 @@ export default class Information extends React.Component {
               groupName="Skill"
             />
 
+             <Language
+              name="Language"
+              groupName="Language"
+            />
+
+            <Education
+              name="Education"
+              groupName="Education"
+            />
+
+             <Degree
+              name="Degree"
+              groupName="Degree"
+            />
+
             <Awards
               name="Awards"
               groupName="Awards"
             />
 
-            <Project
-              name="Project"
-              groupName="Project"
-            />
+            
             
             <Activities
               name="Activities"
               groupName="Activities"
             />
              
-            <Language
-              name="Language"
-              groupName="Language"
+             <Portfolio
+              name="Portfolio"
+              groupName="Portfolio"
             />
 
             <Publication
@@ -80,11 +88,7 @@ export default class Information extends React.Component {
               name="Recommendator"
               groupName="Recommendator"
             />
-            
-            <Portfolio
-              name="Portfolio"
-              groupName="Portfolio"
-            />
+             
            
           </div>
         </div>
