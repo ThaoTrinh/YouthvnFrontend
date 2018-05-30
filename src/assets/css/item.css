@@ -26,8 +26,8 @@
         border-right: 1px solid #edeff7;
         border-top: 1px solid #edeff7;
         position: relative;
-        padding-left: 30px;
-        margin-left: 10px;
+        padding-left: 10px !important;
+        margin-left: 0px !important;
     
     }
     .emply-resume-thumb img {
@@ -51,7 +51,8 @@
   
         position: relative;
         bottom: 100px;
-        margin-left: 30%;
+        width: 80% !important;
+        margin-left: 10% !important;
       }
 
       .emply-resume-info > span {
@@ -60,6 +61,11 @@
         font-size: 30%;
         color: #fb236a;
         margin-top: 2px;
+    }
+
+    .emply-resume-sec {
+        float: left;
+        width: 100%;
     }
 }
 
@@ -77,8 +83,8 @@
         border-right: 1px solid #edeff7;
         border-top: 1px solid #c4b107;
         position: relative;
-      
-        margin-left: 10px;
+      padding-left: 0px !important;
+        margin-left: 0px !important;
     
     }
     .emply-resume-thumb > img {
@@ -102,13 +108,14 @@
   
         position: relative;
         bottom: 100px;
-        margin-left: 30%;
+        width: 80% !important;
+        margin-left: 40px !important;
       }
       .emply-resume-list
       .emply-resume-info > span {
         float: left;
         width: 100%;
-   
+      
         margin-top: 2px;
     }
 }
@@ -128,7 +135,7 @@
     margin: 0;
 }
 .emply-resume-info > span {
-    float: left;
+ 
     width: 70%;
     font-size: 14px;
     color: #fb236a;
