@@ -9,16 +9,11 @@
 
 }
 .heading .titlejob {
-    
-
     margin: 0;
     font-family: "Quicksand Regular";
     font-weight: 900!important;
     margin-top: 10px;
-    
- 
-
-}
+  }
 
 
 .Ourjob .tab-panel{
@@ -205,7 +200,10 @@ color: #fff;
   .recruit-item{
     width:100%;
   }
-  
+  .recruit-item .logo img{
+    width: 60px;
+    height: 30px;
+  }
  }
  @media screen and (max-width: 480px) {
   .recruit-item{

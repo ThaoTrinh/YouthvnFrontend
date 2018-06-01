@@ -128,11 +128,8 @@ const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Main}></IndexRoute>
-      
-			<Route path="/account" component={Account}></Route>
+      <Route path="/account" component={Account}></Route>
       <Route path="/forgot-password" component={ForgotPassword}></Route>
-      
-
       <Route path="/candidate" component={CandidateSingle}/>
       <Route path="/cvs" component={CVHolder}></Route>
       //<Route path="/recruitments/:id" component={PublicRecruitment}></Route>
@@ -141,7 +138,6 @@ const routes = (
       <Route path="/recruitments/apply/:id" component={ApplyJob}></Route>
       <Route path="/organizations/:id" component={PublicOrganization}></Route>
       <Route path="/organizations" component={OrganizationPage}></Route>
-      
     </Route>
 
     <Route path="/user" name="Trang chính" component={UserApp}>
