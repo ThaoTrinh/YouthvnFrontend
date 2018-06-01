@@ -21,7 +21,6 @@ class Footer extends React.Component {
 
           <div className="column col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <h3 className="footer-title">Support</h3>
-            
             <p><i className="fa fa-info"></i><Link to="/">Điều khoản sử dụng</Link></p>
             <p><i className="fa fa-key"></i><Link to="/">Chính sách bảo mật</Link></p>
             <p><i className="fa fa-warning"></i><Link to="/feedback">Feedback</Link></p>
