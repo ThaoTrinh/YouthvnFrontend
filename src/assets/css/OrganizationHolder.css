@@ -87,7 +87,7 @@ color: #8b91dd;
 font-size: 15px;
 }
 .filter .Search-Com {
-	width: 300px;
+	width: 90%;
 	margin: 0 auto;
    border: 2px solid #e8ecec;
   color: #8b91dd;
@@ -120,11 +120,118 @@ font-size: 15px;
   border-radius: 8px;
   height: 60px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .filter .Search-Com {
+    width: 90%;
+    margin: 0 auto;
+     border: 2px solid #e8ecec;
+    color: #8b91dd;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    padding: 14px 30px;
+    border-radius: 8px;
+    height: 45px;
+    margin-top: 30px;
+   
+  }
+  
+
+   .filter .Team {
+
+    height: 300px;
+    margin-top: 5px;
+    position: relative;
+    bottom: 0px !important;
+    margin-left: 12% !important;
+    margin-bottom: -200px !important;
+
+    }
+
+    .filter .checkbox .input p{
+	
+      float: left;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      z-index:99;
+      width: 30% !important;
+      
+     
+  }
+
+  .filter .search-area i{
+    float: right;
+	position: relative;
+    bottom: 38px;
+    font-size: 24px;
+    color: #fb236a;
+    right: 40px !important;
+}
+
+.pagination{
+  position: relative;
+  right: 20% !important;
+}
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .filter .Search-Com {
+    width: 90%;
+    margin: 0 auto;
+     border: 2px solid #e8ecec;
+    color: #8b91dd;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    padding: 14px 30px;
+    border-radius: 8px;
+    height: 45px;
+    margin-top: 30px;
+   
+  }
+  
+
+   .filter .Team {
+
+    height: 300px;
+    margin-top: 5px;
+    position: relative;
+ 
+    margin-left: 10% !important;
+
+    }
+
+    .filter .checkbox .input p{
+	
+      float: left;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      z-index:99;
+      width: 30% !important;
+     
+     
+  }
+
+  .pagination{
+    position: relative;
+    right: 20% !important;
+  }
+
+  .filter .checkbox p label {
+    padding-left: 0px !important;
+}
+  
+}
+
 .filter .search-area{
  margin-top: 0px;
  margin-bottom: 30px;
  margin-left: 0px;
  margin-right: 0px;
+ width: 100%
 }
 .filter .search-area i{
     float: right;

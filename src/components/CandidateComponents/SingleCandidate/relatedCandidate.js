@@ -55,7 +55,7 @@ export default class RelatedCandidate extends React.Component {
       return(
       <Link to="/candidate">
       <div className="emply-resume-list row">        
-          <div className="emply-resume-info col-md-8">
+          <div className="emply-resume-info col-xs-8 col-md-8">
             <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
             <a href="#" className="fa fa-heart-o"></a></h3>
           
@@ -68,7 +68,7 @@ export default class RelatedCandidate extends React.Component {
           </div>
           
 
-           <div className="emply-resume-info col-md-4">
+           <div className="emply-resume-info col-xs-3 col-md-4">
             <span className= "job-is ft">Fulltime</span>
             <span className= "job-is tp">Parttime</span>
             <span className= "job-is fl">Intership</span>

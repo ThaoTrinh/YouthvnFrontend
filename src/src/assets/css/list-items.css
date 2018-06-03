@@ -1,0 +1,174 @@
+
+
+.emply-resume-thumb {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+}
+.emply-resume-thumb img {
+    float: left;
+    width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+.emply-resume-info {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+.emply-resume-sec > h3 {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 2px solid #edeff7;
+    font-size: 20px;
+    color: #202020;
+    font-weight: bold;
+    margin: 0;
+        margin-top: 0px;
+    margin-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: 40px;
+}
+.emply-resume-sec {
+    float: left;
+    width: 100%;
+}
+.emply-resume-list {
+    float: left;
+    width: 150%;
+    display: table;
+    padding: 30px 0;
+    border-radius: 0px;
+    border: 0.5px solid #edeff7;
+    position: relative;
+    padding-left: 30px;
+    margin-left: 50px;
+}
+
+.emply-resume-info > h3 {
+    float: left;
+    width: 100%;
+    font-family: Open Sans;
+    font-size: 16px;
+    color: #202020;
+    margin: 0;
+}
+.emply-resume-info > span {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    color: #202020;
+    margin-top: 7px;
+}
+.emply-resume-info > span i {
+    font-style: normal;
+    color: #8b91dd;
+}
+.emply-resume-info > P {
+    float: left;
+    width: 100%;
+    margin: 0;
+        margin-top: 0px;
+    margin-top: 0px;
+    font-size: 13px;
+    font-family: Open Sans;
+    margin-top: 0;
+    line-height: 28px;
+}
+.emply-resume-info > P i {
+    float: none;
+    line-height: 13px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+    font-size: 17px;
+    color: #999999;
+}
+
+.emply-list.box {
+    border: 2px solid #e6e7ef;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+
+    float: left;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.emply-list.box .emply-list-thumb {
+    float: left;
+    width: 100%;
+}
+.emply-list.box .emply-list-thumb a {
+    float: none;
+    width: auto;
+    display: inline-block;
+}
+.emply-list.box .emply-list-thumb a img {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+
+    border: 2px solid #e8ecec;
+}
+.emply-list.box .emply-list-info {
+    float: left;
+    width: 100%;
+    padding: 0;
+      padding-top: 0px;
+    padding-top: 12px;
+    position: static;
+}
+.emply-list.box .emply-pstn {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+.emply-list-info > h6 i {
+    float: none;
+    line-height: 13px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+.emply-list.box:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+
+    border-color: #8b91dd;
+}
+
+.emply-resume-list:hover {
+    border-color: #ffffff;
+    
+    -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    -o-box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+
+    margin-top: 0px;
+    position: relative;
+    z-index: 12;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+}

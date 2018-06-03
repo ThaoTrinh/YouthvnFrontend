@@ -12,8 +12,8 @@ export default class SideNav extends React.Component{
     return(
       
         
-          <div className="filter">
-           <div className="search-area">
+          /*<div className="filter">
+            <div className="search-area">
             <input type="text" name="" id="input" className="form-control Search-Com" placeholder="Search keywords"/>
             <i className="fa fa-search"></i>
           </div>
@@ -32,8 +32,14 @@ export default class SideNav extends React.Component{
                 groupName={'Degree'}
                 name={'Degree'}
               />
+            </div>*/
+          <div className="filter">
+            <div>
+              <Search3
+                placeholder={"Search Keywords"}
+                icon={"fa fa-search"}
+              />
             </div>
-           
              
            <div>
               <CheckBox3
