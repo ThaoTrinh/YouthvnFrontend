@@ -83,27 +83,25 @@ export default class Recruitments extends React.Component {
       return(
 
       <Link to="/job">
-      <div className="emply-resume-list row">
-        <div className="emply-resume-thumb col-md-2">
+       <div className="emply-resume-list row">
+        <div className="emply-resume-thumb col-xs-2 col-sm-2 col-md-2 col-lg-2">
           <img src={value.logoCompany} alt="" />
-          
         </div>
         
-          <div className="emply-resume-info col-md-6">
+          <div className="emply-resume-info col-xs-7 col-sm-7 col-md-7 col-lg-7">
             <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
             <a href="#" className="fa fa-heart-o"></a></h3>
           
-           
-            <span><i>{value.company}</i></span>
-            <span>open {value.position} position</span>
+            <span>{value.company}</span><br/>
+            <span><i>{value.position +' position'}</i></span><br/>
             <span className="location" style={{color: '#666666' , fontSize: 13}}><i className="fa fa-map-marker"></i>{value.location}</span>
             
           </div>
           
 
-           <div className="emply-resume-info col-md-2" style={{marginLeft:55}}>
-           <div style={{marginLeft:10,color:'#212121'}}><i className="fa fa-dollar"></i>{value.salary}</div>
-            {arrType}
+           <div className="emply-resume-info col-xs-3 col-sm-3 col-md-3 col-lg-3" >
+           <span className="job-is ft" style={{color:'red'}}><i className="fa fa-dollar" style={{color:'red'}}></i>{value.salary}</span>
+           {arrType}
           </div>
           
               

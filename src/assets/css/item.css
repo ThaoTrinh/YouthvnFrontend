@@ -48,9 +48,9 @@
     }
 
     .widget.border{
-  
+        margin-top: 20% !important;
         position: relative;
-        bottom: 100px;
+        bottom: 100px !important;
         width: 80% !important;
         margin-left: 10% !important;
       }
@@ -105,7 +105,7 @@
     }
 
     .widget.border{
-  
+        margin-top: 70px !important;
         position: relative;
         bottom: 100px;
         width: 80% !important;

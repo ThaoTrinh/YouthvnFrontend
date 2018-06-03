@@ -61,25 +61,31 @@ class Organizations extends Component {
   render () {
      var elm = this.state.company.map((value,key)=>{
       return (
-             <div className="row Company-Item">
-             <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 logo">
-               <a href="#" title=""><img src="http://placehold.it/80x80" alt="" /></a>
-              <span className="view" style={{fontSize:10, marginLeft:10}}><i className="fa fa-eye"></i>{" "+ value.view +" view"} </span>
-               <p className="hour" style={{fontSize:12,marginTop:0}}>{value.hour+' hours ago'}</p>
-             </div>
-             <div className="col-xs-8 col-sm-8 col-md-8 col-lg-7 content">
-               <div className="companyName">{value.name}
-                <i className="fa fa-heart-o heart"> </i>
-               </div>
-               <p>{value.field}</p>
-               <span style={{fontSize:14}}><i className="fa fa-map-marker"></i>{value.location}</span>
-               <p className="description">{value.description}</p>
-             </div>
-             <div className="col-xs-2 col-sm-2 col-md-2 col-lg-3 empty-position">
-               <h3 style={{color:'red'}}>{value.position + ' open positions'}</h3>
-             </div>
-           </div>
+        <div className="emply-resume-list row">
+        <div className="emply-resume-thumb col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src="http://placehold.it/100x86" alt="" />
+          <div className="view hidden-md hidden-xs hidden-sm" style={{fontSize: 12}}> <i className="fa fa-eye hidden-md hidden-xs hidden-sm"> </i>{" "+value.view} view</div>
+          <div style={{fontSize: 12}}><center>{value.hour+" hours ago"}</center></div>
+        </div>
+        
+          <div className="emply-resume-info col-xs-7 col-sm-7 col-md-7 col-lg-7">
+            <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
+            <a href="#" className="fa fa-heart-o"></a></h3>
+          
+            <span>{value.field}</span><br/>
+            <span className="location" style={{color: '#666666' , fontSize: 13}}><i className="fa fa-map-marker"></i>{value.location}</span><br/>
+            <span><i>{value.description}</i></span><br/>
+            
+          </div>
+          
 
+           <div className="emply-resume-info col-xs-3 col-sm-3 col-md-3 col-lg-3" >
+            <span style={{color:'red'}}>open {value.position} position</span>
+           
+          </div>
+          
+              
+        </div>
        )
      })
     

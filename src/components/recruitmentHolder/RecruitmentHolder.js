@@ -113,9 +113,9 @@ class RecruitmentHolder extends Component {
                  <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 content">
                    <h3>{value.name}<i className="fa fa-heart-o heart"> </i></h3>
 
-                   <h4>{value.company}</h4>
+                   <h4>{value.company}</h4><br/>
 
-                   <p><i className="fa fa-map-marker location"></i>{value.location}</p>
+                   <p><i className="fa fa-map-marker location"></i>{value.location}</p><br/>
                  </div>
                 
                  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 frame ">

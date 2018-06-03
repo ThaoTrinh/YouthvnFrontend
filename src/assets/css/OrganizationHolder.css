@@ -143,8 +143,9 @@ font-size: 15px;
     height: 300px;
     margin-top: 5px;
     position: relative;
- 
+    bottom: 0px !important;
     margin-left: 12% !important;
+    margin-bottom: -200px !important;
 
     }
 
@@ -165,7 +166,7 @@ font-size: 15px;
     bottom: 38px;
     font-size: 24px;
     color: #fb236a;
-    right: 35px !important;
+    right: 40px !important;
 }
 
 .pagination{
@@ -218,6 +219,10 @@ font-size: 15px;
     position: relative;
     right: 20% !important;
   }
+
+  .filter .checkbox p label {
+    padding-left: 0px !important;
+}
   
 }
 
