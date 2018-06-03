@@ -33,35 +33,26 @@ class Header extends React.Component {
     
     return (
       <nav className= {this.state.hidden?"navbar-hidden navbar-inverse navbar-fixed-top":"navbar navbar-inverse navbar-fixed-top"} >
-        
-          <div className="navbar-header">
+        <div className="navbar-header">
             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target={this.state.hidden?"#myNavbar-hidden":"#myNavbar"}>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-             
-             <a className="navbar-brand visible-lg" href="/"><img src="/logo/youthvn.png"/></a>
-             
-            
-          </div>
-      
+            <a className="navbar-brand visible-lg" href="/"><img src="/logo/youthvn.png"/></a>
+        </div>
           <div className="collapse navbar-collapse" id={this.state.hidden?"myNavbar-hidden":"myNavbar"}>
             <ul className="nav navbar-nav visible-sm visible-md ">
             <DropdownLeft/> 
             </ul>
             <DropdownRight />      
             <LargeScreenNav />
-
-           
-           <ul className="nav navbar-nav navbar-right">
+            <ul className="nav navbar-nav navbar-right">
               <button type="button" class="btn btn-default">+ Post Job</button>
               <li><a href="#"><span className="fa fa-key" onClick ={()=>{this.props.fadeInSignUp()}}></span> Sign Up</a></li>
               <li><a href="#"><span className="fa fa-sign-in" onClick ={()=>{this.props.fadeInSignIn()}}></span> Login</a></li>
            </ul>
-     
           </div>
-        
       </nav>
     )
   }

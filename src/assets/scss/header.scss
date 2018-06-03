@@ -15,6 +15,75 @@ $font: 'Open Sans', sans-serif;
 	z-index: 11;
     top: 0;
     .hidden-sm{
+        &>li{
+        &:hover>ul{
+            opacity: 1;
+            visibility: visible;
+            border-radius: 8px !important;
+        }
+        &>ul{
+            opacity: 0;
+            visibility: hidden;
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            width: 240px;
+            padding-top: 0;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+            &::before{
+                position: absolute;
+                left: 60px;
+                top: -4px;
+                width: 20px;
+                height: 20px;
+                background: #ffffff;
+                content: "";
+                background: #ffffff;
+                
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                border-radius: 3px;
+            }
+            & li{
+                float: left;
+                width: 100%;
+                background: #ffffff;
+                margin: 0;
+                position: relative;
+                
+                transition-property: transform;
+                transition-duration: 1s;
+                
+                &>a{
+                    float: left;
+                    width: 100%;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 13px;
+                    color: #202020;
+                    padding: 9px 25px;
+                    &:hover{
+                        color:#ee2a6b;
+                        transform: translateX(20px);
+                    }
+                }
+                &:first-child{
+                    border-radius: 6px 6px 0px 0px;
+                }
+                &:last-child{
+                    border-radius: 0px 0px 6px 6px;
+                }
+               
+            }
+        }
+    }
         &> li > a{
             font-family: $font;
             margin-left: 40px;
@@ -26,6 +95,8 @@ $font: 'Open Sans', sans-serif;
             color: #fff;
             transition: transform 1s;
             height: 50px;
+          
+            
         }
         & button{
             font-family: $font;
@@ -109,6 +180,11 @@ $font: 'Open Sans', sans-serif;
             border: 2px solid #ee2a6b;
             color: #fff ;
             background-color: #ee2a6b;
+            &:hover{
+                background-color:transparent;
+                border: 2px solid #ee2a6b;
+                color:#ee2a6b;
+            }
         }
     }
 }
@@ -126,6 +202,75 @@ $font: 'Open Sans', sans-serif;
 	z-index: 11;
     top: 0;
     .hidden-sm{
+        &>li{
+            &:hover>ul{
+                opacity: 1;
+                visibility: visible;
+                border-radius: 8px !important;
+            }
+            &>ul{
+                opacity: 1;
+                visibility: hidden;
+                margin: 0;
+                position: absolute;
+                top: 100%;
+                width: 240px;
+                padding-top: 0;
+                box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+                &::before{
+                    position: absolute;
+                    left: 60px;
+                    top: -4px;
+                    width: 20px;
+                    height: 20px;
+                    background: #ffffff;
+                    content: "";
+                    background: #ffffff;
+                    
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -ms-border-radius: 3px;
+                    -o-border-radius: 3px;
+                    border-radius: 3px;
+                }
+                & li{
+                    float: left;
+                    width: 100%;
+                    background: #ffffff;
+                    margin: 0;
+                    position: relative;
+                    
+                    transition-property: transform;
+                    transition-duration: 1s;
+                    
+                    &>a{
+                        float: left;
+                        width: 100%;
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 13px;
+                        color: #202020;
+                        padding: 9px 25px;
+                        &:hover{
+                            color:#ee2a6b;
+                            transform: translateX(20px);
+                        }
+                    }
+                    &:first-child{
+                        border-radius: 6px 6px 0px 0px;
+                    }
+                    &:last-child{
+                        border-radius: 0px 0px 6px 6px;
+                    }
+                   
+                }
+            }
+        }
         & >li{
             &>a{
                 font-family: $font;
@@ -137,6 +282,10 @@ $font: 'Open Sans', sans-serif;
                 padding-bottom: 15px;
                 color: black;
                 height: 50px;
+               
+                &:hover{
+                    color: #ee2a6b;
+                }
             }
         }
       
@@ -165,6 +314,9 @@ $font: 'Open Sans', sans-serif;
             opacity: 0.8;
             & a{
                 color: #fff;
+                &:hover{
+                    color: #0b1b46;
+                }
             }
         }
     }
@@ -196,6 +348,10 @@ $font: 'Open Sans', sans-serif;
             border: 2px solid #ee2a6b;
             color: #ee2a6b;
             background: transparent;
+            &:hover{
+                background-color:#ee2a6b;
+                color:#fff;
+            }
         }
         &>li{
             &>a{
@@ -203,6 +359,9 @@ $font: 'Open Sans', sans-serif;
                 font-family: $font;
                 color: black;
                 font-size: 14px;
+                &:hover{
+                    color:#ee2a6b;
+                }
             }
         }
 
