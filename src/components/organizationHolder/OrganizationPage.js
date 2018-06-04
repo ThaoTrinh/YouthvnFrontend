@@ -4,7 +4,7 @@ import request from 'superagent';
 import async from 'async';
 import Organizations from './Organization';
 import Pagination from '../filter/pagination';
-import Organizationfilter from './Organizationfilter.js'
+import Organizationfilter from './OrganizationFilter.js'
 
 class OrganizationPage extends Component {
 

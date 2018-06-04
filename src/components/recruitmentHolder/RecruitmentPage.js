@@ -6,7 +6,7 @@ import request from 'superagent';
 import async from 'async';
 import ListRecruitments from './ListRecruitment';
 import Pagination from '../filter/pagination';
-import Recruitmentfilter from './Recruitmentfilter.js'
+import Recruitmentfilter from './RecruitmentFilter.js'
 
 class RecruitmentPage extends Component {
 

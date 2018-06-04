@@ -4,7 +4,7 @@ export default class Headers extends React.Component {
   render() { return (
     <header className="stick-top">
       <div className="menu-sec">
-        <div className="container">
+        <div>
           <div className="logo">
             <a href="index.html" title=""><img src="http://placehold.it/178x40" alt="" /></a>
           </div>

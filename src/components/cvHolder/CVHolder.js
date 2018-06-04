@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import _ from 'lodash';
 import request from 'superagent';
 import async from 'async';
-import CVfilter from './CVfilter';
+import CVfilter from './CVFilter';
 import ListCV from './ListCV';
 import Pagination from '../filter/pagination';
 class CVHolder extends Component {
