@@ -1,0 +1,58 @@
+.PublicOrganization{
+   
+    & .OrganizationInfo{
+       & h3{
+        font-family :"Open Sans",sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #3b1e1e;
+       }
+       & .OrganizationFigures{
+           
+           margin-top: 30px;
+          
+           & .figure-item{
+               margin-bottom: 10px;
+               height: 60px;
+               font-family :"Open Sans",sans-serif;
+               font-weight: lighter; 
+               & .figure-icon{
+                   font-size: 25px;
+                   color: #8b9ae6;
+                   &:hover{
+                       color: #ee2a6b;
+                   }
+               }
+               & .figure-body{
+                   & h5{
+                    font-size: 14px;
+                    font-family :"Open Sans",sans-serif;
+                    font-weight: lighter; 
+                    margin-bottom: 2px;
+                   }
+                   & div {
+                      color: #888; 
+                      font-size: 14px;
+                   }
+               }
+           }
+       }
+       & .OrganizationDetail{
+          
+         
+           & p{
+            font-size: 14px;
+            font-family :"Open Sans",sans-serif;
+            font-weight: lighter; 
+            color: #888;
+            }
+       }
+        
+    }
+    & .CompanyInfoCard{
+        & .job-single-head{
+            
+            margin-top: 20px;
+        }
+    }
+}

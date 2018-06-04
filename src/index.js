@@ -6,54 +6,26 @@ import {browserHistory} from 'react-router'
 import App from './components/App';
 import Main from './components/indexComponents/Main';
 
-import Account from './components/account/Account';
 
 //User
-import UserApp from './components/userCMS/UserApp';
 
-import Profile from './components/userCMS/views/account/Profile';
-import ResetPassword from './components/userCMS/views/account/ResetPassword';
-import DeleteAccount from './components/userCMS/views/account/DeleteAccount';
-import UpdateUser from './components/userCMS/views/account/UpdateUser';
-import Connection from './components/userCMS/views/account/Connection';
 
 // Organization
-import OrganizationHolder from './components/organizationHolder/OrganizationHolder';
+
 import OrganizationPage from './components/organizationHolder/OrganizationPage';
 import PublicOrganization from './components/publicOrganization/PublicOrganization';
-import CreateOrganization from './components/userCMS/views/organization/CreateOrganization';
-import UpdateOrganization from './components/userCMS/views/organization/UpdateOrganization';
-import ListOrganization from './components/userCMS/views/organization/ListOrganization';
-import OrganizationDetail from './components/userCMS/views/organization/OrganizationDetail';
-
-
 import ForgotPassword from './components/account/ForgotPassword';
-
-import PublicUserCV from './components/publicCV/PublicUserCV';
 import CVHolder from './components/cvHolder/CVHolder';
-
-import RecruitmentForm from './components/userCMS/views/recruitment/RecruitmentForm';
-import PublicRecruitment from './components/recruitment/PublicRecruitment';
-import ApplyJob from './components/recruitment/ApplyJob';
-
-//import Job from './src/job_single/Job';
-import Job from './components/recruitmentHolder/Job';
-import RecruitmentHolder from './components/recruitmentHolder/RecruitmentHolder';
+import Recruitment from './components/recruitment/Recruitment';
 import RecruitmentPage from './components/recruitmentHolder/RecruitmentPage';
-import ListRecruitment from './components/userCMS/views/recruitment/ListRecruitment';
-import UpdateRecruitment from './components/userCMS/views/recruitment/UpdateRecruitment';
-import RecommendedCVs from './components/userCMS/views/recruitment/RecommendedCVs';
-import ListApplyRecruitment from './components/userCMS/views/recruitment/ListApplyRecruitment';
-import ListCandidate from './components/userCMS/views/recruitment/ListCandidate';
-import CandidateDetail from './components/userCMS/views/recruitment/CandidateDetail';
-import RecommendedRecruitments from './components/userCMS/views/account/jobSearch/RecommendedRecruitments';
+
 //Admin
 import AdminLogin from './components/admin/login';
 import AdminApp from './components/admin/AdminApp';
 import UserManagement from './components/admin/UserManagement';
 import OrganizationManagement from './components/admin/OrganizationManagement' ;
 import Dashboard from './components/admin/Dashboard';
-import CandidateSingle from './components/CandidateComponents/SingleCandidate/candidate_single';
+import PublicCV from './components/publicCV/publicCV';
 import RecuitmentPending from './components/admin/RecuitmentPending';
 
 
@@ -128,51 +100,17 @@ const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Main}></IndexRoute>
-      <Route path="/account" component={Account}></Route>
       <Route path="/forgot-password" component={ForgotPassword}></Route>
-      <Route path="/candidate" component={CandidateSingle}/>
+      <Route path="/cvs/:id" component={PublicCV}/>
       <Route path="/cvs" component={CVHolder}></Route>
-      //<Route path="/recruitments/:id" component={PublicRecruitment}></Route>
       <Route path="/recruitments" component={RecruitmentPage}></Route>
-      <Route path="/job" component={Job}></Route>
-      <Route path="/recruitments/apply/:id" component={ApplyJob}></Route>
+      <Route path="/recruitments/:id" component={Recruitment}></Route>
       <Route path="/organizations/:id" component={PublicOrganization}></Route>
       <Route path="/organizations" component={OrganizationPage}></Route>
     </Route>
 
-    <Route path="/user" name="Trang chính" component={UserApp}>
-      <IndexRoute component={Profile}></IndexRoute>
-      <Route path="/user/account/profile" name="Hồ sơ cá nhân" component={Profile}/>
-      <Route path="/user/account/reset-password" name="Đổi mật khẩu" component={ResetPassword}/>
-      <Route path="/user/account/delete" name="Xóa tài khoản" component={DeleteAccount}/>
-      {/* <Route path="/user/account/update" name="Cập nhật thông tin chung" component={UpdateUser}/> */}
-      <Route path="/user/account/connection" name="Kết nối cộng đồng" component={Connection}/>
-      <Route path="/user/account/recommended-recruitments" name="Tin tuyển dụng phù hợp" component={RecommendedRecruitments}/>
 
-      {/* <Route path="/user/user-org" name="Tổ chức" component={Organization}/>
-      <Route path="/user/organization" name="Tạo tổ chức" component={NewOrganization}/> */}
-      <Route path="/user/organization/detail/:id" name="Chi tiết tổ chức" component={OrganizationDetail}/>
-      <Route path="/user/organization/update/:id" name="Cập nhật tổ chức" component={UpdateOrganization}/>
-      <Route path="/user/organization/create" name="Tạo tổ chức" component={CreateOrganization}/>
-      <Route path="/user/organization/list" name="Tổ chức của tôi" component={ListOrganization} />
-      <Route path="/user/recruitment/create" name="Đăng tin tuyển dụng" component={RecruitmentForm}/>
-      <Route path="/user/recruitment/list" name="Tin tuyển dụng của tôi" component={ListRecruitment}/>
-      <Route path="/user/recruitment/update/:id" name="Cập nhật tin tuyển dụng" component={UpdateRecruitment}/>
-      <Route path="/user/recruitment/recommended-cvs/:id" name="Đề xuất hồ sơ" component={RecommendedCVs}/>
-      <Route path="/user/recruitment/list-apply" name="Danh sách tin tuyển dụng đã ứng tuyển" component={ListApplyRecruitment}/>
-      <Route path="/user/recruitment/list-candidate/:id" name="Danh sách ứng tuyển viên" component={ListCandidate}/>
-      <Route path="/user/recruitment/:recruitmentId/:userId(/:cvCode)" name="Chi tiết hồ sơ ứng tuyển viên" component={CandidateDetail}/>
-      
-    </Route>
 
-    <Route path="/admin" component={AdminLogin}></Route>
-    <Route path="/admin/index" component={AdminApp}>
-      <Route path="/admin/dashboard" component={Dashboard}></Route>
-      <Route path="/admin/user" component={UserManagement}></Route>
-      <Route path="/admin/organization" component={OrganizationManagement}></Route>
-      <Route path="/admin/recuitment/pending" component={RecuitmentPending}></Route>
-      
-    </Route>
   </Router>
 )
 

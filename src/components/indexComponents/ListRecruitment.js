@@ -5,7 +5,6 @@ import request from 'superagent';
 import _ from 'lodash';
 import moment from 'moment';
 import Spinner from 'react-spinkit';
-import { SALARY_VALUES, EXPERIENCE_VALUES, SORT_TYPES } from '../recruitmentHolder/RecruitmentHolder';
 import LazyLoad from 'react-lazyload';
 
 const FULL_SIZE = 10;

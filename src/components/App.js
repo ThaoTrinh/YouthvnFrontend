@@ -4,8 +4,8 @@ import Loading from 'react-loading-bar';
 import 'react-loading-bar/dist/index.css';
 import Header from './fixedComponents/Header';
 import Footer from './fixedComponents/Footer';
-import Signin from './fixedComponents/Signin';
-import Signup from './fixedComponents/Signup';
+import Signin from './account/Signin';
+import Signup from './account/Signup';
 
 const $ = window.jQuery;
 class App extends Component {
