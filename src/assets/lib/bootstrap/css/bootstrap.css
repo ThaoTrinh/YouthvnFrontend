@@ -1592,6 +1592,13 @@ pre code {
     width: 750px;
   }
 }
+
+@media (max-width: 920px) {
+  .container {
+    width: 0px;
+  }
+}
+
 @media (min-width: 992px) {
   .container {
     width: 970px;

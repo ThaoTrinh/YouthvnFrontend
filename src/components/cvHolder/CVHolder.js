@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import ListCV from './ListCV';
-import CVFilter from './CVFilter';
 import _ from 'lodash';
 import request from 'superagent';
 import async from 'async';
-import SideNav from '../CandidateComponents/SingleCandidate/sidenav';
-import ListItem from '../CandidateComponents/SingleCandidate/ListItem';
-import Pagination from '../CandidateComponents/SingleCandidate/pagination';
+import CVfilter from './CVfilter';
+import ListCV from './ListCV';
+import Pagination from '../filter/pagination';
 class CVHolder extends Component {
   constructor(props) {
     super(props);
@@ -19,27 +17,26 @@ class CVHolder extends Component {
     return (
      <section>
         <div className="Panel">
-
         </div>
         <div>
         
         <div >
           <div className="row no-gape">
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-1">
-            <img  style={{width:160}} src="/logo/panner.jpg" alt="" />    
+          <div className="hidden-md hidden-xs hidden-sm  col-lg-1">
+            <img  style={{width:'100%'}} src="/logo/panner.jpg" alt="" />    
            </div>
-           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-3" style={{marginLeft:50}}>
-              <SideNav />
+           <div className="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+              <CVfilter />
            </div>
-           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-6" style={{marginRight:10}}>
-              <ListItem />
+           <div className="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+              <ListCV />
 
-              <div >
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <Pagination/>
               </div>
            </div>
-           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-1">
-            <img  style={{width:160}} src="/logo/panner.jpg" alt="" />   
+           <div className="hidden-md hidden-xs hidden-sm col-lg-1">
+            <img  style={{width:'100%'}} src="/logo/panner.jpg" alt="" />   
            </div>
           </div>
         </div>

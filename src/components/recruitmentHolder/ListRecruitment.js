@@ -1,150 +1,122 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Link } from 'react-router';
-import ListItem from '../share/ListItem';
-import Pagination from "react-js-pagination/dist/Pagination";
-import { PAGE_SIZE, MODES, SORT_TYPES } from './RecruitmentHolder';
-import _ from 'lodash';
-import moment from 'moment';
-import Spinner from 'react-spinkit';
-class ListRecruitment extends Component {
-  constructor(props) {
+
+// import _ from 'lodash';
+
+
+export default class ListRecruitments extends React.Component {
+  constructor(props){
     super(props);
-    this.state = {
-      activePage: 1,
-    }
-  }
-  renderRecruitments(propRecruitments) {
-    try {
-      if (_.isEmpty(propRecruitments)) {
-        return (
-          <div className="row">
-            <div className="col-sm-12 spinner-container">
-              <Spinner name="three-bounce" color="#14b1bb" className="spinner-center"/>
-            </div>
-          </div>
-        )
-      }
-      const recruitments = propRecruitments.map(
-        elem => {
-          var organizationName = '', organizationSlogan = '', organizationLogo = '', arr = [];
-          if (!elem._organization) {}
-          else if (!elem._organization.id) {
-            organizationName = elem._organization.name;
-          }
-          else if (elem._organization.id) {
-            organizationName = elem._organization.id.name;
-            organizationSlogan = elem._organization.id.slogan;
-            try {
-              arr = elem._organization.id._logo.url.split('/');
-              organizationLogo =  '/' + [arr[arr.length-2], arr[arr.length-1]].join('/');  
-            } catch (error) {}            
-          }
-          return (<ListItem
-            key={elem._id} 
-            linkTo={`/recruitments/${elem._id}`}
-            imageUrl={organizationLogo}
-            name={elem.title}
-            sub1={organizationName}
-            sub2={organizationSlogan}
-            col1_footer={`Cập nhật ${moment(new Date(elem.updatedDate), "YYYYMMDD").fromNow()}`}
-            sub4={(elem.view)? elem.view.total: 0}
-            col2_topleft={`${elem.location.streetNumber} ${elem.location.ward} ${elem.location.district} ${elem.location.province}`}
-            col2_topright=""
-            col2_btmleft={elem.requirement.jobType}
-            col2_btmright=""
-            col2_footer={elem.requirement.positions}
-            col3_top={`Lương: ${elem.requirement.minSalary} - ${elem.requirement.maxSalary} triệu`}
-            tags={elem.requirement.skills}
-          />)
+    this.state={
+      recruitments: [
+        {
+          name: 'Web Developer',
+          company: 'KMS company' ,
+          logoCompany:"/logo/KMS.png" ,
+          location: "Sai Gon" ,
+          salary:1000,
+          position: 10,
+          type:['Fulltime']
+        },
+       {
+          name: 'Mobile Developer',
+          company:"VNG Inc." ,
+          logoCompany: "/logo/VNG.png" ,
+          location:"Sai Gon" ,
+          salary:2000,
+          position: 10,
+          type:['Fulltime', 'Parttime']
+        },
+       {
+          name: "PHP dev",
+          company:"Facebook Vietnam",
+          logoCompany: "/logo/facebook.png",
+          location: "Singapore",
+          salary:4000,
+          position: 10,
+          type:['Fulltime', 'Parttime']
+        },
+        {
+          name:"Data Science" ,
+          company:" Google Asia",
+          logoCompany: "/logo/google.png",
+          location: "Da Nang",
+          salary:6000,
+          position: 10,
+          type:['Internship', 'Parttime']
+        },
+        {
+          name:" Game Developer Unity" ,
+          company: "Gameloft",
+          logoCompany:"/logo/Gameloft.png" ,
+          location:" Bangkok" ,
+          salary:9000,
+          position: 10,
+          type:['Fulltime', 'Parttime']
+        },
+        {
+          name:"Optimize search engine" ,
+          company: "Gameloft",
+          logoCompany:"/logo/amazon.png" ,
+          location:"Ha Noi" ,
+          salary:1000,
+          position: 10,
+          type:['Fulltime', 'Parttime']
         }
-      )
-      return (
-        <div className="list-item">
-          {recruitments}
-        </div>
-      )
-    } catch (error) {
-      console.log(error);
-      return <div>404 Not Found.</div>
-    } 
-  }
-  renderPagination(propRecruitments, total) {
-    try {
-      if (_.isEmpty(propRecruitments)) {
-        return null;
-      }
-      return (
-        <div className="row recruitments-pagination">
-          <div className="col-sm-12 text-center">
-            <Pagination
-              activePage={this.state.activePage}
-              itemsCountPerPage={PAGE_SIZE}
-              totalItemsCount={total}
-              pageRangeDisplayed={5}
-              onChange={(e) => this.handlePageChange(e)}
-            />
-          </div>
-      </div>
-      )
-    } catch (error) {
-      console.log(error);
-      return null;
+ 
+       ]
     }
   }
-  renderListHeader(propRecruitments, total, displayStr, mode, getSortOption, sortMode) {
-    try {
-      // if (_.isEmpty(propRecruitments)) {
-      //   return null;
-      // }
-      return (
-        <div className="row" style={{marginBottom: 10}}>
-          <div className="col-sm-3" style={{fontSize: 16}}>
-            Có {total} kết quả.
-          </div>
-          <div className="col-sm-6 text-center">
-            {
-              (mode === MODES.SEARCH)
-              ? <span style={{fontSize: 16}}>Lọc kết quả cho <strong>{displayStr}</strong></span>
-              : null
-            }
-          </div>
-          <div className="col-sm-3">
-            <Link
-              className="float-right"
-              style={{marginLeft: 5}}
-              onClick={(e) => window.location.reload()}>
-              Xem tất cả
-            </Link>
-            <select className="float-right" value={sortMode} onChange={(e) => getSortOption(e.target.value)}>
-              <option value={SORT_TYPES.NEWEST}>Mới nhất</option>
-              <option value={SORT_TYPES.TRENDING}>Phổ biến</option>
-              {(mode=== MODES.SEARCH)? <option value={SORT_TYPES.RELEVANT}>Liên quan</option>: null}
-            </select>
-          </div>
+  render() {
+    var elm = this.state.recruitments.map((value,key)=>{
+
+      var arrType=[];
+      for (let i=0;i<value.type.length;i++){
+        if (value.type[i]=='Fulltime')
+          arrType.push(<span className="job-is ft">{value.type[i]}</span>);
+        else if (value.type[i]=='Parttime')
+          {arrType.push(<span className="job-is tp">{value.type[i]}</span>);}
+        else 
+          arrType.push(<span className="job-is fl">{value.type[i]}</span>);
+        }
+
+      return(
+
+      <Link to="/recruitments/0001">
+       <div className="emply-resume-list row">
+        <div className="emply-resume-thumb col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src={value.logoCompany} alt="" />
         </div>
+        
+          <div className="emply-resume-info col-xs-7 col-sm-7 col-md-7 col-lg-7">
+            <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
+            <a href="#" className="fa fa-heart-o"></a></h3>
+          
+            <span>{value.company}</span><br/>
+            <span><i>{value.position +' position'}</i></span><br/>
+            <span className="location" style={{color: '#666666' , fontSize: 13}}><i className="fa fa-map-marker"></i>{value.location}</span>
+            
+          </div>
+          
+
+           <div className="emply-resume-info col-xs-3 col-sm-3 col-md-3 col-lg-3" >
+           <span className="job-is ft" style={{color:'red'}}><i className="fa fa-dollar" style={{color:'red'}}></i>{value.salary}</span>
+           {arrType}
+          </div>
+          
+              
+        </div>
+      </Link>
       )
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
-  }
-  handlePageChange(pageNumber) {
-    
-    this.props.selectFuctionBasedOnMode(pageNumber - 1, PAGE_SIZE);
-    this.setState({ activePage: pageNumber }, () => window.scrollTo(0, 0));
-  }
-  render () {
-    moment.locale('vi'); 
-    const {recruitments, total, displayStr, mode, getSortOption, sortMode} = this.props;
+    })
     return (
-      <div className="col-sm-8">
-        <h2>Tin tuyển dụng</h2>
-        {this.renderListHeader(recruitments, total, displayStr, mode, getSortOption, sortMode)}
-        {this.renderRecruitments(recruitments)}
-        {this.renderPagination(recruitments, total)}
+      <div className="candidate-item">
+        <div className="padding-left">
+          <div className="emply-resume-sec">
+           {elm}
+          </div>
+        </div>
       </div>
-    )
+    );
   }
 }
-
-export default ListRecruitment

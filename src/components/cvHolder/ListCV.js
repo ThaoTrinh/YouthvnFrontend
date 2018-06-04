@@ -1,143 +1,97 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Link } from 'react-router';
-import ListItem from '../share/ListItem';
-import Pagination from "react-js-pagination/dist/Pagination";
-import { PAGE_SIZE, MODES, SORT_TYPES } from './CVHolder';
-import _ from 'lodash';
-import moment from 'moment';
-import Spinner from 'react-spinkit';
-class ListCV extends Component {
-  constructor(props) {
+// import _ from 'lodash';
+
+
+export default class ListCV extends React.Component {
+  constructor(props){
     super(props);
-    this.state = {
-      activePage: 1,
+    this.state={
+      candidate:[
+       {
+         name:"Michael Jackson",
+         position:"IT project manager",
+         view:9,
+         hour:3,
+         year:2,
+         location:"SaiGon",
+         skill:['Photoshop','C++','Java']
+         
+
+       },
+         {
+         name:"Adam Levine",
+         position:"Marketing Manager",
+         view:3,
+         hour:5,
+         year:1,
+         location:"HaNoi",
+         skill:['SEO','Illustrator']
+         
+
+       },
+         {
+         name:"Adam Khoo",
+         position:"Sale Manager",
+         view:8,
+         hour:1,
+         year:4,
+         location:"SaiGon",
+         skill:['Photoshop','C++','Java']
+         
+
+       }
+
+      ]
     }
   }
-  renderCVs(propCVs) {
-    try {
-      if (_.isEmpty(propCVs)) {
-        return (
-          <div className="row">
-            <div className="col-sm-12 spinner-container">
-              <Spinner name="three-bounce" color="#14b1bb" className="spinner-center"/>
-            </div>
-          </div>
-        )
-      }
-      console.log(propCVs);
-      const cvs = propCVs.map(
-        elem => {
-          const languages = elem._languages.map(lang => lang.language_name);
-          const skills = _.flattenDeep(elem._skills.map(skill => skill.skill_name));
-          var arr=[], avatar = '';
-          try {
-            arr = elem._avatar.url.split('/');  
-            avatar =  '/' + [arr[arr.length-2], arr[arr.length-1]].join('/');
-          } catch (error) {}
-          return (<ListItem
-            key={elem._id} 
-            linkTo={`/cvs/${elem._id}`}
-            imageUrl={avatar}
-            name={`${elem.lastname} ${elem.firstname}`}
-            sub1={(elem.fieldName)? elem.fieldName.viName: ""}
-            sub2={(elem.fieldName)? elem.fieldName.engName: ""} // jobField
-            sub4={(elem.view)? elem.view.total: 0}
-            sub5={(elem.jobSearch.isOn)? 'Đang tìm việc': ''}
-            col1_footer={`Cập nhật ${moment(new Date(elem.updatedDate), "YYYYMMDD").fromNow()}`}
-            col2_topleft={`${elem.address.streetNo} ${elem.address.ward} ${elem.address.district} ${elem.address.province}`}
-            col2_topright=""
-            col2_btmleft={elem.positions} // array
-            col2_btmright=""
-            col2_footer={languages} // array
-            col3_top={`Có ${elem.experience} năm kinh nghiệm`}
-            tags={skills} //array
-          />)
+  render() {
+    var elm = this.state.candidate.map((value,key)=>{
+      var arrSkill=[];
+      for (let i=0;i<value.skill.length;i++){
+         arrSkill.push(<span className="skill-item">{value.skill[i]}</span>);
         }
-      )
-      return (
-        <div className="list-item">
-          {cvs}
+      return(
+      <Link to="/cvs/0001">
+      <div className="emply-resume-list row">
+        <div className="emply-resume-thumb col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src="http://placehold.it/100x86" alt="" />
+          <div className="view hidden-md hidden-xs hidden-sm" style={{fontSize: 12}}> <i className="fa fa-eye hidden-md hidden-xs hidden-sm"> </i>{" "+value.view} view</div>
+          <div style={{fontSize: 12}}><center>{value.hour+" hours ago"}</center></div>
         </div>
-      )
-    } catch (error) {
-      console.log(error);
-      return <div>404 Not Found.</div>
-    } 
-  }
-  renderPagination(propCVs, total) {
-    try {
-      if (_.isEmpty(propCVs)) {
-        return null;
-      }
-      return (
-        <div className="row recruitments-pagination">
-          <div className="col-sm-12 text-center">
-            <Pagination
-              activePage={this.state.activePage}
-              itemsCountPerPage={PAGE_SIZE}
-              totalItemsCount={total}
-              pageRangeDisplayed={5}
-              onChange={(e) => this.handlePageChange(e)}
-            />
+        
+          <div className="emply-resume-info col-xs-7 col-sm-7 col-md-7 col-lg-7">
+            <h3><a href="#" title="" style={{color: "#212121", fontWeight: "bold"}}>{value.name}</a>
+            <a href="#" className="fa fa-heart-o"></a></h3>
+          
+            <span>{value.position}</span><br/>
+            <span><i>{value.year +' year experience'}</i></span><br/>
+            <span className="location" style={{color: '#666666' , fontSize: 13}}><i className="fa fa-map-marker"></i>{value.location}</span>
+            <p className="skill">Skill: {
+              arrSkill
+            }</p>
           </div>
-      </div>
-      )
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
-  }
-  renderListHeader(propCVs, total, displayStr, mode, getSortOption, sortMode) {
-    try {
-      return (
-        <div className="row" style={{marginBottom: 10}}>
-          <div className="col-sm-3" style={{fontSize: 16}}>
-            Có {total} kết quả.
+          
+
+           <div className="emply-resume-info col-xs-3 col-sm-3 col-md-3 col-lg-3" >
+            <span className= "job-is ft">Fulltime</span>
+            <span className= "job-is tp">Parttime</span>
+            <span className= "job-is fl">Intership</span>
           </div>
-          <div className="col-sm-6 text-center">
-            {
-              (mode === MODES.SEARCH)
-              ? <span style={{fontSize: 16}}>Lọc kết quả cho <strong>{displayStr}</strong></span>
-              : null
-            }
-          </div>
-          <div className="col-sm-3">
-            <Link
-              className="float-right"
-              style={{marginLeft: 5}}
-              onClick={(e) => window.location.reload()}>
-              Xem tất cả
-            </Link>
-            <select className="float-right" value={sortMode} onChange={(e) => getSortOption(e.target.value)}>
-              <option value={SORT_TYPES.NEWEST}>Mới nhất</option>
-              <option value={SORT_TYPES.TRENDING}>Phổ biến</option>
-            {(mode=== MODES.SEARCH)? <option value={SORT_TYPES.RELEVANT}>Liên quan</option>: null}
-          </select>
-          </div>
+          
+              
         </div>
+      </Link>
       )
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
-  }
-  handlePageChange(pageNumber) {
-    console.log(`active page is ${pageNumber}`);
-    this.props.selectFuctionBasedOnMode(pageNumber - 1, PAGE_SIZE);
-    this.setState({ activePage: pageNumber }, () => window.scrollTo(0, 0));
-  }
-  render () {
-    moment.locale('vi'); 
-    const {cvs, total, displayStr, mode, sortMode, getSortOption} = this.props;
+    })
     return (
-      <div className="col-sm-8">
-        <h2>Hồ sơ người dùng</h2>
-        {this.renderListHeader(cvs, total, displayStr, mode, getSortOption, sortMode)}
-        {this.renderCVs(cvs)}
-        {this.renderPagination(cvs, total)}
+      <div className="candidate-item">
+        <div className="padding-left">
+          <div className="emply-resume-sec">
+           {elm}
+          </div>
+        </div>
       </div>
-    )
+    );
   }
 }
-
-export default ListCV

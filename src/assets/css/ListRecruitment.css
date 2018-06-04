@@ -84,16 +84,38 @@ color: #fff;
     padding-right: 30px;
     height: 100px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    padding-top: 10px;
-    position: relative;
+      margin-left: 20px;
+      padding-top: 10px;
     }
 .recruit-item .logo img{
-  width: 94px;
-  height: 52.875px;
-  margin-left: 10px;
+  width: 98px;
+  height: 51px;
 }
 
+@media only screen and (max-width: 768px) {
+  .recruit-item .content{
+ 
+    position:relative;
+  right:30%;
+ }
+
+ .recruit-item .content > p{
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #111111;
+  margin-bottom: 3px;
+ right: 30%
+ }
+}
+
+
+.recruit-item .content{
+ 
+   position:relative;
+ right:20px;
+}
 .recruit-item .content h3,p{
 
  font-family: "Open Sans", sans-serif;
@@ -101,7 +123,6 @@ color: #fff;
  font-size: 16px;
  color: #111111;
  margin-bottom: 3px;
- position: relative;
 
 }
 .recruit-item .content h4{
@@ -112,8 +133,8 @@ color: #fff;
 }
 
 .recruit-item .content p{
-   position:absolute;
-   bottom: 5px;
+   position:relative;
+     bottom: 20px;
 }
 .recruit-item .frame p {
    border-radius: 10px;
@@ -139,8 +160,8 @@ color: #fff;
 }
 .recruit-item .content .heart{
     font-size: 18px;
-    right:-3px;
-    position: absolute;
+    margin-left: 8px;
+  
 }
 .recruit-item .content .heart:hover{
    color:#ec2944;
