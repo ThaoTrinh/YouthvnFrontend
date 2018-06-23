@@ -8,7 +8,7 @@ import Main from './components/indexComponents/Main';
 
 
 //User
-
+import UserApp from './components/userCMS/UserApp';
 
 // Organization
 
@@ -108,7 +108,28 @@ const routes = (
       <Route path="/organizations/:id" component={PublicOrganization}></Route>
       <Route path="/organizations" component={OrganizationPage}></Route>
     </Route>
+    {/* <Route path="/user" name="Trang chính" component={UserApp}>
+        <IndexRoute component={Profile}></IndexRoute>
+        <Route path="/user/account/profile" name="Hồ sơ cá nhân" component={Profile}/>
+        <Route path="/user/account/reset-password" name="Đổi mật khẩu" component={ResetPassword}/>
+        <Route path="/user/account/delete" name="Xóa tài khoản" component={DeleteAccount}/>
+        <Route path="/user/account/connection" name="Kết nối cộng đồng" component={Connection}/>
+        <Route path="/user/account/recommended-recruitments" name="Tin tuyển dụng phù hợp" component={RecommendedRecruitments}/>
+        <Route path="/user/organization/detail/:id" name="Chi tiết tổ chức" component={OrganizationDetail}/>
+        <Route path="/user/organization/update/:id" name="Cập nhật tổ chức" component={UpdateOrganization}/>
+        <Route path="/user/organization/create" name="Tạo tổ chức" component={CreateOrganization}/>
+        <Route path="/user/organization/list" name="Tổ chức của tôi" component={ListOrganization} />
+        <Route path="/user/recruitment/create" name="Đăng tin tuyển dụng" component={RecruitmentForm}/>
+        <Route path="/user/recruitment/list" name="Tin tuyển dụng của tôi" component={ListRecruitment}/>
+        <Route path="/user/recruitment/update/:id" name="Cập nhật tin tuyển dụng" component={UpdateRecruitment}/>
+        <Route path="/user/recruitment/recommended-cvs/:id" name="Đề xuất hồ sơ" component={RecommendedCVs}/>
+        <Route path="/user/recruitment/list-apply" name="Danh sách tin tuyển dụng đã ứng tuyển" component={ListApplyRecruitment}/>
+        <Route path="/user/recruitment/list-candidate/:id" name="Danh sách ứng tuyển viên" component={ListCandidate}/>
+        <Route path="/user/recruitment/:recruitmentId/:userId(/:cvCode)" name="Chi tiết hồ sơ ứng tuyển viên" component={CandidateDetail}/>  
+    </Route> */}
+     <Route path="/user" name= "Trang chính" component={UserApp}>
 
+     </Route>
 
 
   </Router>

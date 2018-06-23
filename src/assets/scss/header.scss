@@ -29,6 +29,7 @@ $font: 'Open Sans', sans-serif;
             top: 100%;
             width: 240px;
             padding-top: 0;
+            padding-left: 0;
             box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
             &::before{
                 position: absolute;
@@ -59,8 +60,6 @@ $font: 'Open Sans', sans-serif;
                 margin: 0;
                 position: relative;
                 
-                transition-property: transform;
-                transition-duration: 1s;
                 
                 &>a{
                     float: left;
@@ -71,7 +70,10 @@ $font: 'Open Sans', sans-serif;
                     padding: 9px 25px;
                     &:hover{
                         color:#ee2a6b;
-                        transform: translateX(20px);
+                      
+                    }
+                    &:active{
+                        color: #000;
                     }
                 }
                 &:first-child{
@@ -165,6 +167,47 @@ $font: 'Open Sans', sans-serif;
     }
     .navbar-right{
         margin-right: 20px;
+        &.user{
+            position: relative;
+            right: 30px;
+            & >li{
+                color: #fff;
+                height: 50px;
+               
+            }
+            & .controllerBar.hidden{
+                display:none;
+            }
+            & .controllerBar{
+              position: absolute;
+              background-color: #fff;
+              width: 150px;
+              height: 120px;
+              top: 60px;
+              right: -15px;
+              border-radius: 3px;
+              &>div{
+                 position: relative;      
+                 
+                  height: 40px;
+                & a{
+                    position: absolute;
+                    top: 10px;
+                    color: black;
+                    left: 10px;
+                    & span{
+                        color: #ee2a6b;
+                        margin-left: 7px;
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        color: #ee2a6b; 
+                    }
+                    
+                }
+            }
+            }
+        }
         & >li > a{
             margin-top: 15px;
             font-family: $font;
@@ -216,6 +259,7 @@ $font: 'Open Sans', sans-serif;
                 top: 100%;
                 width: 240px;
                 padding-top: 0;
+                padding-left: 0;
                 box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
                 &::before{
                     position: absolute;
@@ -244,11 +288,7 @@ $font: 'Open Sans', sans-serif;
                     width: 100%;
                     background: #ffffff;
                     margin: 0;
-                    position: relative;
-                    
-                    transition-property: transform;
-                    transition-duration: 1s;
-                    
+                    position: relative;                            
                     &>a{
                         float: left;
                         width: 100%;
@@ -258,7 +298,8 @@ $font: 'Open Sans', sans-serif;
                         padding: 9px 25px;
                         &:hover{
                             color:#ee2a6b;
-                            transform: translateX(20px);
+                           
+                        
                         }
                     }
                     &:first-child{
@@ -285,6 +326,9 @@ $font: 'Open Sans', sans-serif;
                
                 &:hover{
                     color: #ee2a6b;
+                }
+                &:visited{
+                    color: black;
                 }
             }
         }
@@ -339,6 +383,49 @@ $font: 'Open Sans', sans-serif;
     }
     .navbar-right{
         margin-right: 20px;
+        &.user{
+            position: relative;
+            right: 30px;
+            & >li{
+                color: #fff;
+                height: 50px;
+               
+            }
+            & .controllerBar.hidden{
+                display:none;
+            }
+            & .controllerBar{
+              position: absolute;
+              background-color: #fff;
+              width: 150px;
+              height: 120px;
+              top: 70px;
+              right: -15px;
+              border-radius: 3px;
+              
+              &>div{
+                 position: relative;      
+                 
+                  height: 40px;
+                & a{
+                    position: absolute;
+                    top: 10px;
+                    color: black;
+                    left: 10px;
+                    & span{
+                        color: #ee2a6b;
+                        margin-left: 7px;
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        color: #ee2a6b; 
+                    }
+
+                    
+                }
+            }
+            }
+        }
         & button{
             font-family: $font;
             margin-top: 20px;
@@ -362,6 +449,9 @@ $font: 'Open Sans', sans-serif;
                 &:hover{
                     color:#ee2a6b;
                 }
+                &:visited{
+                    color: black;
+                }
             }
         }
 
@@ -373,6 +463,13 @@ $font: 'Open Sans', sans-serif;
         background-color: #0b1b46;
 		border: none;
         .navbar-right{
+           &.user{
+               &>li>a{
+                   margin-top: 0 !important;
+                   margin-left: 30px !important;
+                   
+               }
+           }
             &>li>a{
                 margin-top: 10px;
                 font-family: 'Open Sans', sans-serif;
@@ -394,6 +491,7 @@ $font: 'Open Sans', sans-serif;
                 position:relative;
             }
         }
+        
     }
 	
 }
