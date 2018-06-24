@@ -9,7 +9,9 @@ import Main from './components/indexComponents/Main';
 
 //User
 import UserApp from './components/userCMS/UserApp';
-
+import Profile from './components/userCMS/views/Account/Profile';
+import CV from './components/userCMS/views/Account/CV';
+import ChangePassword from './components/userCMS/views/Account/changePassword';
 // Organization
 
 import OrganizationPage from './components/organizationHolder/OrganizationPage';
@@ -128,7 +130,10 @@ const routes = (
         <Route path="/user/recruitment/:recruitmentId/:userId(/:cvCode)" name="Chi tiết hồ sơ ứng tuyển viên" component={CandidateDetail}/>  
     </Route> */}
      <Route path="/user" name= "Trang chính" component={UserApp}>
-
+        <IndexRoute component={Profile}></IndexRoute>
+        <Route path="/user/account/profile" component={Profile}/>
+        <Route path="/user/account/cv" component={CV}/>
+        <Route path="/user/account/changepassword" component={ChangePassword}/>
      </Route>
 
 

@@ -1,3 +1,39 @@
+.pf-title {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  color: #202020;
+  margin-bottom: 13px; }
+
+.pf-field {
+  float: left;
+  width: 100%;
+  position: relative; }
+  .pf-field > input {
+    float: left;
+    width: 80%;
+    border: 2px solid #e8ecec;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    padding: 12px 45px 12px 15px;
+    background: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    color: #101010;
+    line-height: 24px; }
+  .pf-field > i {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 20px;
+    color: #8b91dd;
+    line-height: 48px; }
+
 .sidebar {
   margin-left: 50px;
   font-family: "Open sans",sans-serif; }
@@ -69,5 +105,289 @@
             padding-bottom: 0;
             line-height: 2px;
             margin-top: 7px; }
+
+.Userprofile .Profile {
+  float: left;
+  border-left: 1px solid #edeff7; }
+  .Userprofile .Profile form {
+    float: left;
+    width: 100%;
+    padding-left: 30px; }
+  .Userprofile .Profile h3 {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 1px solid #edeff7;
+    font-size: 20px;
+    color: #202020;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: 40px;
+    font-family: "Quicksand"; }
+  .Userprofile .Profile button {
+    float: right;
+    background: #ffffff;
+    border: 2px solid #fb236a;
+    color: #202020;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    padding: 11px 40px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    margin-top: 10px; }
+    .Userprofile .Profile button:hover {
+      color: white;
+      background: #fb236a; }
+  .Userprofile .Profile .profile-title {
+    float: left;
+    width: 100%; }
+    .Userprofile .Profile .profile-title .upload-img-bar {
+      float: left;
+      width: 100%;
+      display: table;
+      margin-top: 40px;
+      padding-left: 30px; }
+      .Userprofile .Profile .profile-title .upload-img-bar > span {
+        display: table-cell;
+        vertical-align: top;
+        border: 2px solid #e8ecec;
+        border-radius: 8px;
+        position: relative;
+        width: 160px; }
+        .Userprofile .Profile .profile-title .upload-img-bar > span img {
+          float: left;
+          width: 100%; }
+        .Userprofile .Profile .profile-title .upload-img-bar > span i {
+          position: absolute;
+          right: -8px;
+          top: -8px;
+          width: 23px;
+          height: 23px;
+          background: #fb236a;
+          color: #ffffff;
+          font-style: normal;
+          text-align: center;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          font-size: 14px;
+          line-height: 21px;
+          cursor: pointer; }
+    .Userprofile .Profile .profile-title .upload-info {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-left: 30px; }
+      .Userprofile .Profile .profile-title .upload-info > a {
+        float: left;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        color: #8b91dd;
+        border: 2px solid #8b91dd;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+        padding: 10px 40px; }
+        .Userprofile .Profile .profile-title .upload-info > a:hover {
+          background-color: #8b91dd;
+          color: #fff; }
+    .Userprofile .Profile .profile-title .upload-info > span {
+      float: left;
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      color: #888888;
+      margin-top: 20px; }
+  .Userprofile .Profile .profile-form-edit {
+    float: left;
+    width: 100%; }
+    .Userprofile .Profile .profile-form-edit .tags {
+      float: left;
+      width: 100%;
+      border: 2px solid #e8ecec;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      padding: 8px; }
+      .Userprofile .Profile .profile-form-edit .tags > .addedTag {
+        float: left;
+        background: #f4f5fa;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+        font-family: "Open Sans",sans-serif;
+        font-size: 13px;
+        padding: 7px 17px;
+        margin-right: 10px;
+        position: relative; }
+        .Userprofile .Profile .profile-form-edit .tags > .addedTag > span {
+          position: absolute;
+          right: -6px;
+          top: -5px;
+          width: 16px;
+          height: 16px;
+          font-style: normal;
+          background: #fb236a;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          color: #ffffff;
+          text-align: center;
+          line-height: 13px;
+          font-size: 10px;
+          font-family: "Open Sans", sans-serif;
+          cursor: pointer; }
+    .Userprofile .Profile .profile-form-edit .pf-field {
+      float: left;
+      width: 100%;
+      position: relative; }
+      .Userprofile .Profile .profile-form-edit .pf-field > textarea {
+        float: left;
+        width: 100%;
+        border: 2px solid #e8ecec;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+        padding: 12px 45px 12px 15px;
+        background: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        color: #101010;
+        line-height: 24px; }
+      .Userprofile .Profile .profile-form-edit .pf-field > textarea {
+        color: #888888;
+        padding: 30px 30px;
+        height: 200px; }
+  .Userprofile .Profile .social-edit {
+    float: left;
+    width: 100%; }
+    .Userprofile .Profile .social-edit .pf-field {
+      float: left;
+      width: 100%;
+      position: relative; }
+      .Userprofile .Profile .social-edit .pf-field > input {
+        float: left;
+        width: 100%;
+        border: 2px solid #e8ecec;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+        padding: 12px 45px 12px 15px;
+        background: #ffffff;
+        font-family: "Open Sans",sans-serif;
+        font-size: 13px;
+        color: #101010;
+        line-height: 24px; }
+      .Userprofile .Profile .social-edit .pf-field > i {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        font-size: 20px;
+        color: #8b91dd;
+        line-height: 48px; }
+  .Userprofile .Profile .contact-edit {
+    float: left;
+    width: 100%;
+    margin-bottom: 60px; }
+    .Userprofile .Profile .contact-edit.srch-lctn {
+      float: left;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      color: #8b91dd;
+      border: 2px solid #8b91dd;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      border-radius: 30px;
+      padding: 11px 26px;
+      margin-top: 30px; }
+
+.Userprofile .CV {
+  border-left: 1px solid #edeff7; }
+  .Userprofile .CV > div {
+    border-left: 1px solid #edeff7; }
+  .Userprofile .CV .sb-title {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #edeff7;
+    font-size: 20px;
+    color: #202020;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: "Quicksand"; }
+
+.Userprofile .ChangePassword {
+  float: left;
+  width: 100%; }
+  .Userprofile .ChangePassword .big-icon {
+    font-size: 290px;
+    color: #EFEFEF;
+    text-align: center;
+    width: 100%;
+    float: left;
+    line-height: 413px;
+    margin-bottom: 80px; }
+  .Userprofile .ChangePassword form {
+    float: left;
+    width: 100%;
+    padding-left: 30px; }
+    .Userprofile .ChangePassword form input {
+      margin-bottom: 0; }
+    .Userprofile .ChangePassword form button {
+      float: right;
+      background: #ffffff;
+      border: 2px solid #fb236a;
+      color: #202020;
+      font-family: "Open Sans",sans-serif;
+      font-size: 15px;
+      padding: 11px 40px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      margin-top: 30px;
+      position: relative;
+      right: 95px; }
+      .Userprofile .ChangePassword form button:hover {
+        color: #fff;
+        background-color: #fb236a; }
+  .Userprofile .ChangePassword h3 {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 1px solid #edeff7;
+    font-size: 20px;
+    color: #202020;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: 40px;
+    font-family: "Quicksand"; }
 
 /*# sourceMappingURL=user.css.map */
