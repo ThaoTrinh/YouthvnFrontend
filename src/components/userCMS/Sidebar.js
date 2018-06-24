@@ -11,15 +11,16 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div className="sidebar col-lg-3 col-md-3" id="#mySideNav" style ={{marginTop:60}}>
+      <div className="sidebar" id="#mySideNav" style ={{marginTop:60}}>
         <nav className="sidebar-nav">
           <ul className="nav">
             	<li className="inner-child">
 				 						<a href="#" title=""><i className="fa fa-file-text"></i>User Profile</a>
-				 						<ul>
-				 							<li><a href="#" title="">My CV</a></li>
-				 							<li><a href="#" title="">Change Password</a></li>
-				 							<li><a href="#" title="">Remove Account</a></li>
+										 <ul>
+										 <li><a href="/user/account/profile" title="">My Profile</a></li>
+				 							<li><a href="/user/account/cv" title="">My CV</a></li>
+				 							<li><a href="/user/account/changepassword" title="">Change Password</a></li>
+				 							<li><a href="/user/account/removeaccount" title="">Remove Account</a></li>
 				 						</ul>
 				 					</li>
 				 					<li className="inner-child">

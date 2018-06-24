@@ -1,0 +1,94 @@
+.sidebar {
+  margin-left: 50px;
+  font-family: "Open sans",sans-serif; }
+  .sidebar .sidebar-nav > ul {
+    float: left;
+    width: 100%;
+    margin: 0; }
+    .sidebar .sidebar-nav > ul > li {
+      float: left;
+      width: 100%;
+      margin: 0; }
+      .sidebar .sidebar-nav > ul > li > a {
+        float: left;
+        width: 100%;
+        font-family: "Open Sans",sans-serif;
+        font-size: 14px;
+        color: #888888;
+        line-height: 41px; }
+        .sidebar .sidebar-nav > ul > li > a:hover {
+          color: #8b91dd;
+          background: transparent; }
+      .sidebar .sidebar-nav > ul > li i {
+        float: left;
+        font-size: 28px;
+        line-height: 41px;
+        color: #babebe;
+        margin-right: 5px;
+        width: 35px; }
+        .sidebar .sidebar-nav > ul > li i:hover {
+          color: #8b91dd; }
+      .sidebar .sidebar-nav > ul > li > ul {
+        float: left;
+        width: 100%;
+        margin: 0; }
+        .sidebar .sidebar-nav > ul > li > ul > li {
+          float: left;
+          width: 100%;
+          position: relative;
+          margin: 0;
+          padding-left: 20px;
+          border-left: 1px solid #e8ecec; }
+          .sidebar .sidebar-nav > ul > li > ul > li a {
+            float: left;
+            width: 100%;
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            color: #888888;
+            padding: 3px 0; }
+            .sidebar .sidebar-nav > ul > li > ul > li a:hover {
+              color: black; }
+          .sidebar .sidebar-nav > ul > li > ul > li::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 10px;
+            height: 1px;
+            content: "";
+            background: #e8ecec; }
+          .sidebar .sidebar-nav > ul > li > ul > li:first-child:before {
+            top: 0; }
+          .sidebar .sidebar-nav > ul > li > ul > li:first-child > a {
+            padding-top: 0;
+            line-height: 2px;
+            margin-bottom: 7px; }
+          .sidebar .sidebar-nav > ul > li > ul > li:last-child:before {
+            top: auto;
+            bottom: 0; }
+          .sidebar .sidebar-nav > ul > li > ul > li:last-child > a {
+            padding-bottom: 0;
+            line-height: 2px;
+            margin-top: 7px; }
+
+.Profile {
+  border: 1px red solid;
+  float: left;
+  width: 100%; }
+  .Profile .profile-title {
+    float: left;
+    width: 100%; }
+    .Profile .profile-title > h3 {
+      float: left;
+      width: 100%;
+      margin-top: 40px;
+      border-bottom: 1px solid #edeff7;
+      font-size: 20px;
+      color: #202020;
+      font-weight: bold;
+      margin: 0;
+      margin-top: 0px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      margin-top: 40px; }
+
+/*# sourceMappingURL=user.css.map */
