@@ -12,6 +12,8 @@ import UserApp from './components/userCMS/UserApp';
 import Profile from './components/userCMS/views/Account/Profile';
 import CV from './components/userCMS/views/Account/CV';
 import ChangePassword from './components/userCMS/views/Account/changePassword';
+import DeleteAccount from './components/userCMS/views/Account/deleteAccount';
+import CreateOrganization from './components/userCMS/views/Organization/createOrganization';
 // Organization
 
 import OrganizationPage from './components/organizationHolder/OrganizationPage';
@@ -134,6 +136,8 @@ const routes = (
         <Route path="/user/account/profile" component={Profile}/>
         <Route path="/user/account/cv" component={CV}/>
         <Route path="/user/account/changepassword" component={ChangePassword}/>
+        <Route path="/user/account/deleteaccount" component={DeleteAccount}/>
+        <Route path="/user/organization/create" name="Tạo tổ chức" component={CreateOrganization}/>
      </Route>
 
 

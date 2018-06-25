@@ -37,6 +37,29 @@
   color: #8b91dd;
   line-height: 48px;
 }
+&>textarea{
+  float: left;
+  width: 100%;
+  border: 2px solid #e8ecec;
+  
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+
+  padding: 12px 45px 12px 15px;
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #101010;
+  line-height: 24px;
+}
+&>textarea {
+  color: #888888;
+  padding: 30px 30px;
+  height: 200px;
+}
 }
 .sidebar{
     margin-left: 50px;
@@ -132,15 +155,9 @@
     }
     
   }
-  
-  .Userprofile .Profile{
+  .Userprofile{
     float: left;
     border-left: 1px solid #edeff7;
-    form{
-      float: left;
-      width: 100%;
-      padding-left: 30px;
-    }
     h3{
       float: left;
       width: 100%;
@@ -157,8 +174,8 @@
       font-family:"Quicksand";
       
     }
-   button {
-      float: right;
+    button {
+      float: left;
       background: #ffffff;
       border: 2px solid #fb236a;
       color: #202020;
@@ -177,84 +194,85 @@
         background:#fb236a;
       }
     }
-    .profile-title {
-     
+    .upload-img-bar {
       float: left;
       width: 100%;
-      .upload-img-bar {
-        float: left;
-        width: 100%;
-        display: table;
-        margin-top: 40px;
-        padding-left: 30px;
-        & >span{
-          display: table-cell;
-          vertical-align: top;
-          border: 2px solid #e8ecec;
-          border-radius: 8px;
-          position: relative;
-          width: 160px;
-          img{
-            float: left;
-            width: 100%;
-          }
-          i {
-            position: absolute;
-            right: -8px;
-            top: -8px;
-            width: 23px;
-            height: 23px;
-            background: #fb236a;
-            color: #ffffff;
-            font-style: normal;
-            text-align: center;
-            
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            border-radius: 50%;
-        
-            font-size: 14px;
-            line-height: 21px;
-            cursor: pointer;
-          }
-        }
-       }
-    
-    .upload-info {
+      display: table;
+      margin-top: 40px;
+      padding-left: 30px;
+      & >span{
         display: table-cell;
-        vertical-align: bottom;
-        padding-left: 30px;
-        &>a{
+        vertical-align: top;
+        border: 2px solid #e8ecec;
+        border-radius: 8px;
+        position: relative;
+        width: 160px;
+        img{
           float: left;
-          font-family: "Open Sans", sans-serif;
-          font-size: 15px;
-          color: #8b91dd;
-          border: 2px solid #8b91dd;
-          
-          -webkit-border-radius: 20px;
-          -moz-border-radius: 20px;
-          -ms-border-radius: 20px;
-          -o-border-radius: 20px;
-          border-radius: 20px;
-      
-          padding: 10px 40px;
-          &:hover{
-            background-color:#8b91dd;
-            color: #fff;
-          }
+          width: 100%;
         }
-    }
+        i {
+          position: absolute;
+          right: -8px;
+          top: -8px;
+          width: 23px;
+          height: 23px;
+          background: #fb236a;
+          color: #ffffff;
+          font-style: normal;
+          text-align: center;
+          
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+      
+          font-size: 14px;
+          line-height: 21px;
+          cursor: pointer;
+        }
+      }
+     }
+     .upload-info {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-left: 30px;
+      &>a{
+        float: left;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        color: #8b91dd;
+        border: 2px solid #8b91dd;
+        
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
     
-    .upload-info > span {
+        padding: 10px 40px;
+        &:hover{
+          background-color:#8b91dd;
+          color: #fff;
+        }
+      }
+      &>span{
         float: left;
         width: 100%;
         font-family: "Open Sans", sans-serif;
         font-size: 14px;
         color: #888888;
         margin-top: 20px;
-        }
+      }
+     }
+  }
+  .Userprofile .Profile{
+    .profile-title {
+     
+      float: left;
+      width: 100%;
+   
      }
     .profile-form-edit{
       float: left;
@@ -306,35 +324,7 @@
       }
 
       }
-      .pf-field {
-          float: left;
-          width: 100%;
-          position: relative;
-          
-          &>textarea{
-            float: left;
-            width: 100%;
-            border: 2px solid #e8ecec;
-            
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            -ms-border-radius: 8px;
-            -o-border-radius: 8px;
-            border-radius: 8px;
-
-            padding: 12px 45px 12px 15px;
-            background: #ffffff;
-            font-family: "Open Sans", sans-serif;
-            font-size: 13px;
-            color: #101010;
-            line-height: 24px;
-          }
-          &>textarea {
-            color: #888888;
-            padding: 30px 30px;
-            height: 200px;
-          }
-      }
+      
     }
     .social-edit {
       float: left;
@@ -395,10 +385,7 @@
   }
 
 .Userprofile .CV{
-   border-left: 1px solid #edeff7;
-   &>div{
-    border-left: 1px solid #edeff7;
-   }
+ 
   .sb-title{
     
       float: left;
@@ -411,13 +398,14 @@
       margin-bottom: 40px;
       margin-top: 40px;
       font-family:"Quicksand";
-      
+      padding :0 ;
     
   }
 }
 .Userprofile .ChangePassword{
   float: left;
   width: 100%;
+  
   .big-icon {
     font-size: 290px;
     color: #EFEFEF;
@@ -457,20 +445,26 @@
     }
   }
 
-  h3{
-    float: left;
+
+}
+.Userprofile .DeleteAccount{
+  float: left;
+  width: 100%;
+ p{
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding:0;
+  margin-top: 20px;
+ }
+
+  .big-icon {
+    font-size: 290px;
+    color: #EFEFEF;
+    text-align: center;
     width: 100%;
-    margin-top: 40px;
-    border-bottom: 1px solid #edeff7;
-    font-size: 20px;
-    color: #202020;
-    font-weight: bold;
-    margin: 0;
-    margin-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    margin-top: 40px;
-    font-family:"Quicksand";
+    float: left;
+    line-height: 413px;
+    margin-bottom: 80px;
   }
 }
