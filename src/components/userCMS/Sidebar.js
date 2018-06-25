@@ -20,13 +20,13 @@ class Sidebar extends Component {
 										 <li><a href="/user/account/profile" title="">My Profile</a></li>
 				 							<li><a href="/user/account/cv" title="">My CV</a></li>
 				 							<li><a href="/user/account/changepassword" title="">Change Password</a></li>
-				 							<li><a href="/user/account/removeaccount" title="">Remove Account</a></li>
+				 							<li><a href="/user/account/deleteaccount" title="">Remove Account</a></li>
 				 						</ul>
 				 					</li>
 				 					<li className="inner-child">
 				 						<a href="#" title=""><i className="fa fa-briefcase"></i>Manage Organization</a>
 				 						<ul>
-				 							<li><a href="#" title="">Create Organization</a></li>
+				 							<li><a href="/user/organization/create" title="">Create Organization</a></li>
 				 							<li><a href="#" title="">My Organization</a></li>
 				 							
 				 						</ul>

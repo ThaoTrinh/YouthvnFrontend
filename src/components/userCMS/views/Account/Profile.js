@@ -52,14 +52,14 @@ class Profile extends Component {
 					 					<div className="col-lg-6">
 					 						<span className="pf-title">Education Levels</span>
 					 						<div className="pf-field">
-                       <input type="text" placeholder="Diploma" />
+                                               <input type="text" placeholder="Diploma" />
 					 						</div>
 					 					</div>
 					 					<div className="col-lg-6">
 					 						<span className="pf-title">Languages</span>					 						
 					 						<div className="pf-field">
 						 						<div className="pf-field">
-                         <input type="text" placeholder="English" />
+                                                   <input type="text" placeholder="English" />
 						 						</div>
 											</div>
 					 					</div>
@@ -85,8 +85,8 @@ class Profile extends Component {
 					 					</div>
 					 				</div>
 					 			</form>
-               </div>
-               <div className="social-edit">
+                 </div>
+                 <div className="social-edit">
 					 			<h3>Social Edit</h3>
 					 			<form>
 					 				<div className="row">
@@ -149,13 +149,13 @@ class Profile extends Component {
 					 					<div className="col-lg-6">
 					 						<span className="pf-title">Country</span>
 					 						<div className="pf-field">
-                       <input type="text" placeholder="America"/>
+                                                 <input type="text" placeholder="America"/>
 					 						</div>
 					 					</div>
 					 					<div className="col-lg-6">
 					 						<span className="pf-title">City</span>
 					 						<div className="pf-field">
-                       <input type="text" placeholder="New York"/>
+                                               <input type="text" placeholder="New York"/>
 					 						</div>
 					 					</div>
 					 					<div className="col-lg-6">
@@ -164,8 +164,8 @@ class Profile extends Component {
 					 							<input type="text" placeholder="Collins Street West, Victoria 8007, Australia." />
 					 						</div>
 					 					</div>					 					
-                   </div>
-                   <div className="col-lg-12">
+                         </div>
+                              <div className="col-lg-12">
 					 						<button type="submit">Update</button>
 					 					</div>
 					 			</form>
