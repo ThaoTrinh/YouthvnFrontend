@@ -16,6 +16,7 @@ class App extends Component {
   };
    fadeInSignIn =()=>{
    $(".signin-popup-box").fadeIn();
+   
    }
     fadeInSignUp =()=>{
    $(".signup-popup-box").fadeIn();

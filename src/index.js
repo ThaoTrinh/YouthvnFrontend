@@ -9,11 +9,12 @@ import Main from './components/indexComponents/Main';
 
 //User
 import UserApp from './components/userCMS/UserApp';
-import Profile from './components/userCMS/views/Account/Profile';
-import CV from './components/userCMS/views/Account/CV';
-import ChangePassword from './components/userCMS/views/Account/changePassword';
-import DeleteAccount from './components/userCMS/views/Account/deleteAccount';
+import Profile from './components/userCMS/views/Account/Profile/Profile';
+import CV from './components/userCMS/views/Account/CV/CV';
+import ChangePassword from './components/userCMS/views/Account/ChangePassword/changePassword';
+import DeleteAccount from './components/userCMS/views/Account/DeleteAccount/deleteAccount';
 import CreateOrganization from './components/userCMS/views/Organization/createOrganization';
+import RecruitmentForm from './components/userCMS/views/Recruitment/Create/recruitmentForm';
 // Organization
 
 import OrganizationPage from './components/organizationHolder/OrganizationPage';
@@ -138,6 +139,7 @@ const routes = (
         <Route path="/user/account/changepassword" component={ChangePassword}/>
         <Route path="/user/account/deleteaccount" component={DeleteAccount}/>
         <Route path="/user/organization/create" name="Tạo tổ chức" component={CreateOrganization}/>
+        <Route path="/user/recruitment/create" name="Đăng tin tuyển dụng" component={RecruitmentForm}/>
      </Route>
 
 

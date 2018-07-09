@@ -19,7 +19,8 @@ class Header extends React.Component {
     }
   }
   toggleControllerBar =()=>{
-    this.setState({controllerBarDisplay:!this.state.controllerBarDisplay});
+   this.setState({controllerBarDisplay:!this.state.controllerBarDisplay});
+   
   }
   setBackgroundHeader=()=>{
    

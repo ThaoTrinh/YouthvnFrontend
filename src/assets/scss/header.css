@@ -25,6 +25,7 @@
     top: 100%;
     width: 240px;
     padding-top: 0;
+    padding-left: 0;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); }
     .navbar .hidden-sm > li > ul::before {
       position: absolute;
@@ -50,9 +51,7 @@
       width: 100%;
       background: #ffffff;
       margin: 0;
-      position: relative;
-      transition-property: transform;
-      transition-duration: 1s; }
+      position: relative; }
       .navbar .hidden-sm > li > ul li > a {
         float: left;
         width: 100%;
@@ -61,8 +60,9 @@
         color: #202020;
         padding: 9px 25px; }
         .navbar .hidden-sm > li > ul li > a:hover {
-          color: #ee2a6b;
-          transform: translateX(20px); }
+          color: #ee2a6b; }
+        .navbar .hidden-sm > li > ul li > a:active {
+          color: #000; }
       .navbar .hidden-sm > li > ul li:first-child {
         border-radius: 6px 6px 0px 0px; }
       .navbar .hidden-sm > li > ul li:last-child {
@@ -122,6 +122,36 @@
         color: #fff; }
   .navbar .navbar-right {
     margin-right: 20px; }
+    .navbar .navbar-right.user {
+      position: relative;
+      right: 30px; }
+      .navbar .navbar-right.user > li {
+        color: #fff;
+        height: 50px; }
+      .navbar .navbar-right.user .controllerBar.hidden {
+        display: none; }
+      .navbar .navbar-right.user .controllerBar {
+        position: absolute;
+        background-color: #fff;
+        width: 150px;
+        height: 120px;
+        top: 60px;
+        right: -15px;
+        border-radius: 3px; }
+        .navbar .navbar-right.user .controllerBar > div {
+          position: relative;
+          height: 40px; }
+          .navbar .navbar-right.user .controllerBar > div a {
+            position: absolute;
+            top: 10px;
+            color: black;
+            left: 10px; }
+            .navbar .navbar-right.user .controllerBar > div a span {
+              color: #ee2a6b;
+              margin-left: 7px;
+              font-size: 20px; }
+            .navbar .navbar-right.user .controllerBar > div a:hover {
+              color: #ee2a6b; }
     .navbar .navbar-right > li > a {
       margin-top: 15px;
       font-family: "Open Sans", sans-serif;
@@ -165,6 +195,7 @@
     top: 100%;
     width: 240px;
     padding-top: 0;
+    padding-left: 0;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); }
     .navbar-hidden .hidden-sm > li > ul::before {
       position: absolute;
@@ -190,9 +221,7 @@
       width: 100%;
       background: #ffffff;
       margin: 0;
-      position: relative;
-      transition-property: transform;
-      transition-duration: 1s; }
+      position: relative; }
       .navbar-hidden .hidden-sm > li > ul li > a {
         float: left;
         width: 100%;
@@ -201,8 +230,7 @@
         color: #202020;
         padding: 9px 25px; }
         .navbar-hidden .hidden-sm > li > ul li > a:hover {
-          color: #ee2a6b;
-          transform: translateX(20px); }
+          color: #ee2a6b; }
       .navbar-hidden .hidden-sm > li > ul li:first-child {
         border-radius: 6px 6px 0px 0px; }
       .navbar-hidden .hidden-sm > li > ul li:last-child {
@@ -219,6 +247,8 @@
     height: 50px; }
     .navbar-hidden .hidden-sm > li > a:hover {
       color: #ee2a6b; }
+    .navbar-hidden .hidden-sm > li > a:visited {
+      color: black; }
   .navbar-hidden .visible-sm .dropdown button {
     margin-left: 10px;
     background-color: #0b1b46;
@@ -250,6 +280,36 @@
       color: #fff; }
   .navbar-hidden .navbar-right {
     margin-right: 20px; }
+    .navbar-hidden .navbar-right.user {
+      position: relative;
+      right: 30px; }
+      .navbar-hidden .navbar-right.user > li {
+        color: #fff;
+        height: 50px; }
+      .navbar-hidden .navbar-right.user .controllerBar.hidden {
+        display: none; }
+      .navbar-hidden .navbar-right.user .controllerBar {
+        position: absolute;
+        background-color: #fff;
+        width: 150px;
+        height: 120px;
+        top: 70px;
+        right: -15px;
+        border-radius: 3px; }
+        .navbar-hidden .navbar-right.user .controllerBar > div {
+          position: relative;
+          height: 40px; }
+          .navbar-hidden .navbar-right.user .controllerBar > div a {
+            position: absolute;
+            top: 10px;
+            color: black;
+            left: 10px; }
+            .navbar-hidden .navbar-right.user .controllerBar > div a span {
+              color: #ee2a6b;
+              margin-left: 7px;
+              font-size: 20px; }
+            .navbar-hidden .navbar-right.user .controllerBar > div a:hover {
+              color: #ee2a6b; }
     .navbar-hidden .navbar-right button {
       font-family: "Open Sans", sans-serif;
       margin-top: 20px;
@@ -269,11 +329,16 @@
       font-size: 14px; }
       .navbar-hidden .navbar-right > li > a:hover {
         color: #ee2a6b; }
+      .navbar-hidden .navbar-right > li > a:visited {
+        color: black; }
 
 @media screen and (max-width: 1200px) {
   .navbar, .navbar-hidden {
     background-color: #0b1b46;
     border: none; }
+    .navbar .navbar-right.user > li > a, .navbar-hidden .navbar-right.user > li > a {
+      margin-top: 0 !important;
+      margin-left: 30px !important; }
     .navbar .navbar-right > li > a, .navbar-hidden .navbar-right > li > a {
       margin-top: 10px;
       font-family: 'Open Sans', sans-serif;

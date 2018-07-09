@@ -40,7 +40,7 @@ class Sidebar extends Component {
 				 					<li className="inner-child">
 				 						<a href="#" title=""><i className="fa fa-paper-plane"></i>Jobs Management</a>
 				 						<ul>
-				 							<li><a href="#" title="">Post a new job</a></li>
+				 							<li><a href="/user/recruitment/create" title="">Post a new job</a></li>
 				 							<li><a href="#" title="">Posted Jobs List</a></li>
 				 							<li><a href="#" title="">Applied Jobs List</a></li>
 				 						</ul>
@@ -50,10 +50,8 @@ class Sidebar extends Component {
 				 						<ul>
 				 							<li><a href="#" title="">Social Network</a></li>
 				 							<li><a href="#" title="">Notification</a></li>
-				 							<li><a href="#" title="">Contact Information</a></li>
 				 						</ul>
-				 					</li>
-				 				
+				 					</li>		
 				 					<li className="inner-child"><a href="#" title=""><i className="fa fa-unlink"></i>Logout</a></li>
           </ul>
         </nav>

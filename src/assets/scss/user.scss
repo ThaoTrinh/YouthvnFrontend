@@ -11,6 +11,47 @@
   float: left;
   width: 100%;
   position: relative;
+  
+  .search2{
+    
+    padding:0;
+    .select{
+      border: 2px solid #e8ecec;
+      }
+    .search-chosen{
+      border: 2px solid #e8ecec;
+      border-radius: 8px;
+      position:absolute;
+      background: #fff;
+      border-radius: 8px;
+      width: 200px;
+      height: 90px;
+      left: 0px;
+      margin-top: 10px;
+      z-index:99;
+      .item{
+        position: relative;
+        right: 5px;
+        top: 15px;
+        height: 20px;
+        color: #888888;
+        font-family: "Open Sans", sans-serif;
+        text-shadow: 0px 0px #888888;
+        font-size: 13px;
+        transition-property: transform;
+        transition-duration: 1s;
+        width: 200px;
+        left:20px;
+       
+        &:hover{
+          transform:translateX(15px);
+          color: #ee2a6b;
+          cursor: pointer;
+        }
+      }
+      
+    }
+  }
   &>input{
     float: left;
     width: 80%;
@@ -158,6 +199,52 @@
   .Userprofile{
     float: left;
     border-left: 1px solid #edeff7;
+    .tags {
+      float: left;
+      width: 100%;
+      border: 2px solid #e8ecec;      
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      padding: 8px;
+      &>.addedTag {
+        float: left;
+        background: #f4f5fa;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+        font-family: "Open Sans",sans-serif;
+        font-size: 13px;
+        padding: 7px 17px;
+        margin-right: 10px;
+        position: relative;
+          &> span {
+            position: absolute;
+            right: -6px;
+            top: -5px;
+            width: 16px;
+            height: 16px;
+            font-style: normal;
+            background: #fb236a;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            color: #ffffff;
+            text-align: center;
+            line-height: 13px;
+            font-size: 10px;
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer;
+        }
+    }
+
+    }
     h3{
       float: left;
       width: 100%;
@@ -171,8 +258,8 @@
       padding-bottom: 20px;
       padding-left: 30px;
       margin-top: 40px;
-      font-family:"Quicksand";
-      
+      font-family:"Quicksand";    
+    
     }
     button {
       float: left;
@@ -182,13 +269,13 @@
       font-family: "Open Sans",sans-serif;
       font-size: 15px;
       padding: 11px 40px;
-      
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
       border-radius: 8px;
-      margin-top: 10px;
+      margin-top: 20px;
+      
       &:hover{
         color: white;
         background:#fb236a;
@@ -238,7 +325,7 @@
       display: table-cell;
       vertical-align: bottom;
       padding-left: 30px;
-      &>a{
+      form {
         float: left;
         font-family: "Open Sans", sans-serif;
         font-size: 15px;
@@ -251,11 +338,28 @@
         -o-border-radius: 20px;
         border-radius: 20px;
     
-        padding: 10px 40px;
+        padding: 5px 20px;
         &:hover{
           background-color:#8b91dd;
           color: #fff;
         }
+        .inputfile {
+         
+          opacity: 0;
+          overflow: hidden;
+          position: absolute;
+          
+        }
+        .inputfile + label {
+          font-weight:300;
+          display: inline-block;
+          &:hover{
+            cursor:pointer;
+          }
+      }
+
+      
+        
       }
       &>span{
         float: left;
@@ -269,7 +373,6 @@
   }
   .Userprofile .Profile{
     .profile-title {
-     
       float: left;
       width: 100%;
    
@@ -277,54 +380,6 @@
     .profile-form-edit{
       float: left;
       width: 100%;
-    
-      .tags {
-        float: left;
-        width: 100%;
-        border: 2px solid #e8ecec;      
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -o-border-radius: 8px;
-        border-radius: 8px;
-        padding: 8px;
-        &>.addedTag {
-          float: left;
-          background: #f4f5fa;
-          -webkit-border-radius: 8px;
-          -moz-border-radius: 8px;
-          -ms-border-radius: 8px;
-          -o-border-radius: 8px;
-          border-radius: 8px;
-          font-family: "Open Sans",sans-serif;
-          font-size: 13px;
-          padding: 7px 17px;
-          margin-right: 10px;
-          position: relative;
-            &> span {
-              position: absolute;
-              right: -6px;
-              top: -5px;
-              width: 16px;
-              height: 16px;
-              font-style: normal;
-              background: #fb236a;
-              -webkit-border-radius: 50%;
-              -moz-border-radius: 50%;
-              -ms-border-radius: 50%;
-              -o-border-radius: 50%;
-              border-radius: 50%;
-              color: #ffffff;
-              text-align: center;
-              line-height: 13px;
-              font-size: 10px;
-              font-family: "Open Sans", sans-serif;
-              cursor: pointer;
-          }
-      }
-
-      }
-      
     }
     .social-edit {
       float: left;
@@ -467,4 +522,49 @@
     line-height: 413px;
     margin-bottom: 80px;
   }
+}
+.Userprofile .RecruitmentForm{
+  .Experience,.Age{
+    position:relative!important;
+    padding:0!important;
+    
+  }
+  .salary{
+    .widget.border{
+    p{
+      margin-left:0!important;
+    }
+    .range{
+      margin-left:0!important;
+    }
+    }
+  }
+  .widget.border{
+    margin-top: 20px;
+    padding:0; 
+    margin-bottom: 5px!important;
+    top: 0 !important;
+    p{
+    font-size:14px !important;
+    margin-left: 16px !important;
+    margin-top: 20px;
+    }
+    .range{
+      width: 387px!important;
+      margin-top: 20px;  
+      margin-left: 16px !important; 
+    }
+    .float{
+      position:relative;
+      top:25px;
+      right: 70px;
+      z-index:-9;
+    }
+   
+  }
+ 
+  .Requirement{
+    margin: 0 !important;
+  }
+
 }

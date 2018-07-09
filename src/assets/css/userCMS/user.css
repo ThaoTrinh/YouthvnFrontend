@@ -11,6 +11,38 @@
   float: left;
   width: 100%;
   position: relative; }
+  .pf-field .search2 {
+    padding: 0; }
+    .pf-field .search2 .select {
+      border: 2px solid #e8ecec; }
+    .pf-field .search2 .search-chosen {
+      border: 2px solid #e8ecec;
+      border-radius: 8px;
+      position: absolute;
+      background: #fff;
+      border-radius: 8px;
+      width: 200px;
+      height: 90px;
+      left: 0px;
+      margin-top: 10px;
+      z-index: 99; }
+      .pf-field .search2 .search-chosen .item {
+        position: relative;
+        right: 5px;
+        top: 15px;
+        height: 20px;
+        color: #888888;
+        font-family: "Open Sans", sans-serif;
+        text-shadow: 0px 0px #888888;
+        font-size: 13px;
+        transition-property: transform;
+        transition-duration: 1s;
+        width: 200px;
+        left: 20px; }
+        .pf-field .search2 .search-chosen .item:hover {
+          transform: translateX(15px);
+          color: #ee2a6b;
+          cursor: pointer; }
   .pf-field > input {
     float: left;
     width: 80%;
@@ -128,6 +160,48 @@
 .Userprofile {
   float: left;
   border-left: 1px solid #edeff7; }
+  .Userprofile .tags {
+    float: left;
+    width: 100%;
+    border: 2px solid #e8ecec;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    padding: 8px; }
+    .Userprofile .tags > .addedTag {
+      float: left;
+      background: #f4f5fa;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      font-family: "Open Sans",sans-serif;
+      font-size: 13px;
+      padding: 7px 17px;
+      margin-right: 10px;
+      position: relative; }
+      .Userprofile .tags > .addedTag > span {
+        position: absolute;
+        right: -6px;
+        top: -5px;
+        width: 16px;
+        height: 16px;
+        font-style: normal;
+        background: #fb236a;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        color: #ffffff;
+        text-align: center;
+        line-height: 13px;
+        font-size: 10px;
+        font-family: "Open Sans", sans-serif;
+        cursor: pointer; }
   .Userprofile h3 {
     float: left;
     width: 100%;
@@ -155,7 +229,7 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border-radius: 8px;
-    margin-top: 10px; }
+    margin-top: 20px; }
     .Userprofile button:hover {
       color: white;
       background: #fb236a; }
@@ -197,7 +271,7 @@
     display: table-cell;
     vertical-align: bottom;
     padding-left: 30px; }
-    .Userprofile .upload-info > a {
+    .Userprofile .upload-info form {
       float: left;
       font-family: "Open Sans", sans-serif;
       font-size: 15px;
@@ -208,10 +282,19 @@
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
       border-radius: 20px;
-      padding: 10px 40px; }
-      .Userprofile .upload-info > a:hover {
+      padding: 5px 20px; }
+      .Userprofile .upload-info form:hover {
         background-color: #8b91dd;
         color: #fff; }
+      .Userprofile .upload-info form .inputfile {
+        opacity: 0;
+        overflow: hidden;
+        position: absolute; }
+      .Userprofile .upload-info form .inputfile + label {
+        font-weight: 300;
+        display: inline-block; }
+        .Userprofile .upload-info form .inputfile + label:hover {
+          cursor: pointer; }
     .Userprofile .upload-info > span {
       float: left;
       width: 100%;
@@ -226,48 +309,6 @@
 .Userprofile .Profile .profile-form-edit {
   float: left;
   width: 100%; }
-  .Userprofile .Profile .profile-form-edit .tags {
-    float: left;
-    width: 100%;
-    border: 2px solid #e8ecec;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
-    padding: 8px; }
-    .Userprofile .Profile .profile-form-edit .tags > .addedTag {
-      float: left;
-      background: #f4f5fa;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -o-border-radius: 8px;
-      border-radius: 8px;
-      font-family: "Open Sans",sans-serif;
-      font-size: 13px;
-      padding: 7px 17px;
-      margin-right: 10px;
-      position: relative; }
-      .Userprofile .Profile .profile-form-edit .tags > .addedTag > span {
-        position: absolute;
-        right: -6px;
-        top: -5px;
-        width: 16px;
-        height: 16px;
-        font-style: normal;
-        background: #fb236a;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%;
-        color: #ffffff;
-        text-align: center;
-        line-height: 13px;
-        font-size: 10px;
-        font-family: "Open Sans", sans-serif;
-        cursor: pointer; }
 .Userprofile .Profile .social-edit {
   float: left;
   width: 100%; }
@@ -382,5 +423,33 @@
     float: left;
     line-height: 413px;
     margin-bottom: 80px; }
+
+.Userprofile .RecruitmentForm .Experience, .Userprofile .RecruitmentForm .Age {
+  position: relative !important;
+  padding: 0 !important; }
+.Userprofile .RecruitmentForm .salary .widget.border p {
+  margin-left: 0 !important; }
+.Userprofile .RecruitmentForm .salary .widget.border .range {
+  margin-left: 0 !important; }
+.Userprofile .RecruitmentForm .widget.border {
+  margin-top: 20px;
+  padding: 0;
+  margin-bottom: 5px !important;
+  top: 0 !important; }
+  .Userprofile .RecruitmentForm .widget.border p {
+    font-size: 14px !important;
+    margin-left: 16px !important;
+    margin-top: 20px; }
+  .Userprofile .RecruitmentForm .widget.border .range {
+    width: 387px !important;
+    margin-top: 20px;
+    margin-left: 16px !important; }
+  .Userprofile .RecruitmentForm .widget.border .float {
+    position: relative;
+    top: 25px;
+    right: 70px;
+    z-index: -9; }
+.Userprofile .RecruitmentForm .Requirement {
+  margin: 0 !important; }
 
 /*# sourceMappingURL=user.css.map */
